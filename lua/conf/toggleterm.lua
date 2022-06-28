@@ -27,7 +27,7 @@ toggleterm.setup({
 })
 
 local Terminal = require("toggleterm.terminal").Terminal
-local python = Terminal:new({ cmd = "python3", hidden = true })
+local python = Terminal:new({ cmd = "bpython", hidden = true })
 local node = Terminal:new({ cmd = "node", hidden = true })
 local lua = Terminal:new({ cmd = "lua", hidden = true })
 

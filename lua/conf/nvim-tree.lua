@@ -1,4 +1,12 @@
-require("nvim-tree").setup({
+local status_ok, nvim_tree = pcall(require, "nvim-tree")
+if not status_ok then
+  return
+end
+
+-- Always open new windows to the right
+vim.opt.splitright = true
+
+nvim_tree.setup({
    hijack_cursor = true,
    view = {
       hide_root_folder = true,

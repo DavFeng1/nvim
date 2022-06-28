@@ -2,11 +2,11 @@
 let mapleader = " "
 
 " Save file
-nnoremap <C-s> <cmd>w<cr>1
+nnoremap <C-s> <cmd>w<cr>
 
 " Telescope keybinds Ctrl+P
 nnoremap <C-p> <cmd>Telescope find_files<cr>
-nnoremap <Leader>f <cmd>Telescope live_grep<cr>
+nnoremap <C-f> <cmd>Telescope live_grep<cr>
 
 " Clear search 
 nnoremap <Leader><space> :noh<cr>
@@ -18,15 +18,15 @@ nnoremap <Leader>e <cmd>NvimTreeToggle<cr>
 " nnoremap <Leader>ec <cmd>NvimTreeCollapse<cr>
 
 " Bufferline
-nnoremap <silent><leader>1 <Cmd>BufferLineGoToBuffer 1<CR>
-nnoremap <silent><leader>2 <Cmd>BufferLineGoToBuffer 2<CR>
-nnoremap <silent><leader>3 <Cmd>BufferLineGoToBuffer 3<CR>
-nnoremap <silent><leader>4 <Cmd>BufferLineGoToBuffer 4<CR>
-nnoremap <silent><leader>5 <Cmd>BufferLineGoToBuffer 5<CR>
-nnoremap <silent><leader>6 <Cmd>BufferLineGoToBuffer 6<CR>
-nnoremap <silent><leader>7 <Cmd>BufferLineGoToBuffer 7<CR>
-nnoremap <silent><leader>8 <Cmd>BufferLineGoToBuffer 8<CR>
-nnoremap <silent><leader>9 <Cmd>BufferLineGoToBuffer 9<CR>
+nnoremap <leader>1 <Cmd>BufferLineGoToBuffer 1<CR>
+nnoremap <leader>2 <Cmd>BufferLineGoToBuffer 2<CR>
+nnoremap <leader>3 <Cmd>BufferLineGoToBuffer 3<CR>
+nnoremap <leader>4 <Cmd>BufferLineGoToBuffer 4<CR>
+nnoremap <leader>5 <Cmd>BufferLineGoToBuffer 5<CR>
+nnoremap <leader>6 <Cmd>BufferLineGoToBuffer 6<CR>
+nnoremap <leader>7 <Cmd>BufferLineGoToBuffer 7<CR>
+nnoremap <leader>8 <Cmd>BufferLineGoToBuffer 8<CR>
+nnoremap <leader>9 <Cmd>BufferLineGoToBuffer 9<CR>
 
 " Close tab without closing all
 nnoremap <leader>w <Cmd>bd<bar>bp<cr>
@@ -43,3 +43,18 @@ nnoremap <c-\> <cmd>ToggleTerm direction=float<cr>
 nnoremap <leader>tp <cmd> lua _PYTHON_TOGGLE()<cr>
 nnoremap <leader>tn <cmd> lua _NODE_TOGGLE()<cr>
 nnoremap <leader>tl <cmd> lua _LUA_TOGGLE()<cr>
+
+" Adjust pane size
+nnoremap <C-Up> <cmd> :resize +2<cr>
+nnoremap <C-Down> <cmd> :resize -2<cr>
+nnoremap <C-Left> <cmd> :vertical resize +2<cr>
+nnoremap <C-Right> <cmd> :vertical resize -2<cr>
+
+" Toggle through command suggestions
+cnoremap <expr> <C-k> wildmenumode() ? "\<C-P>" : "\<Up>"
+cnoremap <expr> <C-j> wildmenumode() ? "\<C-N>" : "\<Down>"
+
+" Show all highlights
+nnoremap <leader>hi <cmd>so $VIMRUNTIME/syntax/hitest.vim<cr>
+
+

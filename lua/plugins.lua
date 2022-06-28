@@ -33,16 +33,27 @@ return require('packer').startup(function(use)
 		'nvim-treesitter/nvim-treesitter',
 		run = ":TSUpdate",
 	}
+	-- Snippets
+	use "L3MON4D3/LuaSnip" --snippet engine
+	use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+
 
 	-- Autocomplete
 	use "hrsh7th/nvim-cmp" -- The completion plugin
 	use "hrsh7th/cmp-buffer" -- buffer completions
 	use "hrsh7th/cmp-path" -- path completions
 	use "hrsh7th/cmp-cmdline" -- cmdline completions
-	use "saadparwaiz1/cmp_luasnip" -- snippet completions
-	use "hrsh7th/cmp-nvim-lsp"
 
-	-- Snippets
-	use "L3MON4D3/LuaSnip" --snippet engine
-	use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
+	-- Integration
+	use "hrsh7th/cmp-nvim-lsp"
+	use "saadparwaiz1/cmp_luasnip" -- snippet completions
+
+	-- Whichkey
+	use 'folke/which-key.nvim'
+
+	-- Theme
+	use 'base16-project/base16-vim'
+
+	-- Comment toggling
+	use 'numToStr/Comment.nvim'
 end)
