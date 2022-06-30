@@ -18,3 +18,5 @@ lspconfig.sumneko_lua.setup {
 }
 
 lspconfig.vimls.setup {}
+
+lspconfig.pyright.setup {}

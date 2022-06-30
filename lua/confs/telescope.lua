@@ -9,7 +9,7 @@ local actions = require "telescope.actions"
 telescope.setup {
   defaults = {
     path_display = { "smart" },
-	prompt_prefix = "   ",
+	prompt_prefix = "  ",
     selection_caret = "  ",
 	entry_prefix = "   ",
 	sorting_strategy = "ascending",
@@ -17,9 +17,9 @@ telescope.setup {
 		horizontal = {
 			prompt_position = "top"
 		},
-		width = 150,
+		width = 135,
         height = 35,
-		preview_width = 75,
+		preview_width = 70,
 	},
 	color_devicons = true,
     file_previewer = require("telescope.previewers").vim_buffer_cat.new,

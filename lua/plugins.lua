@@ -3,11 +3,13 @@
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
 
-return require('packer').startup(function(use)
+require('packer').startup(function(use)
   	-- Packer can manage itself
   	use 'wbthomason/packer.nvim'
+
 	-- Terminal
 	use 'akinsho/toggleterm.nvim'
+
 	-- Tree
 	use "kyazdani42/nvim-tree.lua"
 	use 'kyazdani42/nvim-web-devicons'
@@ -37,7 +39,6 @@ return require('packer').startup(function(use)
 	use "L3MON4D3/LuaSnip" --snippet engine
 	use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
 
-
 	-- Autocomplete
 	use "hrsh7th/nvim-cmp" -- The completion plugin
 	use "hrsh7th/cmp-buffer" -- buffer completions
@@ -56,4 +57,41 @@ return require('packer').startup(function(use)
 
 	-- Comment toggling
 	use 'numToStr/Comment.nvim'
+
+	-- Git signs
+	use 'lewis6991/gitsigns.nvim'
+
+	-- Auto pairs
+	use 'windwp/nvim-autopairs'
+
+	-- Dashboard
+	use 'goolord/alpha-nvim'
 end)
+
+
+--- Initialize all plugins
+---- Configs
+require "confs.cmp"
+
+-- setup lsp Installer before lspconfig
+require "confs.nvim-lsp-installer"
+require "confs.lspconfig"
+require "confs.telescope"
+require "confs.nvim-tree"
+require "confs.nvim-treesitter"
+require "confs.toggleterm"
+
+--- Editor functionality
+require "confs.nvim-autopairs"
+
+-- UI
+require "confs.indent-blankline"
+require "confs.bufferline"
+require "confs.lualine"
+require "confs.which-key"
+require "confs.comment"
+require "confs.gitsigns"
+
+require "confs.alpha-nvim"
+
+

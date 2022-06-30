@@ -55,6 +55,6 @@ cnoremap <expr> <C-k> wildmenumode() ? "\<C-P>" : "\<Up>"
 cnoremap <expr> <C-j> wildmenumode() ? "\<C-N>" : "\<Down>"
 
 " Show all highlights
-nnoremap <leader>hi <cmd>so $VIMRUNTIME/syntax/hitest.vim<cr>
+nnoremap <leader>hi <cmd>so $VIMRUNTIME/syntax/hitest.vim<cr><cr>
 
 
