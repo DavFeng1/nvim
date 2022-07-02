@@ -31,9 +31,6 @@ nnoremap <leader>9 <Cmd>BufferLineGoToBuffer 9<CR>
 " Close tab without closing all
 nnoremap <leader>w <Cmd>bd<bar>bp<cr>
 
-" WSL copy to windows clipboard
-vnoremap <silent><leader>y :<C-U>'<,'>w !clip.exe<cr><cr>
-
 " LSP Keybinds
 nnoremap <leader>gd <cmd> lua vim.lsp.buf.definition()<cr>
 nnoremap <leader>h <cmd> lua vim.lsp.buf.hover()<cr>
@@ -56,5 +53,9 @@ cnoremap <expr> <C-j> wildmenumode() ? "\<C-N>" : "\<Down>"
 
 " Show all highlights
 nnoremap <leader>hi <cmd>so $VIMRUNTIME/syntax/hitest.vim<cr><cr>
+
+" WSL copy to windows clipboard
+vnoremap <silent><leader>y :<C-U>'<,'>w !clip.exe<cr><cr>
+
 
 

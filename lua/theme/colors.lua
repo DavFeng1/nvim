@@ -1,23 +1,29 @@
 local M = {
 	light_white = "#ffffff",
-	white = "#cccccc",
-	black = "#001126",
-	lightbg = "#405570",
-	background =  "#002451" , -- lighter
-	background2 = "#001c40", -- background
-	background3 = "#001733", -- darker
-	darkest_bg = '#081633',
+	white = "#bfbab0",
 	grey = "#7285b7",
 	light_grey = "#808ea0",
 	line = "#404F7D",
-	green = "#d1f1a9",
-	red = "#f14c4c",
-	blue = "#bbdaff",
-	purple = "#ebbbff",
+	green = "#86c379",
+	dark_green = "#238e92",
+	red = "#e06c75",
+	orange = "#d19a66",
+	blue = "#61afef",
+	dark_blue = "#7ab0df",
+	purple = "#c678dd",
+	dark_purple = "#b68acb",
+	black = "#0a0d11",
+	yellow = "#efb004",
+	pink = "#C678DD",
 	statusline_bg = "#15191e",
+	lightbg = "#405570",
+	background1 =  "#0f1419" , -- background
+	background2 = "#070d14", -- darker
+	background3 = "#25323f", -- lighter
+	darkest_bg = '#081633',
 	pmenu_bg = "#3bdda2",
 	folder_bg = "#5fb0fc",
-	dark_green = "#487e02",
+	cmp_background = "#0f1419",
 }
 
 return M

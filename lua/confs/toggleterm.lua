@@ -1,4 +1,5 @@
 local status_ok, toggleterm = pcall(require, "toggleterm")
+
 if not status_ok then
 	return
 end
@@ -20,8 +21,8 @@ toggleterm.setup({
 		border = "curved",
 		winblend = 0,
 		highlights = {
-			border = "Normal",
-			background = "Normal",
+			border = "TerminalBorder",
+			background = "TerminalBackground",
 		},
 	},
 })
@@ -34,7 +35,6 @@ local lua = Terminal:new({ cmd = "lua", hidden = true })
 function _PYTHON_TOGGLE()
 	python:toggle()
 end
-
 
 function _NODE_TOGGLE()
 	node:toggle()

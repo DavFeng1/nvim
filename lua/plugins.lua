@@ -4,23 +4,24 @@
 vim.cmd [[packadd packer.nvim]]
 
 require('packer').startup(function(use)
-  	-- Packer can manage itself
+ 	-- Packer can manage itself
   	use 'wbthomason/packer.nvim'
 
-	-- Terminal
+	-- Terminal Mode
 	use 'akinsho/toggleterm.nvim'
 
-	-- Tree
+	-- File Explorer
 	use "kyazdani42/nvim-tree.lua"
 	use 'kyazdani42/nvim-web-devicons'
-	-- Telescope
+
+	-- Fuzzy search
 	use 'nvim-lua/plenary.nvim'
 	use 'nvim-telescope/telescope.nvim'
 
-	-- Bufferline
+	-- Buffer + Tabs
 	use 'akinsho/bufferline.nvim'
 
-	--LSP - config + installer
+	--LSP
 	use 'williamboman/nvim-lsp-installer'
 	use 'neovim/nvim-lspconfig'
 
@@ -30,11 +31,13 @@ require('packer').startup(function(use)
 	-- Status line
 	use 'nvim-lualine/lualine.nvim'
 
-	-- Tree sitter highlighting
+	-- Tree Sitter
 	use {
 		'nvim-treesitter/nvim-treesitter',
 		run = ":TSUpdate",
 	}
+	use 'nvim-treesitter/playground'
+
 	-- Snippets
 	use "L3MON4D3/LuaSnip" --snippet engine
 	use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
@@ -67,7 +70,6 @@ require('packer').startup(function(use)
 	-- Dashboard
 	use 'goolord/alpha-nvim'
 end)
-
 
 --- Initialize all plugins
 ---- Configs

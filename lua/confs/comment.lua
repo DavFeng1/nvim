@@ -7,5 +7,5 @@ end
 comment.setup {
 	toggler = {
 		line = "<C-_>",
-	}
+	},
 }
