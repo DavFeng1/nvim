@@ -7,11 +7,10 @@ vim.api.nvim_set_hl(0, 'CmpDocBorder', {  fg = colors.blue, bg = colors.cmp_back
 vim.api.nvim_set_hl(0, 'CmpDocPMenu', { bg = colors.cmp_background })
 vim.api.nvim_set_hl(0, 'CmpPmenuBorder', { bg = colors.yellow })
 
-
 -- Defaults
 vim.api.nvim_set_hl(0, 'CmpItemKindDefault', { fg = colors.white, bg = colors.cmp_background })
 vim.api.nvim_set_hl(0, 'CmpItemMenuDefault', { fg = colors.white, bg = colors.cmp_background })
-vim.api.nvim_set_hl(0, 'CmpItemAbbrDefault', { fg = colors.light_grey, bg = colors.cmp_background })
+vim.api.nvim_set_hl(0, 'CmpItemAbbrDefault', { fg = colors.grey, bg = colors.cmp_background })
 
 
 -- Matches

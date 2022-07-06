@@ -36,7 +36,7 @@ nnoremap <leader>gd <cmd> lua vim.lsp.buf.definition()<cr>
 nnoremap <leader>h <cmd> lua vim.lsp.buf.hover()<cr>
 
 " Toggle terminal
-nnoremap <c-\> <cmd>ToggleTerm direction=float<cr>
+nnoremap <c-\> <cmd>ToggleTerm direction=vertical<cr>
 nnoremap <leader>tp <cmd> lua _PYTHON_TOGGLE()<cr>
 nnoremap <leader>tn <cmd> lua _NODE_TOGGLE()<cr>
 nnoremap <leader>tl <cmd> lua _LUA_TOGGLE()<cr>

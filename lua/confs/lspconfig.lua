@@ -20,3 +20,4 @@ lspconfig.sumneko_lua.setup {
 lspconfig.vimls.setup {}
 
 lspconfig.pyright.setup {}
+lspconfig.rust_analyzer.setup {}

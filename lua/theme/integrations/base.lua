@@ -9,14 +9,14 @@ vim.api.nvim_set_hl(0, 'Error', {fg =  colors.red, bg = colors.background1})
 vim.api.nvim_set_hl(0, 'ErrorMsg', {fg =  colors.red, bg = colors.background1})
 vim.api.nvim_set_hl(0, 'Normal', {fg =  colors.white, bg = colors.background1})
 vim.api.nvim_set_hl(0, 'NonText', {fg = colors.background1 })
-vim.api.nvim_set_hl(0, 'LineNr', {fg = colors.light_grey})
 
 vim.api.nvim_set_hl(0, 'Folded', {bg = colors.background1})
 
 -- Cursor
 vim.api.nvim_set_hl(0, 'Cursor', {fg = colors.background1 })
-vim.api.nvim_set_hl(0, 'CursorLine', {bg = colors.background2})
-vim.api.nvim_set_hl(0, 'CursorLineNr', {fg = colors.light_white })
+vim.api.nvim_set_hl(0, 'CursorLine', {bg = colors.cursor_line_background})
+vim.api.nvim_set_hl(0, 'CursorLineNr', {fg = colors.light_white})
+vim.api.nvim_set_hl(0, 'LineNr', {fg = colors.white})
 
 -- PMenu
 vim.api.nvim_set_hl(0, 'PMenu', {fg = colors.white, bg = colors.background2 })

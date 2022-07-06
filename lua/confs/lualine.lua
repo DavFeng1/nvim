@@ -33,8 +33,8 @@ local config = {
       -- We are going to use lualine_c an lualine_x as left and
       -- right section. Both are highlighted by c theme .  So we
       -- are just setting default looks o statusline
-      normal = { c = { fg = colors.white, bg = colors.background2 } },
-      inactive = { c = { fg = colors.white, bg = colors.background2 } },
+      normal = { c = { fg = colors.white, bg = colors.lualine_background } },
+      inactive = { c = { fg = colors.white, bg = colors.lualine_background } },
     },
   },
   sections = {
@@ -63,7 +63,7 @@ local function ins_left(component)
   table.insert(config.sections.lualine_c, component)
 end
 
--- Inserts a component in lualine_x ot right section
+-- Inserts a component in lualine_x at right section
 local function ins_right(component)
   table.insert(config.sections.lualine_x, component)
 end

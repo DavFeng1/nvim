@@ -1,8 +1,7 @@
 local M = {
 	light_white = "#ffffff",
 	white = "#bfbab0",
-	grey = "#7285b7",
-	light_grey = "#808ea0",
+	grey = "#a1aab4",
 	line = "#404F7D",
 	green = "#86c379",
 	dark_green = "#238e92",
@@ -10,20 +9,23 @@ local M = {
 	orange = "#d19a66",
 	blue = "#61afef",
 	dark_blue = "#7ab0df",
-	purple = "#c678dd",
-	dark_purple = "#b68acb",
+	dark_purple = "#c678dd",
+	purple = "#f4b7ff",
 	black = "#0a0d11",
 	yellow = "#efb004",
 	pink = "#C678DD",
 	statusline_bg = "#15191e",
 	lightbg = "#405570",
-	background1 =  "#0f1419" , -- background
-	background2 = "#070d14", -- darker
-	background3 = "#25323f", -- lighter
+	background1 = "#111033",
+	background2 = "#222649", -- darker
+	background3 = "#001127",
 	darkest_bg = '#081633',
 	pmenu_bg = "#3bdda2",
 	folder_bg = "#5fb0fc",
 	cmp_background = "#0f1419",
+	cursor_line_background = "#322647",
+	telescope_background = "#1b1b40",
+	lualine_background = "#1b1b40",
 }
 
 return M
