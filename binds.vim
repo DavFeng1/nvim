@@ -12,24 +12,23 @@ nnoremap <C-f> <cmd>Telescope live_grep<cr>
 nnoremap <Leader><space> :noh<cr>
 
 " Toggle Explorer
-nnoremap <Leader>e <cmd>NvimTreeToggle<cr>
-" nnoremap <Leader>er <cmd>NvimTreeRefresh<cr>
-" nnoremap <Leader>ef <cmd>NvimTreeFindFile<cr>
-" nnoremap <Leader>ec <cmd>NvimTreeCollapse<cr>
+nnoremap <Leader>e <cmd>NeoTreeShowToggle<cr>
 
 " Bufferline
-nnoremap <leader>1 <Cmd>BufferLineGoToBuffer 1<CR>
-nnoremap <leader>2 <Cmd>BufferLineGoToBuffer 2<CR>
-nnoremap <leader>3 <Cmd>BufferLineGoToBuffer 3<CR>
-nnoremap <leader>4 <Cmd>BufferLineGoToBuffer 4<CR>
-nnoremap <leader>5 <Cmd>BufferLineGoToBuffer 5<CR>
-nnoremap <leader>6 <Cmd>BufferLineGoToBuffer 6<CR>
-nnoremap <leader>7 <Cmd>BufferLineGoToBuffer 7<CR>
-nnoremap <leader>8 <Cmd>BufferLineGoToBuffer 8<CR>
-nnoremap <leader>9 <Cmd>BufferLineGoToBuffer 9<CR>
+nnoremap <leader>1 <Cmd>BufferGoto 1<CR>
+nnoremap <leader>2 <Cmd>BufferGoto 2<CR>
+nnoremap <leader>3 <Cmd>BufferGoto 3<CR>
+nnoremap <leader>4 <Cmd>BufferGoto 4<CR>
+nnoremap <leader>5 <Cmd>BufferGoto 5<CR>
+nnoremap <leader>6 <Cmd>BufferGoto 6<CR>
+nnoremap <leader>7 <Cmd>BufferGoto 7<CR>
+nnoremap <leader>8 <Cmd>BufferGoto 8<CR>
+nnoremap <leader>9 <Cmd>BufferGoto 9<CR>
 
+" nnoremap <silent>    <A-<> <Cmd>BufferMovePrevious<CR>
+" nnoremap <silent>    <A->> <Cmd>BufferMoveNext<CR>
 " Close tab without closing all
-nnoremap <leader>w <Cmd>bd<bar>bp<cr>
+nnoremap <leader>w <Cmd>BufferWipeout<cr>
 
 " LSP Keybinds
 nnoremap <leader>gd <cmd> lua vim.lsp.buf.definition()<cr>

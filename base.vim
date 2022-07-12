@@ -10,16 +10,18 @@ set shiftwidth=4
 set scrolloff=20
 
 " Left padding
-set numberwidth=3
+set numberwidth=4
 
 " Folding with tree-sitter
-set foldmethod=expr
-set foldexpr=nvim_treesitter#foldexpr()
-set foldnestmax=5
-set foldtext=getline(v:foldstart).'...'.trim(getline(v:foldend))
+" set foldmethod=expr
+" set foldexpr=nvim_treesitter#foldexpr()
+" set foldnestmax=5
+" set foldtext=getline(v:foldstart).'...'.trim(getline(v:foldend))
 
 " Note the space after the /
 set fillchars=fold:\ 
+
+set fillchars+=vert:\▕
 
 " Set sign column always show
 set signcolumn=yes

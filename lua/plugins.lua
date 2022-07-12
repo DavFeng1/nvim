@@ -3,6 +3,10 @@
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
 
+
+-- Remove legacy commands to neo-tree
+vim.cmd( [[ let g:neo_tree_remove_lgacy_commands = 1]])
+
 require('packer').startup(function(use)
  	-- Packer can manage itself
   	use 'wbthomason/packer.nvim'
@@ -11,7 +15,17 @@ require('packer').startup(function(use)
 	use 'akinsho/toggleterm.nvim'
 
 	-- File Explorer
-	use "kyazdani42/nvim-tree.lua"
+	use {
+		"nvim-neo-tree/neo-tree.nvim",
+		branch = "v2.x",
+		requires = {
+			"nvim-lua/plenary.nvim",
+			"kyazdani42/nvim-web-devicons",
+			"MunifTanjim/nui.nvim",
+		}
+	}
+
+	-- Dev Icons
 	use 'kyazdani42/nvim-web-devicons'
 
 	-- Fuzzy search
@@ -19,7 +33,9 @@ require('packer').startup(function(use)
 	use 'nvim-telescope/telescope.nvim'
 
 	-- Buffer + Tabs
-	use 'akinsho/bufferline.nvim'
+	use {'romgrk/barbar.nvim',
+		requires = {'kyazdani42/nvim-web-devicons'}
+	}
 
 	--LSP
 	use 'williamboman/nvim-lsp-installer'
@@ -79,7 +95,6 @@ require "confs.cmp"
 require "confs.nvim-lsp-installer"
 require "confs.lspconfig"
 require "confs.telescope"
-require "confs.nvim-tree"
 require "confs.nvim-treesitter"
 require "confs.toggleterm"
 
@@ -87,8 +102,9 @@ require "confs.toggleterm"
 require "confs.nvim-autopairs"
 
 -- UI
+require "confs.neo-tree"
 require "confs.indent-blankline"
-require "confs.bufferline"
+require "confs.barbar"
 require "confs.lualine"
 require "confs.which-key"
 require "confs.comment"

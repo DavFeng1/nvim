@@ -19,8 +19,8 @@ vim.api.nvim_set_hl(0, 'CursorLineNr', {fg = colors.light_white})
 vim.api.nvim_set_hl(0, 'LineNr', {fg = colors.white})
 
 -- PMenu
-vim.api.nvim_set_hl(0, 'PMenu', {fg = colors.white, bg = colors.background2 })
-vim.api.nvim_set_hl(0, 'PmenuSel', { fg = colors.orange, bg = colors.background2 })
+vim.api.nvim_set_hl(0, 'PMenu', {fg = colors.white, bg = colors.pmenu_bg })
+vim.api.nvim_set_hl(0, 'PmenuSel', { fg = colors.pmenu_bg, bg = colors.pmenu_sel_bg })
 
 vim.api.nvim_set_hl(0, 'PmenuSbar', { bg = colors.background2 })
 vim.api.nvim_set_hl(0, 'PmenuThumb', { bg = colors.blue })

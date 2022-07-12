@@ -14,22 +14,23 @@ vim.api.nvim_set_hl(0, 'CmpItemAbbrDefault', { fg = colors.grey, bg = colors.cmp
 
 
 -- Matches
-vim.api.nvim_set_hl(0, 'CmpItemAbbrMatchDefault', { fg = colors.white })
+vim.api.nvim_set_hl(0, 'CmpItemAbbrMatchDefault', { fg = colors.green })
 vim.api.nvim_set_hl(0, 'MatchParen', { bg = colors.white })
 
 
--- Kindas
-vim.api.nvim_set_hl(0, 'CmpItemKindField', { fg = colors.blue })
+-- Kinds 
+vim.api.nvim_set_hl(0, 'CmpItemKindField', { fg = colors.pink })
 vim.api.nvim_set_hl(0, 'CmpItemKindProperty', { fg = colors.blue })
 vim.api.nvim_set_hl(0, 'CmpItemKindEvent', { fg = colors.blue })
 vim.api.nvim_set_hl(0, 'CmpItemKindEnum', { fg = colors.blue })
-vim.api.nvim_set_hl(0, 'CmpItemKindText', { fg = colors.blue })
+vim.api.nvim_set_hl(0, 'CmpItemKindText', { fg = colors.green})
 vim.api.nvim_set_hl(0, 'CmpItemKindKeyword', { fg = colors.blue })
 vim.api.nvim_set_hl(0, 'CmpItemKindConstant', { fg = colors.blue })
 vim.api.nvim_set_hl(0, 'CmpItemKindConstructor', { fg = colors.blue })
 vim.api.nvim_set_hl(0, 'CmpItemKindReference', { fg = colors.blue })
 vim.api.nvim_set_hl(0, 'CmpItemKindFunction', { fg = colors.blue })
 vim.api.nvim_set_hl(0, 'CmpItemKindStruct', { fg = colors.blue })
+vim.api.nvim_set_hl(0, 'CmpItemKindVariable', { fg = colors.pink })
 vim.api.nvim_set_hl(0, 'CmpItemKindClass', { fg = colors.blue })
 vim.api.nvim_set_hl(0, 'CmpItemKindModule', { fg = colors.blue })
 vim.api.nvim_set_hl(0, 'CmpItemKindOperator', { fg = colors.blue })
@@ -44,4 +45,4 @@ vim.api.nvim_set_hl(0, 'CmpItemKindEnumMember', { fg = colors.blue })
 vim.api.nvim_set_hl(0, 'CmpItemKindInterface', { fg = colors.blue })
 vim.api.nvim_set_hl(0, 'CmpItemKindColor', { fg = colors.blue })
 vim.api.nvim_set_hl(0, 'CmpItemKindTypeParameter', { fg = colors.blue })
-
+vim.api.nvim_set_hl(0, 'CmpItemKindSnippet', { fg = colors.orange })

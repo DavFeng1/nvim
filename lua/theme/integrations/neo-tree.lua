@@ -8,7 +8,7 @@ vim.api.nvim_set_hl(0, 'NvimTreeRootfolder', {fg = colors.light_white})
 
 vim.api.nvim_set_hl(0, 'NvimTreeEmptyFolderName', {fg = colors.folder_bg})
 vim.api.nvim_set_hl(0, 'NvimTreeFolderName', {fg = colors.grey})
-vim.api.nvim_set_hl(0, 'NvimTreeFolderIcon', {fg = colors.folder_bg})
+vim.api.nvim_set_hl(0, 'NeoTreeDirectoryIcon', {fg = colors.folder_bg})
 
 vim.api.nvim_set_hl(0, 'NvimTreeGitDirty', { fg = colors.red })
 
