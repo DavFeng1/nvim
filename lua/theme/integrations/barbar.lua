@@ -1,38 +1,27 @@
 local colors = require('theme.colors')
 
--- " BUFFERLINE
-vim.api.nvim_set_hl(0, 'BufferLineFill', { bg = colors.background1 , fg = colors.green})
-vim.api.nvim_set_hl(0, 'BufferLineBackground', { bg = colors.background1 })
+--  Current
+vim.api.nvim_set_hl(0, 'BufferCurrent', { bg = colors.background1 , fg = colors.light_white})
+vim.api.nvim_set_hl(0, 'BufferOffset', { bg = colors.neo_tree_background , fg = colors.light_white})
 
-vim.api.nvim_set_hl(0, 'BufferLineCloseButton', { bg = colors.background1 })
-vim.api.nvim_set_hl(0, 'BufferLineDiagnostic', { bg = colors.background2 })
-vim.api.nvim_set_hl(0, 'BufferLineModified', { bg = colors.background2 })
-
--- " Tab has an error
-vim.api.nvim_set_hl(0, 'BufferLineError', { bg = colors.background, fg = colors.red })
-vim.api.nvim_set_hl(0, 'BufferLIneErrorDiagnostic', { bg = colors.background, fg = colors.red })
-vim.api.nvim_set_hl(0, 'BufferLineErrorDiagnosticSelected', {})
-
--- Default
-vim.api.nvim_set_hl(0, 'BufferLineBuffer', { bg = colors.background2, fg = colors.white })
-vim.api.nvim_set_hl(0, 'BufferLineSeparator', { fg = colors.red,  bg = colors.green })
-vim.api.nvim_set_hl(0, 'BufferLineNumbers', { bg = colors.background })
-vim.api.nvim_set_hl(0, 'BufferLineDevIconLua', { bg = colors.background1, fg = colors.blue })
+vim.api.nvim_set_hl(0, 'BufferCurrentIcon', { bg = colors.background1 })
+vim.api.nvim_set_hl(0, 'BufferCurrentIndex', { bg = colors.background1 , fg = colors.light_white})
+vim.api.nvim_set_hl(0, 'BufferCurrentSign', { bg = colors.background1 , fg = colors.line})
+vim.api.nvim_set_hl(0, 'BufferCurrentTarget', { bg = colors.background1 , fg = colors.light_white})
 
 -- Visible
-vim.api.nvim_set_hl(0, 'BufferLineBufferVisible', { bg = colors.background1, fg = colors.white })
-vim.api.nvim_set_hl(0, 'BufferLineSeparatorVisible', { bg = colors.red, fg = colors.green })
-vim.api.nvim_set_hl(0, 'BufferLineNumbersVisible', { bg = colors.background2 })
-vim.api.nvim_set_hl(0, 'BufferLineInfoVisible', { bg = colors.red })
-vim.api.nvim_set_hl(0, 'BufferLineHintDiagonisticVisible', { bg = colors.red })
-vim.api.nvim_set_hl(0, 'BufferLineWarningVisible', { bg = colors.red })
-vim.api.nvim_set_hl(0, 'BufferLineErrorVisible', { bg = colors.red })
-vim.api.nvim_set_hl(0, 'BufferLineDevIconLuaVisible', { fg = colors.blue, bg = colors.background1 })
+vim.api.nvim_set_hl(0, 'BufferVisible', { bg = colors.barbar_background })
+vim.api.nvim_set_hl(0, 'BufferVisibleSign', { fg = colors.line })
 
--- Selected
-vim.api.nvim_set_hl(0, 'BufferLineBufferSelected', { bg = colors.background1, fg = colors.orange })
-vim.api.nvim_set_hl(0, 'BufferLineSeparatorSelected', { bg = colors.red, fg = colors.green })
-vim.api.nvim_set_hl(0, 'BufferLineIndicatorSelected', { bg = colors.background1, fg = colors.background1 })
-vim.api.nvim_set_hl(0, 'BufferLineErrorSelected', { bg = colors.background1, fg = colors.red })
-vim.api.nvim_set_hl(0, 'BufferLineDevIconLuaSelected', { fg = colors.blue, bg = colors.background1 })
+-- Inactive
+vim.api.nvim_set_hl(0, 'BufferInactive', { fg = colors.white, bg = colors.barbar_background })
 
+vim.api.nvim_set_hl(0, 'BufferInactiveSign', { fg = colors.line, bg = colors.barbar_background })
+vim.api.nvim_set_hl(0, 'BufferInactiveMod', { fg = colors.white, bg = colors.barbar_background })
+vim.api.nvim_set_hl(0, 'BufferInactiveTarget', { fg = colors.white, bg = colors.barbar_background })
+vim.api.nvim_set_hl(0, 'BufferInactiveIndex', { fg = colors.white, bg = colors.barbar_background })
+
+
+-- Fill
+vim.api.nvim_set_hl(0, 'BufferTabpage', { bg = colors.barbar_background , fg = colors.line})
+vim.api.nvim_set_hl(0, 'BufferTabpageFill', { bg = colors.barbar_background , fg = colors.line})

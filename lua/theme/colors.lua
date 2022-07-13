@@ -1,33 +1,43 @@
 local M = {
+	-- Colors
+	background1 = "#002451",
+	black = "#000000",
+	blue = "#BBDAFF",
+	cyan = "#99FFFF",
+	green = "#D1F1A9",
+	purple = "#EBBBFF",
+	red = "#FF9DA4",
 	light_white = "#ffffff",
 	white = "#bfbab0",
 	grey = "#a1aab4",
-	line = "#404F7D",
-	green = "#98c379",
+	line = "#404f7d",
 	dark_green = "#238e92",
-	red = "#e06c75",
-	orange = "#d19a66",
-	blue = "#61afef",
+	orange = "#ff9d9e",
 	dark_blue = "#7ab0df",
 	dark_purple = "#c678dd",
-	purple = "#f4b7ff",
-	black = "#0a0d11",
-	cyan = "#56B6C2",
-	yellow = "#E5C07B",
+	yellow = "#FFEEAD",
 	pink = "#C678DD",
-	statusline_bg = "#15191e",
 	lightbg = "#405570",
-	background1 = "#07090F",
 	background2 = "#222650", -- darker
 	background3 = "#001127",
+
+	-- Plugins
 	darkest_bg = '#081633',
+	statusline_bg = "#15191e",
 	pmenu_bg = "#07090F",
 	pmenu_sel_bg = "#61afef",
 	folder_bg = "#86a5ff",
-	cmp_background = "#07090F",
-	cursor_line_background = "#2c313c",
-	telescope_background = "#12171e",
-	lualine_background = "#86a5ff",
+	cursor_line_background = "#00346e",
+
+	cmp_background = "#002451",
+	telescope_background = "#001126",
+	lualine_background = "#001126",
+	lualine_background2 = "#2a75a6",
+	barbar_background = "#001733",
+	neo_tree_background = "#001733",
+	which_key_background = "#001126",
+
+	git_signs_add = "#487e02",
 }
 
 return M

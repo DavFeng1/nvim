@@ -85,6 +85,7 @@ require('packer').startup(function(use)
 
 	-- Dashboard
 	use 'goolord/alpha-nvim'
+
 end)
 
 --- Initialize all plugins

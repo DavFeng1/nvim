@@ -8,7 +8,7 @@ vim.api.nvim_set_hl(0, 'DiffDelete', {bg = colors.background1, fg = colors.red }
 vim.api.nvim_set_hl(0, 'Error', {fg =  colors.red, bg = colors.background1})
 vim.api.nvim_set_hl(0, 'ErrorMsg', {fg =  colors.red, bg = colors.background1})
 vim.api.nvim_set_hl(0, 'Normal', {fg =  colors.white, bg = colors.background1})
-vim.api.nvim_set_hl(0, 'NonText', {fg = colors.background1 })
+-- vim.api.nvim_set_hl(0, 'NonText', {fg = colors.neo_tree_background })
 
 vim.api.nvim_set_hl(0, 'Folded', {bg = colors.background1})
 

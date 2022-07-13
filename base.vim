@@ -21,10 +21,14 @@ set numberwidth=4
 " Note the space after the /
 set fillchars=fold:\ 
 
+" proper stuff
 set fillchars+=vert:\▕
 
+" Remove eof characters (note the space)
+set fillchars+=eob:\ 
+
 " Set sign column always show
-set signcolumn=yes
+set signcolumn=yes:2
 
 " move to bottom
 set cmdheight=0
@@ -34,4 +38,3 @@ set timeoutlen=500
 
 " enable mouse support for n v i modes
 set mouse=nvi
-
