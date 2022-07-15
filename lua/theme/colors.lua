@@ -24,7 +24,7 @@ local M = {
 	-- Plugins
 	darkest_bg = '#081633',
 	statusline_bg = "#15191e",
-	pmenu_bg = "#07090F",
+	pmenu_bg = "#001126",
 	pmenu_sel_bg = "#61afef",
 	folder_bg = "#86a5ff",
 	cursor_line_background = "#00346e",
