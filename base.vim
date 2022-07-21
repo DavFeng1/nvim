@@ -31,7 +31,7 @@ set fillchars+=eob:\
 set signcolumn=yes:2
 
 " move to bottom
-set cmdheight=0
+set cmdheight=1
 
 " timeoutlen
 set timeoutlen=500
