@@ -13,9 +13,9 @@ set scrolloff=20
 set numberwidth=4
 
 " Folding with tree-sitter
-set foldmethod=indent
+" set foldmethod=indent
 " set foldexpr=nvim_treesitter#foldexpr()
-set foldnestmax=3
+" set foldnestmax=3
 " set foldtext=getline(v:foldstart).'...'.trim(getline(v:foldend))
 
 " Note the space after the /
