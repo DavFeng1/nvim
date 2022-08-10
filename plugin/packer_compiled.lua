@@ -94,11 +94,6 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/base16-vim",
     url = "https://github.com/base16-project/base16-vim"
   },
-  catppuccin = {
-    loaded = true,
-    path = "/root/.local/share/nvim/site/pack/packer/start/catppuccin",
-    url = "https://github.com/catppuccin/nvim"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -139,6 +134,11 @@ _G.packer_plugins = {
     path = "/root/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
+  ["lspsaga.nvim"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
+    url = "https://github.com/glepnir/lspsaga.nvim"
+  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -163,6 +163,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/root/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-colorizer.lua"] = {
+    loaded = true,
+    path = "/root/.local/share/nvim/site/pack/packer/start/nvim-colorizer.lua",
+    url = "https://github.com/norcalli/nvim-colorizer.lua"
   },
   ["nvim-lsp-installer"] = {
     loaded = true,

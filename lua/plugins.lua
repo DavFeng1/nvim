@@ -86,9 +86,15 @@ require('packer').startup(function(use)
 	-- Dashboard
 	use 'goolord/alpha-nvim'
 
+	-- Colorizer
+	use 'norcalli/nvim-colorizer.lua'
+
+	use 'glepnir/lspsaga.nvim'
+
 end)
 
 --- Initialize all plugins
+
 ---- Configs
 require "confs.cmp"
 
@@ -110,7 +116,7 @@ require "confs.lualine"
 require "confs.which-key"
 require "confs.comment"
 require "confs.gitsigns"
-
 require "confs.alpha-nvim"
+require "confs.nvim-colorizer"
 
 

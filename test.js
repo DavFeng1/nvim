@@ -2,8 +2,12 @@
 import "abc"
 
 const btn = document.getElementById('btn');
+
+
 let count = 0;
 
+const a = "#FFFFFF";
+console.log(a);
 
 const STUFF = {
 	field_a: 123,

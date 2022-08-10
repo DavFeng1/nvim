@@ -1,3 +1,6 @@
+vim.cmd('source ~/.config/nvim/base.vim')
+vim.cmd('source ~/.config/nvim/binds.vim')
+
 -- Modules + Setup
 require "plugins"
 
@@ -5,8 +8,6 @@ require "plugins"
 require "theme"
 
 -- Vim scripts
-vim.cmd('source ~/.config/nvim/base.vim')
-vim.cmd('source ~/.config/nvim/binds.vim')
 
 
 vim.api.nvim_create_autocmd('BufWinEnter', {
@@ -26,3 +27,12 @@ vim.api.nvim_create_autocmd('BufWinLeave', {
 		end
 	end
 })
+
+
+local opts = { noremap = true, silent = true }
+vim.keymap.set('n', '<C-j>', '<Cmd>Lspsaga diagnostic_jump_next<CR>', opts)
+vim.keymap.set('n', '<C-k>', '<Cmd>Lspsaga hover_doc<CR>', opts)
+vim.keymap.set('n', 'gf', '<Cmd>Lspsaga lsp_finder<CR>', opts)
+vim.keymap.set('i', '<C-l>', '<Cmd>Lspsaga signature_help<CR>', opts)
+vim.keymap.set('n', '<C-i>', '<Cmd>Lspsaga preview_definition<CR>', opts)
+vim.keymap.set('n', 'gr', '<Cmd>Lspsaga rename<CR>', opts)
