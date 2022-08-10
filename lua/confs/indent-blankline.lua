@@ -1,2 +1,11 @@
-require("indent_blankline").setup {}
+local present, blankline = pcall(require, "indent_blankline")
+
+if not present then
+	return
+end
+
+
+blankline.setup {
+	show_current_context = true,
+}
 

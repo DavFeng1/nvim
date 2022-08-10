@@ -7,7 +7,10 @@ const btn = document.getElementById('btn');
 let count = 0;
 
 const a = "#FFFFFF";
+
 console.log(a);
+
+console.log('string argument');
 
 const STUFF = {
 	field_a: 123,

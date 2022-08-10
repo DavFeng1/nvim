@@ -1,3 +1,5 @@
+
+-- Vim scripts
 vim.cmd('source ~/.config/nvim/base.vim')
 vim.cmd('source ~/.config/nvim/binds.vim')
 
@@ -7,9 +9,7 @@ require "plugins"
 -- Theme
 require "theme"
 
--- Vim scripts
-
-
+-- Auto commands
 vim.api.nvim_create_autocmd('BufWinEnter', {
 	pattern = '*',
 	callback = function()
@@ -26,9 +26,15 @@ vim.api.nvim_create_autocmd('BufWinLeave', {
 				require'bufferline.state'.set_offset(0)
 		end
 	end
+});
+
+
+vim.diagnostic.config({
+	virtual_text = false,
 })
 
 
+-- Keybinds
 local opts = { noremap = true, silent = true }
 vim.keymap.set('n', '<C-j>', '<Cmd>Lspsaga diagnostic_jump_next<CR>', opts)
 vim.keymap.set('n', '<C-k>', '<Cmd>Lspsaga hover_doc<CR>', opts)

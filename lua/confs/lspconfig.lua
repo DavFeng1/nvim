@@ -5,9 +5,25 @@ if not present then
    return
 end
 
-lspconfig.tsserver.setup {}
+local on_attach = function(client, bufnr)
+
+  local bufopts = { noremap=true, silent=true, buffer=bufnr }
+  vim.keymap.set('n', '<space>f', vim.lsp.buf.formatting, bufopts)
+
+end
+
+local lsp_flags = {
+  debounce_text_changes = 100,
+}
+
+lspconfig.tsserver.setup {
+	on_attach = on_attach,
+	flags = lsp_flags
+}
 
 lspconfig.sumneko_lua.setup {
+	on_attach = on_attach,
+	flags = lsp_flags,
 	settings = {
 		Lua = {
 			diagnostics = {
@@ -17,7 +33,18 @@ lspconfig.sumneko_lua.setup {
 	}
 }
 
-lspconfig.vimls.setup {}
+lspconfig.vimls.setup {
+	on_attach = on_attach,
+	flags = lsp_flags,
+}
 
-lspconfig.pyright.setup {}
-lspconfig.rust_analyzer.setup {}
+lspconfig.pyright.setup {
+	on_attach = on_attach,
+	flags = lsp_flags,
+}
+
+lspconfig.rust_analyzer.setup {
+	on_attach = on_attach,
+	flags = lsp_flags,
+}
+

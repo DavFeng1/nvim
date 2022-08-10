@@ -38,6 +38,15 @@ local M = {
 	which_key_background = "#001126",
 
 	git_signs_add = "#487e02",
+	git_signs_blame = "#35577d",
+
+	-- Diagnostics
+	diagnostics_error = "#f14c4c",
+
+
+	-- Neo Tree
+	neo_tree_modified = "#e2a974",
+	neo_tree_root_background = "#1a304d",
 }
 
 return M

@@ -8,7 +8,6 @@ vim.api.nvim_set_hl(0, 'DiffDelete', {bg = colors.background1, fg = colors.red }
 vim.api.nvim_set_hl(0, 'Error', {fg =  colors.red, bg = colors.background1})
 vim.api.nvim_set_hl(0, 'ErrorMsg', {fg =  colors.red, bg = colors.background1})
 vim.api.nvim_set_hl(0, 'Normal', {fg =  colors.white, bg = colors.background1})
--- vim.api.nvim_set_hl(0, 'NonText', {fg = colors.neo_tree_background })
 
 vim.api.nvim_set_hl(0, 'Folded', {bg = colors.background1})
 
@@ -28,4 +27,20 @@ vim.api.nvim_set_hl(0, 'PmenuThumb', { bg = colors.blue })
 vim.api.nvim_set_hl(0, 'VertSplit', {fg = colors.line , bg = colors.background1})
 vim.api.nvim_set_hl(0, 'Visual', { bg = colors.lightbg })
 vim.api.nvim_set_hl(0, 'SignColumn', { bg = colors.background1 })
+
+
+-- Characters
+vim.api.nvim_set_hl(0, 'MatchParen', { fg = colors.black, bg = colors.light_white })
+
+-- Diagnostic
+vim.api.nvim_set_hl(0, 'DiagnosticError', {fg = colors.diagnostics_error })
+vim.api.nvim_set_hl(0, 'DiagnosticUnderlineError', {fg = colors.diagnostics_error , underline=true })
+
+-- Diagnostic signs
+local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
+for type, icon in pairs(signs) do
+  local hl = "DiagnosticSign" .. type
+  vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
+end
+
 

@@ -13,7 +13,7 @@ telescope.setup {
     selection_caret = "  ",
 	entry_prefix = "   ",
 	sorting_strategy = "ascending",
-	file_ignore_patterns = { "node_modules", ".git", "package-lock.json" },
+	file_ignore_patterns = { "node_modules", "package-lock.json" },
 	layout_config = {
 		horizontal = {
 			prompt_position = "top"

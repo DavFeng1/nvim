@@ -32,7 +32,6 @@ nnoremap <leader>w <Cmd>BufferWipeout<cr>
 
 " LSP Keybinds
 nnoremap <leader>gd <cmd> lua vim.lsp.buf.definition()<cr>
-nnoremap <leader>h <cmd> lua vim.lsp.buf.hover()<cr>
 
 " Toggle terminal
 nnoremap <c-\> <cmd>ToggleTerm direction=vertical<cr>
