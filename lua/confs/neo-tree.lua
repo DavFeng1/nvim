@@ -25,8 +25,8 @@ neo_tree.setup ({
 			expander_highlight = "NeoTreeExpander",
 		},
         icon = {
-        	folder_closed = "〉", -- "",
-            folder_open = "﹀",--"",
+        	folder_closed = "〉",
+            folder_open = "﹀",
             folder_empty = "ﰊ",
             default = "*",
             highlight = "NeoTreeFileIcon"
