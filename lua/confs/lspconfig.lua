@@ -5,9 +5,10 @@ if not present then
    return
 end
 
-local on_attach = function(client, bufnr)
+local on_attach = function(_, bufnr)
 
   local bufopts = { noremap=true, silent=true, buffer=bufnr }
+
   vim.keymap.set('n', '<space>f', vim.lsp.buf.formatting, bufopts)
 
 end

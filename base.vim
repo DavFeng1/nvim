@@ -2,7 +2,6 @@
 set backspace=indent,eol,start
 set number
 set nocompatible
-set tgc
 
 set cursorline
 set tabstop=4
