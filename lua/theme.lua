@@ -9,6 +9,7 @@ require "theme.integrations.terminal"
 require "theme.integrations.lualine"
 require "theme.integrations.gitsigns"
 require "theme.integrations.which-key"
+require "theme.integrations.lspsaga"
 
 -- Base theme
 require "theme.integrations.base"

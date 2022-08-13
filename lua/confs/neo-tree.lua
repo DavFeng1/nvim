@@ -61,6 +61,7 @@ neo_tree.setup ({
 		filtered_items = {
 			visible = true
 		},
+		use_libuv_file_watcher = true,
 	},
 	event_handlers = {},
 	source_selector = {
