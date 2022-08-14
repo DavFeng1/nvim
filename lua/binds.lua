@@ -38,7 +38,7 @@ vim.keymap.set('n', '<leader>gd <cmd>', 'lua vim.lsp.buf.definition()<cr>', opts
 
 
 -- ToggleTerm
-vim.keymap.set('n',  '<C-\\>', '<cmd>ToggleTerm direction=float<cr>', opts)
+vim.keymap.set('n',  '<C-\\>', '<cmd>ToggleTerm direction=vertical<cr>', opts)
 vim.keymap.set('n', '<leader>tp', '<cmd> lua _PYTHON_TOGGLE()<cr>', opts)
 vim.keymap.set('n', '<leader>tn', '<cmd> lua _NODE_TOGGLE()<cr>', opts)
 vim.keymap.set('n', '<leader>tl', '<cmd> lua _LUA_TOGGLE()<cr>', opts)
