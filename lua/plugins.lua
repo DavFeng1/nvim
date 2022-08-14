@@ -88,6 +88,7 @@ require('packer').startup(function(use)
 	-- Colorizer
 	use 'norcalli/nvim-colorizer.lua'
 
+	-- Lsp saga
 	use 'glepnir/lspsaga.nvim'
 
 end)
@@ -102,6 +103,8 @@ require "confs.nvim-lsp-installer"
 require "confs.lspconfig"
 require "confs.telescope"
 require "confs.nvim-treesitter"
+
+-- Terminal
 require "confs.toggleterm"
 
 --- Editor functionality

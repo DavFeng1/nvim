@@ -31,6 +31,7 @@ vim.opt.cursorline = true
 vim.opt.tabstop = 4
 vim.opt.shiftwidth = 4
 vim.opt.scrolloff = 20
+vim.opt.laststatus = 3
 
 -- Left padding
 vim.opt.numberwidth = 4
@@ -50,3 +51,9 @@ vim.opt.cmdheight=0
 
 vim.opt.timeoutlen=500
 vim.opt.mouse='nvi'
+
+vim.opt.winbar = "%{%v:lua.require('winbar').eval()%}"
+
+
+
+

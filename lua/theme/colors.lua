@@ -20,8 +20,6 @@ local M = {
 	lightbg = "#405570",
 	background2 = "#222650", -- darker
 	background3 = "#001127",
-
-	-- Plugins
 	darkest_bg = '#081633',
 	statusline_bg = "#15191e",
 	pmenu_bg = "#001126",
@@ -29,24 +27,39 @@ local M = {
 	folder_bg = "#86a5ff",
 	cursor_line_background = "#00346e",
 
+	-- CMP
 	cmp_background = "#002451",
+
+	-- Telescope
 	telescope_background = "#001126",
+
+	-- Lualine
 	lualine_background = "#001126",
 	lualine_background2 = "#2a75a6",
+
+	-- Bufferline
 	barbar_background = "#001733",
-	neo_tree_background = "#001733",
+
+	-- Which Key
 	which_key_background = "#001126",
 
+	-- Git Signs
 	git_signs_add = "#487e02",
 	git_signs_blame = "#35577d",
 
 	-- Diagnostics
 	diagnostics_error = "#f14c4c",
 
-
 	-- Neo Tree
+	neo_tree_background = "#001733",
 	neo_tree_modified = "#e2a974",
 	neo_tree_root_background = "#1a304d",
+
+	-- Toggle Tem
+	toggle_term_background = "#001c40",
+
+	-- Winbar
+	winbar_background = "#002451",
 }
 
 return M

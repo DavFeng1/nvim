@@ -65,8 +65,7 @@ neo_tree.setup ({
 	},
 	event_handlers = {},
 	source_selector = {
-		winbar = false,
-		statusline = false,
+		winbar = true,
 	}
 })
 

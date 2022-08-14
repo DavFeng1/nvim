@@ -4,13 +4,15 @@ if not status_ok then
 	return
 end
 
+local colors = require('theme.colors')
+
 toggleterm.setup({
 	size = 55,
 	-- open_mapping = [[<c-\>]],
 	hide_numbers = true,
 	shade_filetypes = {},
-	shade_terminals = true,
-	shading_factor = 2,
+	shade_terminals = false,
+	shading_factor = 1,
 	start_in_insert = true,
 	insert_mappings = true,
 	persist_size = true,
@@ -25,6 +27,17 @@ toggleterm.setup({
 			background = "TerminalBackground",
 		},
 	},
+	highlights = {
+		Normal = {
+			guibg = colors.toggle_term_background
+		}
+	},
+	winbar = {
+		enbaled = true,
+		name_formatted = function(term)
+			return term.name
+		end
+	}
 })
 
 local Terminal = require("toggleterm.terminal").Terminal

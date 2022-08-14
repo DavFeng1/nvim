@@ -43,6 +43,8 @@ vim.keymap.set('n', '<leader>tp', '<cmd> lua _PYTHON_TOGGLE()<cr>', opts)
 vim.keymap.set('n', '<leader>tn', '<cmd> lua _NODE_TOGGLE()<cr>', opts)
 vim.keymap.set('n', '<leader>tl', '<cmd> lua _LUA_TOGGLE()<cr>', opts)
 
+vim.keymap.set('t',  '<Esc>', '<C-\\><C-n>', opts) -- Escape terminal
+
 
 -- Adjust pane size
 vim.keymap.set('n', '<C-Up>', '<cmd> :resize +2<cr>', opts)
