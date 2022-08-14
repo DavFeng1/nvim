@@ -91,6 +91,8 @@ require('packer').startup(function(use)
 	-- Lsp saga
 	use 'glepnir/lspsaga.nvim'
 
+	use 'folke/lua-dev.nvim'
+
 end)
 
 --- Initialize all plugins
@@ -120,5 +122,3 @@ require "confs.comment"
 require "confs.gitsigns"
 require "confs.alpha-nvim"
 require "confs.nvim-colorizer"
-
-

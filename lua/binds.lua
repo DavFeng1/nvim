@@ -34,7 +34,7 @@ vim.keymap.set('n', '<leader>w', '<Cmd>BufferWipeout<cr>', opts)
 
 
 -- LSP
-vim.keymap.set('n', '<leader>gd <cmd>', 'lua vim.lsp.buf.definition()<cr>', opts)
+vim.keymap.set('n', '<Leader>gd', '<Cmd> lua vim.lsp.buf.definition()<cr>', opts)
 
 
 -- ToggleTerm
@@ -67,7 +67,7 @@ vim.keymap.set('v', '<Leader>y', ':<C-U>\'<,\'>w !clip.exe<cr><cr>', opts)
 
 -- LSP Saga
 vim.keymap.set('n', '<C-j>', '<Cmd>Lspsaga diagnostic_jump_next<CR>', opts)
-vim.keymap.set('n', '<C-k>', '<Cmd>Lspsaga hover_doc<CR>', opts)
+vim.keymap.set('n', '<C-h>', '<Cmd>Lspsaga hover_doc<CR>', opts)
 vim.keymap.set('n', 'gf', '<Cmd>Lspsaga lsp_finder<CR>', opts)
 vim.keymap.set('i', '<C-l>', '<Cmd>Lspsaga signature_help<CR>', opts)
 vim.keymap.set('n', '<C-i>', '<Cmd>Lspsaga preview_definition<CR>', opts)
