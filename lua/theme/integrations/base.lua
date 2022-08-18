@@ -24,7 +24,7 @@ vim.api.nvim_set_hl(0, 'PmenuSel', { fg = colors.pmenu_bg, bg = colors.pmenu_sel
 vim.api.nvim_set_hl(0, 'PmenuSbar', { bg = colors.background2 })
 vim.api.nvim_set_hl(0, 'PmenuThumb', { bg = colors.blue })
 
-vim.api.nvim_set_hl(0, 'VertSplit', {fg = colors.background1 , bg = colors.background1})
+vim.api.nvim_set_hl(0, 'VertSplit', {fg = colors.line , bg = colors.background1})
 vim.api.nvim_set_hl(0, 'Visual', { bg = colors.lightbg })
 vim.api.nvim_set_hl(0, 'SignColumn', { bg = colors.background1 })
 
@@ -43,8 +43,5 @@ for type, icon in pairs(signs) do
   local hl = "DiagnosticSign" .. type
   vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
 end
-
--- Winbar
--- vim.api.nvim_set_hl(0, 'WinSeparator', { bg = colors.red })
 
 

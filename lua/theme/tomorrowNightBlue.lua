@@ -57,7 +57,7 @@ local M = {
 	neo_tree_winbar_background = "#1a304d",
 
 	-- Toggle Tem
-	toggle_term_background = "#002451",
+	toggle_term_background = "#001c40",
 
 	-- Winbar
 	winbar_background = "#002451",
