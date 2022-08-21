@@ -18,8 +18,8 @@ telescope.setup {
 		horizontal = {
 			prompt_position = "top"
 		},
-		width = 135,
-        height = 35,
+		width = 120,
+        height = 30,
 		preview_width = 70,
 	},
 	color_devicons = true,

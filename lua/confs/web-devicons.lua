@@ -6,6 +6,6 @@ end
 
 
 nvim_web_devicons.setup {
-	default = true;
+	default = true
 }
 

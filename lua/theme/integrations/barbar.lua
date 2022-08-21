@@ -20,7 +20,7 @@ vim.api.nvim_set_hl(0, 'BufferVisibleMod', { fg = colors.yellow, bg = colors.bac
 vim.api.nvim_set_hl(0, 'BufferVisibleTarget', { fg = colors.white, bg = colors.background1 })
 
 -- Inactive
-vim.api.nvim_set_hl(0, 'BufferInactive', { fg = colors.white, bg = colors.barbar_background })
+vim.api.nvim_set_hl(0, 'BufferInactive', { fg = colors.grey, bg = colors.barbar_background })
 vim.api.nvim_set_hl(0, 'BufferInactiveIcon', { bg = colors.barbar_background })
 vim.api.nvim_set_hl(0, 'BufferInactiveIndex', { fg = colors.white, bg = colors.barbar_background })
 vim.api.nvim_set_hl(0, 'BufferInactiveSign', { fg = colors.line, bg = colors.barbar_background })

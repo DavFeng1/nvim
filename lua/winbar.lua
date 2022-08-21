@@ -7,10 +7,14 @@ end
 
 local M = {}
 
+M.winbar_filetype_exclude = {
+	"alpha", "neo-tree", "toggleterm"
+}
+
 function M.eval()
 	local buffer_name = vim.api.nvim_eval_statusline('%y', {}).str
 
-	if buffer_name == "[alpha]" or buffer_name == "[neo-tree]" then
+	if vim.tbl_contains(M.winbar_filetype_exclude, vim.bo.filetype) then
 		return ''
 	end
 

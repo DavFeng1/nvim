@@ -1,88 +1,47 @@
-local present, alpha_nvim = pcall(require, "alpha")
+local alpha_present, alpha_nvim = pcall(require, "alpha")
+local dashboard_present, dashboard = pcall(require, "alpha.themes.dashboard")
 
-if not present then
+if not alpha_present or not dashboard_present then
 	return
 end
 
+require("alpha.term")
 
-local function button(sc, txt, keybind)
-   local sc_ = sc:gsub("%s", ""):gsub("SPC", "<leader>")
+dashboard.section.terminal.command = "cat | lolcat -F 0.3 ~/.config/nvim/static/neovim.cat"
+dashboard.section.terminal.width = 69
+dashboard.section.terminal.height = 8
 
-   local opts = {
-      position = "center",
-      text = txt,
-      shortcut = sc,
-      cursor = 5,
-      width = 36,
-      align_shortcut = "right",
-      hl = "AlphaButtons",
-   }
+dashboard.section.buttons.val = {
+    dashboard.button("CTRL P", "  Find File  ", ":Telescope find_files<CR>"),
+    dashboard.button("SPC f o", "  Recent File  ", ":Telescope oldfiles<CR>"),
+    dashboard.button("CTRL F", "  Find Word  ", ":Telescope live_grep<CR>"),
+    dashboard.button("SPC b m", "  Bookmarks  ", ":Telescope marks<CR>"),
+    dashboard.button("u", "   Update plugins", ":PackerSync <CR>"),
+    dashboard.button("q", "   Quit Neovim", ":qa<CR>"),
+}
 
-   if keybind then
-      opts.keymap = { "n", sc_, keybind, { noremap = true, silent = true } }
-   end
-
-   return {
-      type = "button",
-      val = txt,
-      on_press = function()
-         local key = vim.api.nvim_replace_termcodes(sc_, true, false, true)
-         vim.api.nvim_feedkeys(key, "normal", false)
-      end,
-      opts = opts,
-   }
+-- Footer
+local function footer()
+    local version = vim.version()
+    local nvim_version_info = "  Neovim v" .. version.major .. "." .. version.minor .. "." .. version.patch
+    return nvim_version_info
 end
 
-local options = {}
+dashboard.section.footer.val = footer()
+dashboard.section.footer.opts.hl = "AlphaFooter"
 
-local ascii = {
-	'',
-    '⣿⣿⣷⡁⢆⠈⠕⢕⢂⢕⢂⢕⢂⢔⢂⢕⢄⠂⣂⠂⠆⢂⢕⢂⢕⢂⢕⢂⢕⢂ ',
-    '⣿⣿⣿⡷⠊⡢⡹⣦⡑⢂⢕⢂⢕⢂⢕⢂⠕⠔⠌⠝⠛⠶⠶⢶⣦⣄⢂⢕⢂⢕ ',
-    '⣿⣿⠏⣠⣾⣦⡐⢌⢿⣷⣦⣅⡑⠕⠡⠐⢿⠿⣛⠟⠛⠛⠛⠛⠡⢷⡈⢂⢕⢂ ',
-    '⠟⣡⣾⣿⣿⣿⣿⣦⣑⠝⢿⣿⣿⣿⣿⣿⡵⢁⣤⣶⣶⣿⢿⢿⢿⡟⢻⣤⢑⢂ ',
-    '⣾⣿⣿⡿⢟⣛⣻⣿⣿⣿⣦⣬⣙⣻⣿⣿⣷⣿⣿⢟⢝⢕⢕⢕⢕⢽⣿⣿⣷⣔ ',
-    '⣿⣿⠵⠚⠉⢀⣀⣀⣈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣗⢕⢕⢕⢕⢕⢕⣽⣿⣿⣿⣿ ',
-    '⢷⣂⣠⣴⣾⡿⡿⡻⡻⣿⣿⣴⣿⣿⣿⣿⣿⣿⣷⣵⣵⣵⣷⣿⣿⣿⣿⣿⣿⡿ ',
-    '⢌⠻⣿⡿⡫⡪⡪⡪⡪⣺⣿⣿⣿⣿⣿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃ ',
-    '⠣⡁⠹⡪⡪⡪⡪⣪⣾⣿⣿⣿⣿⠋⠐⢉⢍⢄⢌⠻⣿⣿⣿⣿⣿⣿⣿⣿⠏⠈ ',
-    '⡣⡘⢄⠙⣾⣾⣾⣿⣿⣿⣿⣿⣿⡀⢐⢕⢕⢕⢕⢕⡘⣿⣿⣿⣿⣿⣿⠏⠠⠈ ',
-    '⠌⢊⢂⢣⠹⣿⣿⣿⣿⣿⣿⣿⣿⣧⢐⢕⢕⢕⢕⢕⢅⣿⣿⣿⣿⡿⢋⢜⠠⠈ ',
-    '⠄⠁⠕⢝⡢⠈⠻⣿⣿⣿⣿⣿⣿⣿⣷⣕⣑⣑⣑⣵⣿⣿⣿⡿⢋⢔⢕⣿⠠⠈ ',
-    '⠨⡂⡀⢑⢕⡅⠂⠄⠉⠛⠻⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢋⢔⢕⢕⣿⣿⠠⠈ ',
-    '⠄⠪⣂⠁⢕⠆⠄⠂⠄⠁⡀⠂⡀⠄⢈⠉⢍⢛⢛⢛⢋⢔⢕⢕⢕⣽⣿⣿⠠⠈ ',
-    '',
 
+-- Layout
+dashboard.config.layout = {
+    { type = "padding", val = 2 },
+    dashboard.section.terminal,
+    { type = "padding", val = 10 },
+    dashboard.section.buttons,
+    { type = "padding", val = 1 },
+    dashboard.section.footer,
 }
 
-options.header = {
-   type = "text",
-   val = ascii,
-   opts = {
-      position = "center",
-      hl = "AlphaHeader",
-   },
-}
+dashboard.opts.opts.noautocmd = true
 
-options.buttons = {
-   type = "group",
-   val = {
-      button("CTRL P", "  Find File  ", ":Telescope find_files<CR>"),
-      button("SPC f o", "  Recent File  ", ":Telescope oldfiles<CR>"),
-      button("CTRL F", "  Find Word  ", ":Telescope live_grep<CR>"),
-      button("SPC b m", "  Bookmarks  ", ":Telescope marks<CR>"),
-   },
-   opts = {
-      spacing = 1,
-   },
-}
-
-alpha_nvim.setup {
-   layout = {
-      options.header,
-      { type = "padding", val = 2 },
-      options.buttons,
-   },
-   opts = {},
-}
+alpha_nvim.setup(dashboard.opts)
 

@@ -1,17 +1,16 @@
 local colors = require('theme.colors')
 
 -- Menu
-vim.api.nvim_set_hl(0, 'CmpPmenu', { fg = colors.white, bg = colors.cmp_background })
-vim.api.nvim_set_hl(0, 'CmpBorder', { fg = colors.blue, bg = colors.cmp_background })
-vim.api.nvim_set_hl(0, 'CmpDocBorder', {  fg = colors.blue, bg = colors.cmp_background })
-vim.api.nvim_set_hl(0, 'CmpDocPMenu', { bg = colors.cmp_background })
+vim.api.nvim_set_hl(0, 'CmpPmenu', { fg = colors.white })
+vim.api.nvim_set_hl(0, 'CmpBorder', { fg = colors.red })
+vim.api.nvim_set_hl(0, 'CmpDocBorder', {  fg = colors.red })
+vim.api.nvim_set_hl(0, 'CmpDocPMenu', {})
 vim.api.nvim_set_hl(0, 'CmpPmenuBorder', { bg = colors.yellow })
 
 -- Defaults
-vim.api.nvim_set_hl(0, 'CmpItemKindDefault', { fg = colors.white, bg = colors.cmp_background })
-vim.api.nvim_set_hl(0, 'CmpItemMenuDefault', { fg = colors.white, bg = colors.cmp_background })
-vim.api.nvim_set_hl(0, 'CmpItemAbbrDefault', { fg = colors.grey, bg = colors.cmp_background })
-
+vim.api.nvim_set_hl(0, 'CmpItemKindDefault', { fg = colors.white })
+vim.api.nvim_set_hl(0, 'CmpItemMenuDefault', { fg = colors.white })
+vim.api.nvim_set_hl(0, 'CmpItemAbbrDefault', { fg = colors.grey })
 
 -- Matches
 vim.api.nvim_set_hl(0, 'CmpItemAbbrMatchDefault', { fg = colors.green })

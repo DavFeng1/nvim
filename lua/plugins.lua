@@ -20,6 +20,7 @@ require('packer').startup(function(use)
 		branch = "v2.x",
 		requires = {
 			"nvim-lua/plenary.nvim",
+			-- "kyazdani42/nvim-web-devicons",
 			"MunifTanjim/nui.nvim",
 		}
 	}
@@ -33,7 +34,7 @@ require('packer').startup(function(use)
 
 	-- Buffer + Tabs
 	use {'romgrk/barbar.nvim',
-		requires = {'kyazdani42/nvim-web-devicons'}
+		-- requires = {'kyazdani42/nvim-web-devicons'}
 	}
 
 	--LSP
@@ -98,6 +99,7 @@ end)
 --- Initialize all plugins
 
 ---- Configs
+require "confs.web-devicons"
 require "confs.cmp"
 
 -- setup lsp Installer before lspconfig

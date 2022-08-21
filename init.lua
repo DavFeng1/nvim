@@ -3,7 +3,7 @@ require "base"
 
 require "binds"
 
-require "plugins"
-
 require "theme"
+
+require "plugins"
 

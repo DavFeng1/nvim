@@ -5,10 +5,13 @@ end
 
 
 neo_tree.setup ({
+    popup_border_style = "single",
 	close_if_last_window = false,
 	default_component_configs = {
         container = {
-        	enable_character_fade = true
+        	enable_character_fade = true,
+			width = "100%",
+			right_padding = 1,
         },
 		indent = {
 			indent_size = 2,
@@ -25,11 +28,11 @@ neo_tree.setup ({
 			expander_highlight = "NeoTreeExpander",
 		},
         icon = {
-        	folder_closed = "〉",
-            folder_open = "﹀",
+            folder_closed = "",
+            folder_open = "",
             folder_empty = "ﰊ",
-            default = "*",
-            highlight = "NeoTreeFileIcon"
+            -- default = "*",
+            -- highlight = "NeoTreeFileIcon"
         },
         modified = {
             symbol = "[+]",
@@ -42,9 +45,9 @@ neo_tree.setup ({
         },
         git_status = {
             symbols = {
-				-- Change type
-				added     = "✚",
-				modified  = "",
+                -- Change type
+                added     = "✚",
+                modified  = "",
 				deleted   = "✖",-- this can only be used in the git_status source
 				renamed   = "",-- this can only be used in the git_status source
 				-- Status type
@@ -63,7 +66,21 @@ neo_tree.setup ({
 		},
 		use_libuv_file_watcher = true,
 	},
-	event_handlers = {},
+	event_handlers = {
+        {
+            event = "neo_tree_window_after_close",
+            handler = function()
+                require'bufferline.state'.set_offset(0)
+            end,
+        },
+        {
+            event = "neo_tree_buffer_enter",
+            handler = function()
+                require'bufferline.state'.set_offset(40, '')
+            end,
+        }
+
+	},
 	source_selector = {
 		winbar = true,
 	}
