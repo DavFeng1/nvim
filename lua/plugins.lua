@@ -94,6 +94,9 @@ require('packer').startup(function(use)
 
 	use 'folke/lua-dev.nvim'
 
+    -- Debugging
+    use 'mfussenegger/nvim-dap'
+
 end)
 
 --- Initialize all plugins
@@ -107,6 +110,9 @@ require "confs.nvim-lsp-installer"
 require "confs.lspconfig"
 require "confs.telescope"
 require "confs.nvim-treesitter"
+
+-- Debugger
+require "confs.nvim-dap"
 
 -- Terminal
 require "confs.toggleterm"
