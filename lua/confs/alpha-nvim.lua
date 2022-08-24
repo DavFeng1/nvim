@@ -7,9 +7,6 @@ end
 
 require("alpha.term")
 
-dashboard.section.terminal.command = "cat | lolcat -F 0.3 ~/.config/nvim/static/neovim.cat"
-dashboard.section.terminal.width = 69
-dashboard.section.terminal.height = 8
 
 dashboard.section.buttons.val = {
     dashboard.button("CTRL P", "  Find File  ", ":Telescope find_files<CR>"),
@@ -29,19 +26,6 @@ end
 
 dashboard.section.footer.val = footer()
 dashboard.section.footer.opts.hl = "AlphaFooter"
-
-
--- Layout
-dashboard.config.layout = {
-    { type = "padding", val = 2 },
-    dashboard.section.terminal,
-    { type = "padding", val = 10 },
-    dashboard.section.buttons,
-    { type = "padding", val = 1 },
-    dashboard.section.footer,
-}
-
-dashboard.opts.opts.noautocmd = true
 
 alpha_nvim.setup(dashboard.opts)
 
