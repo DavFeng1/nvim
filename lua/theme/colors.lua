@@ -54,10 +54,10 @@ local M = {
 
 	telescope_background = base_colors.background3,
 
-	lualine_background = "#001126",
+	lualine_background = base_colors.background3,
 	lualine_background2 = "#2a75a6",
 
-	barbar_background = "#001733",
+	barbar_background = base_colors.background2,
 
 	which_key_background = "#001126",
 
