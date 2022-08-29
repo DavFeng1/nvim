@@ -1,7 +1,7 @@
 local base_colors = {
-	background1 = "#001E33",
+	background1 = "#001E27",
 	background2 = "#02161b",
-	background3 = "#01150c",
+	background3 = "#000000",
 	black = "#002831",
 	blue = "#2176c7",
 	cyan = "#259286",

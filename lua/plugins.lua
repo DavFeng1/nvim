@@ -8,8 +8,8 @@ vim.cmd [[packadd packer.nvim]]
 vim.cmd( [[ let g:neo_tree_remove_lgacy_commands = 1]])
 
 require('packer').startup(function(use)
- 	-- Packer can manage itself
-  	use 'wbthomason/packer.nvim'
+    -- Packer can manage itself
+    use 'wbthomason/packer.nvim'
 
 	-- Terminal Mode
 	use 'akinsho/toggleterm.nvim'
@@ -95,7 +95,12 @@ require('packer').startup(function(use)
 	use 'folke/lua-dev.nvim'
 
     -- Debugging
-    use 'mfussenegger/nvim-dap'
+    use { "mxsdev/nvim-dap-vscode-js", requires = {"mfussenegger/nvim-dap"} }
+    use {
+        "microsoft/vscode-js-debug",
+        opt = true,
+        run = "npm install --legacy-peer-deps && npm run compile" 
+    }
 
 end)
 

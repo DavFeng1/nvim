@@ -24,7 +24,7 @@ vim.api.nvim_set_hl(0, 'PmenuSel', { fg = colors.pmenu_bg, bg = colors.pmenu_sel
 vim.api.nvim_set_hl(0, 'PmenuSbar', { bg = colors.background2 })
 
 -- SPlit
-vim.api.nvim_set_hl(0, 'WinSeparator', { fg = colors.background2 })
+vim.api.nvim_set_hl(0, 'WinSeparator', { fg = colors.background1 })
 vim.api.nvim_set_hl(0, 'Visual', { bg = colors.lightbg })
 
 -- Characters

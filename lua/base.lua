@@ -18,7 +18,7 @@ vim.opt.expandtab = true
 
 -- Chars
 vim.opt.list = true
-vim.opt.listchars:append "space:⋅"
+-- vim.opt.listchars:append "space:⋅"
 
 -- " Note the space after the /
 vim.cmd[[

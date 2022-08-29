@@ -6,7 +6,7 @@ vim.api.nvim_set_hl(0, 'NeoTreeNormalNC', { bg = colors.neo_tree_background, fg 
 vim.api.nvim_set_hl(0, 'NeoTreeStatusLine', { bg = colors.green, fg = colors.white })
 vim.api.nvim_set_hl(0, 'NeoTreeStatusLineNC', { bg = colors.green, fg = colors.white })
 
-vim.api.nvim_set_hl(0, 'NeoTreeWinSeparator', { bg = colors.background1, fg = colors.background1 })
+vim.api.nvim_set_hl(0, 'NeoTreeWinSeparator', { fg = colors.background1, bg = colors.background1 })
 
 vim.api.nvim_set_hl(0, 'NeoTreeDirectoryName', { fg = colors.white })
 vim.api.nvim_set_hl(0, 'NeoTreeDotFile', { fg = colors.grey })

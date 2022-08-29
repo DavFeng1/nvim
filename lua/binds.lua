@@ -30,7 +30,7 @@ vim.keymap.set('n', '<leader>8', '<Cmd>BufferGoto 8<CR>', opts)
 vim.keymap.set('n', '<leader>9', '<Cmd>BufferGoto 9<CR>', opts)
 
 -- Close tab 
-vim.keymap.set('n', '<leader>w', '<Cmd>BufferWipeout<cr>', opts)
+vim.keymap.set('n', '<leader>w', '<Cmd>BufferWipeout!<cr>', opts)
 
 
 -- LSP
@@ -75,5 +75,10 @@ vim.keymap.set('n', '<C-h>', '<Cmd>Lspsaga hover_doc<CR>', opts)
 vim.keymap.set('n', 'gf', '<Cmd>Lspsaga lsp_finder<CR>', opts)
 vim.keymap.set('i', '<C-l>', '<Cmd>Lspsaga signature_help<CR>', opts)
 vim.keymap.set('n', '<C-i>', '<Cmd>Lspsaga preview_definition<CR>', opts)
--- vim.keymap.set('n', 'gr', '<Cmd>Lspsaga rename<CR>', opts)
+
+-- Debug
+vim.keymap.set('n', '<C-b>', '<Cmd> lua require\'dap\'.toggle_breakpoint() <CR>')
+vim.keymap.set('n', '<S-k>', '<Cmd> lua require\'dap\'.step_out() <CR>')
+vim.keymap.set('n', '<S-l>', '<Cmd> lua require\'dap\'.step_into() <CR>')
+vim.keymap.set('n', '<S-j>', '<Cmd> lua require\'dap\'.step_over() <CR>')
 
