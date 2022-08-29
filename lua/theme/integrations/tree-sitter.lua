@@ -18,7 +18,7 @@ vim.api.nvim_set_hl(0, 'TSVariable', { fg = colors.pink })
 vim.api.nvim_set_hl(0, 'TSVariableBuiltin', { fg = colors.pink })
 vim.api.nvim_set_hl(0, 'TSParameter', { fg = colors.pink })
 
-vim.api.nvim_set_hl(0, 'TSProperty', { fg = colors.orange })
+vim.api.nvim_set_hl(0, 'TSProperty', { fg = colors.green })
 
 vim.api.nvim_set_hl(0, 'TSMethod', { fg = colors.blue })
 vim.api.nvim_set_hl(0, 'TSInclude', { fg = colors.blue })

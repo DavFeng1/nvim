@@ -8,8 +8,8 @@ local actions = require "telescope.actions"
 
 telescope.setup {
   defaults = {
-    path_display = { "smart" },
-	prompt_prefix = "  ",
+    path_display = { "truncate" },
+	prompt_prefix = "🔍  ",
     selection_caret = "  ",
 	entry_prefix = "   ",
 	sorting_strategy = "ascending",
@@ -18,9 +18,9 @@ telescope.setup {
 		horizontal = {
 			prompt_position = "top"
 		},
-		width = 120,
+		width = 125,
         height = 30,
-		preview_width = 70,
+		preview_width = 60,
 	},
 	color_devicons = true,
     file_previewer = require("telescope.previewers").vim_buffer_cat.new,

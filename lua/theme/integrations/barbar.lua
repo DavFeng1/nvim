@@ -31,3 +31,4 @@ vim.api.nvim_set_hl(0, 'BufferInactiveTarget', { fg = colors.white, bg = colors.
 -- Fill
 vim.api.nvim_set_hl(0, 'BufferTabpage', { bg = colors.barbar_background , fg = colors.line})
 vim.api.nvim_set_hl(0, 'BufferTabpageFill', { bg = colors.barbar_background , fg = colors.line})
+

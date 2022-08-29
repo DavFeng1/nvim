@@ -21,10 +21,11 @@ vim.api.nvim_set_hl(0, 'LineNr', {fg = colors.grey})
 -- PMenu
 vim.api.nvim_set_hl(0, 'PMenu', {fg = colors.white, bg = colors.pmenu_bg })
 vim.api.nvim_set_hl(0, 'PmenuSel', { fg = colors.pmenu_bg, bg = colors.pmenu_sel_bg })
-vim.api.nvim_set_hl(0, 'PmenuSbar', { bg = colors.background2 })
+vim.api.nvim_set_hl(0, 'PmenuSbar', { fg = colors.white, bg = colors.background2 })
+vim.api.nvim_set_hl(0, 'PmenuThumb', { bg = colors.red })
 
 -- SPlit
-vim.api.nvim_set_hl(0, 'WinSeparator', { fg = colors.background1 })
+vim.api.nvim_set_hl(0, 'WinSeparator', { fg = colors.red })
 vim.api.nvim_set_hl(0, 'Visual', { bg = colors.lightbg })
 
 -- Characters

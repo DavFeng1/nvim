@@ -8,7 +8,6 @@ const STUFF = {
 	field_c: true,
 	field_d: (1, 2)
 }
-
 console.log(STUFF)
 
 for (let i = 0; i < 5; i ++) {

@@ -4,7 +4,7 @@ local colors = require('theme.colors')
 vim.api.nvim_set_hl(0, 'CmpPmenu', { fg = colors.white })
 vim.api.nvim_set_hl(0, 'CmpBorder', { fg = colors.red })
 vim.api.nvim_set_hl(0, 'CmpDocBorder', {  fg = colors.red })
-vim.api.nvim_set_hl(0, 'CmpDocPMenu', {})
+vim.api.nvim_set_hl(0, 'CmpDocPMenu', { fg = colors.white })
 vim.api.nvim_set_hl(0, 'CmpPmenuBorder', { bg = colors.yellow })
 
 -- Defaults
