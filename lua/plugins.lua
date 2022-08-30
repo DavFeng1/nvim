@@ -31,6 +31,7 @@ require('packer').startup(function(use)
 	-- Fuzzy search
 	use 'nvim-lua/plenary.nvim'
 	use 'nvim-telescope/telescope.nvim'
+    use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
 
 	-- Buffer + Tabs
 	use {'romgrk/barbar.nvim',
