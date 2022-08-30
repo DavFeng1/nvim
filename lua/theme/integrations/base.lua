@@ -10,6 +10,7 @@ vim.api.nvim_set_hl(0, 'Error', {fg =  colors.red, bg = colors.background1})
 vim.api.nvim_set_hl(0, 'ErrorMsg', {fg =  colors.red, bg = colors.background1})
 vim.api.nvim_set_hl(0, 'Normal', {fg =  colors.white })
 vim.api.nvim_set_hl(0, 'Folded', {bg = colors.background1})
+vim.api.nvim_set_hl(0, 'Statement', {fg = colors.yellow})
 
 
 -- Cursor

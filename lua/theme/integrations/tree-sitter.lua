@@ -27,6 +27,7 @@ vim.api.nvim_set_hl(0, 'TSType', { fg = colors.yellow })
 vim.api.nvim_set_hl(0, 'TSPunctBracket', { fg = colors.red })
 
 vim.api.nvim_set_hl(0, 'TSConstructor', { fg = colors.red })
+vim.api.nvim_set_hl(0, 'TSLabel', { fg = colors.orange })
 
 
 
