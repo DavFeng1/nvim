@@ -22,8 +22,6 @@ vim.keymap.set('n', '<Leader>e', '<cmd>NeoTreeShowToggle<cr>', opts)
 vim.keymap.set('n', '<Leader>1', '<Cmd>BufferGoto 1<CR>', opts)
 vim.keymap.set('n', '<Leader>2', '<Cmd>BufferGoto 2<CR>', opts)
 vim.keymap.set('n', '<Leader>3', '<Cmd>BufferGoto 3<CR>', opts)
-vim.keymap.set('n', '<Leader>4', '<Cmd>BufferGoto 4<CR>', opts)
-vim.keymap.set('n', '<leader>5', '<Cmd>BufferGoto 5<CR>', opts)
 vim.keymap.set('n', '<leader>6', '<Cmd>BufferGoto 6<CR>', opts)
 vim.keymap.set('n', '<leader>7', '<Cmd>BufferGoto 7<CR>', opts)
 vim.keymap.set('n', '<leader>8', '<Cmd>BufferGoto 8<CR>', opts)
@@ -34,7 +32,7 @@ vim.keymap.set('n', '<leader>w', '<Cmd>BufferWipeout!<cr>', opts)
 
 
 -- LSP
-vim.keymap.set('n', '<Leader>gd', '<Cmd> lua vim.lsp.buf.definition()<cr>', opts)
+vim.keymap.set('n', '<C-g>', '<Cmd> lua vim.lsp.buf.definition()<cr>', opts)
 
 
 -- ToggleTerm
