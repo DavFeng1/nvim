@@ -11,9 +11,9 @@ local colors = require('theme.colors')
 
 local custom_theme = {
     normal = {
-        a = { fg = colors.black, bg = colors.orange },
-        b = { fg = colors.white, bg = colors.lualine_background },
-        c = { fg = colors.light_white, bg = colors.lualine_background },
+        a = { fg = colors.black, bg = colors.red },
+        b = { fg = colors.red, bg = colors.lualine_background },
+        c = { fg = colors.red, bg = colors.lualine_background },
     },
 
     insert = { a = { fg = colors.light_white, bg = colors.lualine_background2 } },

@@ -8,7 +8,7 @@ local colors = require('theme.colors')
 
 toggleterm.setup({
 	size = 15,
-	-- open_mapping = [[<c-\>]],
+	open_mapping = [[<c-\>]],
 	hide_numbers = true,
 	shade_filetypes = {},
 	shade_terminals = false,
