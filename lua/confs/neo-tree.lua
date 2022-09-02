@@ -6,7 +6,8 @@ end
 
 neo_tree.setup ({
     popup_border_style = "single",
-	close_if_last_window = false,
+    add_blank_line_at_top = false,
+	close_if_last_window = true,
 	default_component_configs = {
         container = {
         	enable_character_fade = true,
@@ -76,13 +77,18 @@ neo_tree.setup ({
         {
             event = "neo_tree_buffer_enter",
             handler = function()
-                require'bufferline.state'.set_offset(40, '')
+                require'bufferline.state'.set_offset(35, '')
             end,
         }
 
 	},
 	source_selector = {
 		winbar = true,
-	}
+	},
+    window = {
+        position = "left", -- left, right, top, bottom, float, current
+        width = 35,
+        height = 15, 
+    },
 })
 
