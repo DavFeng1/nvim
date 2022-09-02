@@ -8,8 +8,8 @@ vim.cmd [[packadd packer.nvim]]
 vim.cmd( [[ let g:neo_tree_remove_lgacy_commands = 1]])
 
 require('packer').startup(function(use)
-    -- Packer can manage itself
-    use 'wbthomason/packer.nvim'
+  -- Packer can manage itself
+  use 'wbthomason/packer.nvim'
 
 	-- Terminal Mode
 	use 'akinsho/toggleterm.nvim'
