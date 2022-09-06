@@ -10,7 +10,7 @@ neo_tree.setup ({
 	close_if_last_window = true,
 	default_component_configs = {
         container = {
-        	enable_character_fade = true,
+        	enable_character_fade = false,
 			width = "100%",
 			right_padding = 1,
         },
@@ -77,7 +77,7 @@ neo_tree.setup ({
         {
             event = "neo_tree_buffer_enter",
             handler = function()
-                require'bufferline.state'.set_offset(35, '')
+                require'bufferline.state'.set_offset(33, '')
             end,
         }
 
@@ -87,8 +87,8 @@ neo_tree.setup ({
 	},
     window = {
         position = "left", -- left, right, top, bottom, float, current
-        width = 35,
-        height = 15, 
+        width = 33,
+        height = 15,
     },
 })
 
