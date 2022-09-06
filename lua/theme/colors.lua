@@ -16,7 +16,7 @@ local base_colors = {
 	orange = "#f34b00",
 	dark_blue = "#178ec8",
 	dark_purple = "#c678dd",
-	yellow = "#a57706",
+	yellow = "#b58900",
 	pink = "#C678DD",
 	lightbg = "#405570",
 }

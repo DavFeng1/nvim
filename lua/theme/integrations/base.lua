@@ -35,8 +35,13 @@ vim.api.nvim_set_hl(0, 'Directory', { fg = colors.cyan })
 vim.api.nvim_set_hl(0, 'NonText', { fg = colors.grey })
 
 -- Diagnostic
-vim.api.nvim_set_hl(0, 'DiagnosticError', {fg = colors.diagnostics_error })
-vim.api.nvim_set_hl(0, 'DiagnosticUnderlineError', {fg = colors.diagnostics_error , underline=true })
+vim.api.nvim_set_hl(0, 'DiagnosticInfo', { fg = colors.dark_purple })
+vim.api.nvim_set_hl(0, 'DiagnosticHint', { fg = colors.yellow })
+vim.api.nvim_set_hl(0, 'DiagnosticWarn', { fg = colors.yellow })
+vim.api.nvim_set_hl(0, 'DiagnosticError', { fg = colors.diagnostics_error })
+vim.api.nvim_set_hl(0, 'DiagnosticUnderlineHint', { underline = true })
+vim.api.nvim_set_hl(0, 'DiagnosticUnderlineError', { fg = colors.diagnostics_error , underline = true })
+vim.api.nvim_set_hl(0, 'DiagnosticUnderlineInfo',  {fg = colors.white})
 
 
 -- Diagnostic signs
