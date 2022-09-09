@@ -71,10 +71,12 @@ vim.keymap.set('v', '<Leader>y', ':<C-U>\'<,\'>w !clip.exe<cr><cr>', opts)
 
 -- LSP Saga
 vim.keymap.set('n', '<C-j>', '<Cmd>Lspsaga diagnostic_jump_next<CR>', opts)
+vim.keymap.set('n', '<C-k>', '<Cmd>Lspsaga diagnostic_jump_prev<CR>', opts)
 vim.keymap.set('n', '<C-h>', '<Cmd>Lspsaga hover_doc<CR>', opts)
-vim.keymap.set('n', 'gf', '<Cmd>Lspsaga lsp_finder<CR>', opts)
-vim.keymap.set('i', '<C-l>', '<Cmd>Lspsaga signature_help<CR>', opts)
+vim.keymap.set('n', '<C-u>', '<Cmd>Lspsaga lsp_finder<CR>', opts)
+vim.keymap.set('n', '<C-l>', '<Cmd>Lspsaga signature_help<CR>', opts)
 vim.keymap.set('n', '<C-i>', '<Cmd>Lspsaga preview_definition<CR>', opts)
+vim.keymap.set('n', '<C-a>', '<Cmd>Lspsaga code_action<CR>', opts)
 
 -- Debug
 vim.keymap.set('n', '<C-b>', '<Cmd> lua require\'dap\'.toggle_breakpoint() <CR>')
