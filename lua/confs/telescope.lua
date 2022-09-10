@@ -18,9 +18,9 @@ telescope.setup {
             horizontal = {
                 prompt_position = "top"
             },
-            width = 125,
+            width = 115,
             height = 30,
-            preview_width = 60,
+            preview_width = 45,
         },
         color_devicons = true,
         file_previewer = require("telescope.previewers").vim_buffer_cat.new,
@@ -35,7 +35,10 @@ telescope.setup {
     pickers = {
         find_files = {
             hidden = true,
-        }
+        },
+        live_grep = {
+            shorten_path = true,
+        },
     },
     extensions = {
         fzf = {

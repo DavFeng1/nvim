@@ -79,8 +79,8 @@ vim.keymap.set('n', '<C-i>', '<Cmd>Lspsaga preview_definition<CR>', opts)
 vim.keymap.set('n', '<C-a>', '<Cmd>Lspsaga code_action<CR>', opts)
 
 -- Debug
-vim.keymap.set('n', '<C-b>', '<Cmd> lua require\'dap\'.toggle_breakpoint() <CR>')
-vim.keymap.set('n', '<S-k>', '<Cmd> lua require\'dap\'.step_out() <CR>')
-vim.keymap.set('n', '<S-l>', '<Cmd> lua require\'dap\'.step_into() <CR>')
-vim.keymap.set('n', '<S-j>', '<Cmd> lua require\'dap\'.step_over() <CR>')
+vim.keymap.set('n', '<C-b>', '<Cmd> lua require\'dap\'.toggle_breakpoint() <CR>', opts)
+vim.keymap.set('n', '<S-k>', '<Cmd> lua require\'dap\'.step_out() <CR>', opts)
+vim.keymap.set('n', '<S-l>', '<Cmd> lua require\'dap\'.step_into() <CR>', opts)
+vim.keymap.set('n', '<S-j>', '<Cmd> lua require\'dap\'.step_over() <CR>', opts)
 
