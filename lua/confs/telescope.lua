@@ -18,9 +18,9 @@ telescope.setup {
             horizontal = {
                 prompt_position = "top"
             },
-            width = 115,
+            width = 125,
             height = 30,
-            preview_width = 45,
+            preview_width = 60,
         },
         color_devicons = true,
         file_previewer = require("telescope.previewers").vim_buffer_cat.new,
