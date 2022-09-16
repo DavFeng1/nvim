@@ -7,7 +7,7 @@ end
 local colors = require('theme.colors')
 
 toggleterm.setup({
-	size = 15,
+	size = 12,
 	open_mapping = [[<c-\>]],
 	hide_numbers = true,
 	shade_filetypes = {},
