@@ -14,6 +14,7 @@ vim.keymap.set('n', '<Leader><Space>', ':noh<CR>', opts)
 -- Telescope
 vim.keymap.set('n', '<C-p>', '<Cmd>Telescope find_files<CR>', opts)
 vim.keymap.set('n', '<C-f>', '<Cmd>Telescope live_grep<CR>', opts)
+vim.keymap.set('n', '<C-e>', '<Cmd>Telescope file_browser<CR>', opts)
 
 -- Neo Tree
 vim.keymap.set('n', '<Leader>e', '<cmd>NeoTreeShowToggle<cr>', opts)
@@ -75,7 +76,7 @@ vim.keymap.set('n', '<C-k>', '<Cmd>Lspsaga diagnostic_jump_prev<CR>', opts)
 vim.keymap.set('n', '<C-h>', '<Cmd>Lspsaga hover_doc<CR>', opts)
 vim.keymap.set('n', '<C-u>', '<Cmd>Lspsaga lsp_finder<CR>', opts)
 vim.keymap.set('n', '<C-l>', '<Cmd>Lspsaga signature_help<CR>', opts)
-vim.keymap.set('n', '<C-i>', '<Cmd>Lspsaga preview_definition<CR>', opts)
+vim.keymap.set('n', '<C-i>', '<Cmd>Lspsaga peek_definition<CR>', opts)
 vim.keymap.set('n', '<C-a>', '<Cmd>Lspsaga code_action<CR>', opts)
 
 -- Debug

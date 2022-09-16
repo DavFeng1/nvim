@@ -1,9 +1,10 @@
 local colors = require('theme.colors')
 
--- " Diffs
+vim.api.nvim_set_hl(0, 'DefinitionBorder', {fg = colors.red })
 vim.api.nvim_set_hl(0, 'DiffAdd', {fg = colors.green })
 vim.api.nvim_set_hl(0, 'DiffChange', {fg = colors.yellow })
 vim.api.nvim_set_hl(0, 'DiffDelete', {fg = colors.red })
+vim.api.nvim_set_hl(0, 'FinderParam', {fg = colors.red, bg = colors.background1 })
 vim.api.nvim_set_hl(0, 'SignColumn', {})
 
 vim.api.nvim_set_hl(0, 'Error', {fg =  colors.red, bg = colors.background1 })

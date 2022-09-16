@@ -29,7 +29,7 @@ vim.opt.scrolloff = 20
 vim.opt.laststatus = 3
 
 -- Left padding
-vim.opt.numberwidth = 3
+vim.opt.numberwidth = 1
 
 -- Set sign column always show
 vim.opt.signcolumn='yes:2'

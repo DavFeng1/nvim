@@ -22,9 +22,9 @@ telescope.setup {
             vertical = {
                 prompt_position = "top",
             },
-            width = 0.9,
-            height = 100,
-            preview_height = 0.4,
+            width = 130,
+            height = 40,
+            preview_height = 15,
             preview_cutoff = 1,
         },
         color_devicons = true,
@@ -56,4 +56,5 @@ telescope.setup {
 }
 
 telescope.load_extension('fzf')
+telescope.load_extension('file_browser')
 

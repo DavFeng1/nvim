@@ -80,7 +80,6 @@ neo_tree.setup ({
                 require'bufferline.state'.set_offset(33, '')
             end,
         }
-
 	},
 	source_selector = {
 		winbar = true,
