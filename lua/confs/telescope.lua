@@ -14,13 +14,18 @@ telescope.setup {
         entry_prefix = "   ",
         sorting_strategy = "ascending",
         file_ignore_patterns = { "node_modules", "package-lock.json", ".git" },
+        layout_strategy = 'vertical',
         layout_config = {
             horizontal = {
-                prompt_position = "top"
+                prompt_position = "top",
             },
-            width = 125,
-            height = 30,
-            preview_width = 60,
+            vertical = {
+                prompt_position = "top",
+            },
+            width = 0.9,
+            height = 100,
+            preview_height = 0.4,
+            preview_cutoff = 1,
         },
         color_devicons = true,
         file_previewer = require("telescope.previewers").vim_buffer_cat.new,
