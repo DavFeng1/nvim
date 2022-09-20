@@ -24,7 +24,7 @@ telescope.setup {
             },
             width = 115,
             height = 30,
-            preview_height = 10,
+            preview_height = 0,
             preview_cutoff = 1,
         },
         color_devicons = true,

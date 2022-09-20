@@ -23,6 +23,6 @@ vim.api.nvim_set_hl(0, 'NeoTreeTabSeparatorInactive', { })
 vim.api.nvim_set_hl(0, 'NeoTreeRootName', { fg = colors.white })
 
 -- Popup
-vim.api.nvim_set_hl(0, 'NeoTreeFloatBorder', { fg = colors.red, bg = colors.neo_tree_background })
-vim.api.nvim_set_hl(0, 'NeoTreeFloatTitle', { bg = colors.neo_tree_background, fg = colors.red })
+vim.api.nvim_set_hl(0, 'NeoTreeFloatBorder', { fg = colors.neo_tree_background, bg = colors.neo_tree_background })
+vim.api.nvim_set_hl(0, 'NeoTreeFloatTitle', { bg = colors.neo_tree_background, fg = colors.neo_tree_background })
 
