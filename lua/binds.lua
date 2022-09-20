@@ -52,10 +52,10 @@ vim.keymap.set('t', '<C-l>', [[<Cmd>wincmd l<CR>]], opts)
 vim.keymap.set('t', '<C-\\', [[<Cmd>ToggleTerm <CR>]], opts)
 
 -- Adjust pane size
-vim.keymap.set('n', '<C-Up>', '<cmd> :resize +2<cr>', opts)
-vim.keymap.set('n', '<C-Down>', '<cmd> :resize -2<cr>', opts)
-vim.keymap.set('n', '<C-Left>', '<cmd> :vertical resize +2<cr>', opts)
-vim.keymap.set('n', '<C-Right>', '<cmd> :vertical resize -2<cr>', opts)
+vim.keymap.set('n', '<S-Up>', '<cmd> :resize +2<cr>', opts)
+vim.keymap.set('n', '<S-Down>', '<cmd> :resize -2<cr>', opts)
+vim.keymap.set('n', '<S-Left>', '<cmd> :vertical resize +2<cr>', opts)
+vim.keymap.set('n', '<S-Right>', '<cmd> :vertical resize -2<cr>', opts)
 
 -- Toggle through command suggestions
 vim.cmd [[
