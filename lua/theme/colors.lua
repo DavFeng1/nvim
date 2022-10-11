@@ -46,9 +46,9 @@ local M = {
 
 	-- Component specific colors
 	pmenu_sel_bg = base_colors.red,
-	statusline_bg = "#15191e",
+	statusline_bg = base_colors.background2,
 	folder_bg = "#86a5ff",
-	cursor_line_background = "#003748",
+	cursor_line_background = base_colors.dark_green,
 
 	cmp_background = base_colors.background2,
 
