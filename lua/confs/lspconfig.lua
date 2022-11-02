@@ -7,9 +7,10 @@ if not present then
    return
 end
 
-local on_attach = function(_, bufnr)
+local on_attach = function(client, bufnr)
 
   local bufopts = { noremap=true, silent=true, buffer=bufnr }
+  client.server_capabilities.document_formatting = true
 
   vim.keymap.set('n', '<space>f', vim.lsp.buf.formatting, bufopts)
 
@@ -39,5 +40,16 @@ lspconfig.pyright.setup {
 lspconfig.rust_analyzer.setup {
 	on_attach = on_attach,
 	flags = lsp_flags,
+}
+
+lspconfig.eslint.setup {
+  on_attach = on_attach,
+  flags = lsp_flags,
+  settings = {
+    codeActionsOnSave = {
+      enable = true,
+      mode = 'all',
+    }
+  },
 }
 
