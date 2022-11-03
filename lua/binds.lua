@@ -6,7 +6,7 @@ vim.g.mapleader = " "
 local opts = { noremap = true, silent = true }
 
 -- Save file
-vim.keymap.set('n', '<C-s>', '<Cmd> EslintFixAll <bar> w <CR>', opts)
+vim.keymap.set('n', '<C-s>', '<Cmd>w<CR>', opts)
 
 -- Clear search 
 vim.keymap.set('n', '<Leader><Space>', ':noh<CR>', opts)
