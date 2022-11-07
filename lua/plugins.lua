@@ -55,6 +55,7 @@ require('packer').startup(function(use)
 		run = ":TSUpdate",
 	}
 	use 'nvim-treesitter/playground'
+  use 'nvim-treesitter/nvim-treesitter-context'
 
 	-- Snippets
 	use "L3MON4D3/LuaSnip" --snippet engine
@@ -94,7 +95,7 @@ require('packer').startup(function(use)
 	-- Lsp saga
 	use 'glepnir/lspsaga.nvim'
 
-	use 'folke/lua-dev.nvim'
+	use 'folke/neodev.nvim'
 
     -- Debugging
     use { "mxsdev/nvim-dap-vscode-js", requires = {"mfussenegger/nvim-dap"} }

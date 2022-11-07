@@ -1,6 +1,6 @@
 local present, lspconfig = pcall(require, "lspconfig")
 
-local luadev = require("lua-dev").setup({
+require("neodev").setup({
 })
 
 if not present then
@@ -25,7 +25,15 @@ lspconfig.tsserver.setup {
 	flags = lsp_flags
 }
 
-lspconfig.sumneko_lua.setup(luadev)
+lspconfig.sumneko_lua.setup({
+  settings = {
+    Lua = {
+      completion = {
+        callSnippet = "Replace"
+      }
+    }
+  }
+})
 
 lspconfig.vimls.setup {
 	on_attach = on_attach,
