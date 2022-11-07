@@ -117,7 +117,10 @@ require "confs.cmp"
 require "confs.nvim-lsp-installer"
 require "confs.lspconfig"
 require "confs.telescope"
+
+-- Setup treesitter
 require "confs.nvim-treesitter"
+require "confs.nvim-treesitter-context"
 
 -- Debugger
 require "confs.nvim-dap"
