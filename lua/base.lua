@@ -46,6 +46,3 @@ vim.opt.mouse='nvi'
 vim.opt.winbar = "%{%v:lua.require('winbar').eval()%}"
 
 
-
-
-

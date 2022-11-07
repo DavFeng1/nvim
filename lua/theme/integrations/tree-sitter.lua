@@ -4,30 +4,30 @@ local colors = require('theme.colors')
 vim.api.nvim_set_hl(0, 'Type', { fg = colors.yellow })
 
 -- " TREESITTER
-vim.api.nvim_set_hl(0, 'TSComment', { fg = colors.grey })
-vim.api.nvim_set_hl(0, 'TSString', { fg = colors.green})
-vim.api.nvim_set_hl(0, 'TSConstant', { fg = colors.pink })
-vim.api.nvim_set_hl(0, 'TSKeywordFunction', { fg = colors.purple })
-vim.api.nvim_set_hl(0, 'TSFunction', { fg = colors.dark_blue })
+vim.api.nvim_set_hl(0, '@Comment', { fg = colors.grey })
+vim.api.nvim_set_hl(0, '@String', { fg = colors.green})
+vim.api.nvim_set_hl(0, '@Constant', { fg = colors.pink })
+vim.api.nvim_set_hl(0, '@KeywordFunction', { fg = colors.purple })
+vim.api.nvim_set_hl(0, '@Function', { fg = colors.dark_blue })
 
-vim.api.nvim_set_hl(0, 'TSConditional', { fg = colors.purple })
-vim.api.nvim_set_hl(0, 'TSKeyword', { fg = colors.purple })
+vim.api.nvim_set_hl(0, '@Conditional', { fg = colors.purple })
+vim.api.nvim_set_hl(0, '@Keyword', { fg = colors.purple })
 
-vim.api.nvim_set_hl(0, 'TSField', { fg = colors.blue })
-vim.api.nvim_set_hl(0, 'TSVariable', { fg = colors.pink })
-vim.api.nvim_set_hl(0, 'TSVariableBuiltin', { fg = colors.pink })
-vim.api.nvim_set_hl(0, 'TSParameter', { fg = colors.pink })
+vim.api.nvim_set_hl(0, '@Field', { fg = colors.blue })
+vim.api.nvim_set_hl(0, '@Variable', { fg = colors.pink })
+vim.api.nvim_set_hl(0, '@VariableBuiltin', { fg = colors.pink })
+vim.api.nvim_set_hl(0, '@Parameter', { fg = colors.pink })
 
-vim.api.nvim_set_hl(0, 'TSProperty', { fg = colors.green })
+vim.api.nvim_set_hl(0, '@Property', { fg = colors.green })
 
-vim.api.nvim_set_hl(0, 'TSMethod', { fg = colors.blue })
-vim.api.nvim_set_hl(0, 'TSInclude', { fg = colors.blue })
-vim.api.nvim_set_hl(0, 'TSType', { fg = colors.yellow })
+vim.api.nvim_set_hl(0, '@Method', { fg = colors.blue })
+vim.api.nvim_set_hl(0, '@Include', { fg = colors.blue })
+vim.api.nvim_set_hl(0, '@Type', { fg = colors.yellow })
 
-vim.api.nvim_set_hl(0, 'TSPunctBracket', { fg = colors.red })
+vim.api.nvim_set_hl(0, '@PunctBracket', { fg = colors.red })
 
-vim.api.nvim_set_hl(0, 'TSConstructor', { fg = colors.red })
-vim.api.nvim_set_hl(0, 'TSLabel', { fg = colors.orange })
+vim.api.nvim_set_hl(0, '@Constructor', { fg = colors.red })
+vim.api.nvim_set_hl(0, '@Label', { fg = colors.orange })
 
 
 
