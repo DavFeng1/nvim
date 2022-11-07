@@ -8,6 +8,7 @@ vim.wo.wrap = false
 vim.opt.termguicolors = true
 vim.opt.backspace = 'indent,eol,start'
 vim.opt.number = true
+vim.opt.relativenumber = true
 
 vim.opt.cursorline = true
 
