@@ -1,3 +1,4 @@
+local colors = require('theme.colors')
 local devicons_present, web_devicons = pcall(require, 'nvim-web-devicons')
 
 if not devicons_present then
@@ -12,8 +13,6 @@ M.winbar_filetype_exclude = {
 }
 
 function M.eval()
-	local buffer_name = vim.api.nvim_eval_statusline('%y', {}).str
-
 	if vim.tbl_contains(M.winbar_filetype_exclude, vim.bo.filetype) then
 		return ''
 	end
@@ -37,7 +36,6 @@ function M.eval()
 		.. ' '
 		.. '%#WinBarFileName#'
 		.. file_name
-
 end
 
 return M
