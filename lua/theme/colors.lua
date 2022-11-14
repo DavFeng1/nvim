@@ -59,7 +59,7 @@ local M = {
 
 	barbar_background = base_colors.background2,
 
-	which_key_background = "#001126",
+	which_key_background = base_colors.background2,
 
 	git_signs_add = "#487e02",
 	git_signs_blame = "#35577d",
@@ -73,7 +73,7 @@ local M = {
 	neo_tree_winbar_background = "#1a304d",
 
 	toggle_term_background = base_colors.background2,
-	winbar_background = base_colors.background2,
+	winbar_background = base_colors.background1,
 }
 
 return M

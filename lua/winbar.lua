@@ -1,4 +1,3 @@
-local colors = require('theme.colors')
 local devicons_present, web_devicons = pcall(require, 'nvim-web-devicons')
 
 if not devicons_present then
