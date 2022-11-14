@@ -5,61 +5,61 @@ end
 
 
 neo_tree.setup ({
-    popup_border_style = "single",
-    add_blank_line_at_top = false,
+  popup_border_style = "single",
+  add_blank_line_at_top = false,
 	close_if_last_window = true,
 	default_component_configs = {
-        container = {
-        	enable_character_fade = false,
-			width = "100%",
-			right_padding = 1,
-        },
-		indent = {
-			indent_size = 2,
-			padding = 1, -- extra padding on left hand side
-			-- indent guides
-			with_markers = true,
-			indent_marker = "│",
-			last_indent_marker = "└",
-			highlight = "NeoTreeIndentMarker",
-			-- expander config, needed for nesting files
-			with_expanders = nil, -- if nil and file nesting is enabled, will enable expanders
-			expander_collapsed = "",
-			expander_expanded = "",
-			expander_highlight = "NeoTreeExpander",
-		},
-        icon = {
-            folder_closed = "",
-            folder_open = "",
-            folder_empty = "ﰊ",
-            -- default = "*",
-            -- highlight = "NeoTreeFileIcon"
-        },
-        modified = {
-            symbol = "[+]",
-            highlight = "NeoTreeModified",
-        },
-        name = {
-            trailing_slash = false,
-            use_git_status_colors = true,
-            highlight = "NeoTreeFileName",
-        },
-        git_status = {
-            symbols = {
-                -- Change type
-                added     = "✚",
-                modified  = "",
-				deleted   = "✖",-- this can only be used in the git_status source
-				renamed   = "",-- this can only be used in the git_status source
-				-- Status type
-				untracked = "",
-				ignored   = "",
-				unstaged  = "",
-				staged    = "",
-				conflict  = "",
-            }
-        },
+    container = {
+      enable_character_fade = false,
+      width = "100%",
+      right_padding = 1,
     },
+    indent = {
+      indent_size = 2,
+      padding = 1, -- extra padding on left hand side
+      -- indent guides
+      with_markers = true,
+      indent_marker = "│",
+      last_indent_marker = "└",
+      highlight = "NeoTreeIndentMarker",
+      -- expander config, needed for nesting files
+      with_expanders = nil, -- if nil and file nesting is enabled, will enable expanders
+      expander_collapsed = "",
+      expander_expanded = "",
+      expander_highlight = "NeoTreeExpander",
+    },
+    icon = {
+        folder_closed = "",
+        folder_open = "",
+        folder_empty = "ﰊ",
+        -- default = "*",
+        -- highlight = "NeoTreeFileIcon"
+    },
+    modified = {
+        symbol = "[+]",
+        highlight = "NeoTreeModified",
+    },
+    name = {
+        trailing_slash = false,
+        use_git_status_colors = true,
+        highlight = "NeoTreeFileName",
+    },
+    git_status = {
+        symbols = {
+            -- Change type
+            added     = "✚",
+            modified  = "",
+    deleted   = "✖",-- this can only be used in the git_status source
+    renamed   = "",-- this can only be used in the git_status source
+    -- Status type
+    untracked = "",
+    ignored   = "",
+    unstaged  = "",
+    staged    = "",
+    conflict  = "",
+        }
+    },
+  },
 	filesystem = {
 		follow_current_file = true,
 		filtered_items = {
@@ -84,10 +84,10 @@ neo_tree.setup ({
 	source_selector = {
 		winbar = true,
 	},
-    window = {
-        position = "left", -- left, right, top, bottom, float, current
-        width = 33,
-        height = 15,
-    },
+  window = {
+      position = "left", -- left, right, top, bottom, float, current
+      width = 40,
+      height = 15,
+  },
 })
 
