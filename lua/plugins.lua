@@ -11,9 +11,6 @@ require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
 
-	-- Terminal Mode
-	use 'akinsho/toggleterm.nvim'
-
 	-- File Explorer
 	use {
 		"nvim-neo-tree/neo-tree.nvim",
@@ -126,9 +123,6 @@ require "confs.nvim-treesitter-context"
 
 -- Debugger
 require "confs.nvim-dap"
-
--- Terminal
-require "confs.toggleterm"
 
 --- Editor functionality
 require "confs.nvim-autopairs"
