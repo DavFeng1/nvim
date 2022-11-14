@@ -68,18 +68,18 @@ neo_tree.setup ({
 		use_libuv_file_watcher = true,
 	},
 	event_handlers = {
-        {
-            event = "neo_tree_window_after_close",
-            handler = function()
-                require'bufferline.state'.set_offset(0)
-            end,
-        },
-        {
-            event = "neo_tree_buffer_enter",
-            handler = function()
-                require'bufferline.state'.set_offset(33, '')
-            end,
-        }
+        -- {
+        --     event = "neo_tree_window_after_close",
+        --     handler = function()
+        --         require'bufferline.state'.set_offset(0)
+        --     end,
+        -- },
+        -- {
+        --     event = "neo_tree_buffer_enter",
+        --     handler = function()
+        --         require'bufferline.state'.set_offset(33, '')
+        --     end,
+        -- }
 	},
 	source_selector = {
 		winbar = true,
