@@ -30,18 +30,22 @@ vim.keymap.set('n', '<leader>7', '<Cmd>BufferGoto 7<CR>', opts)
 vim.keymap.set('n', '<leader>8', '<Cmd>BufferGoto 8<CR>', opts)
 vim.keymap.set('n', '<leader>9', '<Cmd>BufferGoto 9<CR>', opts)
 
--- Close tab 
+-- Tab and Buffer  
 vim.keymap.set('n', '<leader>w', '<Cmd>BufferWipeout!<cr>', opts)
+vim.keymap.set('n', '<leader>ot', '<Cmd>tabnew %<cr>', opts)
+vim.keymap.set('n', '<leader>ct', '<Cmd>tabclose<cr>', opts)
+
+
 
 
 -- LSP
 vim.keymap.set('n', '<C-d>', '<Cmd> lua vim.lsp.buf.definition()<cr>', opts)
 
 -- Adjust pane size
-vim.keymap.set('n', '<S-Up>', '<cmd> :resize +2<cr>', opts)
-vim.keymap.set('n', '<S-Down>', '<cmd> :resize -2<cr>', opts)
-vim.keymap.set('n', '<S-Left>', '<cmd> :vertical resize +2<cr>', opts)
-vim.keymap.set('n', '<S-Right>', '<cmd> :vertical resize -2<cr>', opts)
+vim.keymap.set('n', '<S-Up>', '<cmd> :resize +1<cr>', opts)
+vim.keymap.set('n', '<S-Down>', '<cmd> :resize -1<cr>', opts)
+vim.keymap.set('n', '<S-Left>', '<cmd> :vertical resize +1<cr>', opts)
+vim.keymap.set('n', '<S-Right>', '<cmd> :vertical resize -1<cr>', opts)
 
 -- Toggle through command suggestions
 vim.cmd [[
