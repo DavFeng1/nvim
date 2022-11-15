@@ -8,7 +8,7 @@ end
 local M = {}
 
 M.winbar_filetype_exclude = {
-	"alpha", "neo-tree", "toggleterm"
+	"alpha", "neo-tree"
 }
 
 function M.eval()

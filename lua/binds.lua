@@ -37,20 +37,6 @@ vim.keymap.set('n', '<leader>w', '<Cmd>BufferWipeout!<cr>', opts)
 -- LSP
 vim.keymap.set('n', '<C-d>', '<Cmd> lua vim.lsp.buf.definition()<cr>', opts)
 
-
--- ToggleTerm
-vim.keymap.set('n',  '<C-\\>', '<cmd>ToggleTerm direction=horizontal<cr>', opts)
-vim.keymap.set('n', '<leader>tp', '<cmd> lua _PYTHON_TOGGLE()<cr>', opts)
-vim.keymap.set('n', '<leader>tn', '<cmd> lua _NODE_TOGGLE()<cr>', opts)
-vim.keymap.set('n', '<leader>tl', '<cmd> lua _LUA_TOGGLE()<cr>', opts)
-vim.keymap.set('t', '<esc>', [[<C-\><C-n>]], opts)
-vim.keymap.set('t', 'jk', [[<C-\><C-n>]], opts)
-vim.keymap.set('t', '<C-h>', [[<Cmd>wincmd h<CR>]], opts)
-vim.keymap.set('t', '<C-j>', [[<Cmd>wincmd j<CR>]], opts)
-vim.keymap.set('t', '<C-k>', [[<Cmd>wincmd k<CR>]], opts)
-vim.keymap.set('t', '<C-l>', [[<Cmd>wincmd l<CR>]], opts)
-vim.keymap.set('t', '<C-\\', [[<Cmd>ToggleTerm <CR>]], opts)
-
 -- Adjust pane size
 vim.keymap.set('n', '<S-Up>', '<cmd> :resize +2<cr>', opts)
 vim.keymap.set('n', '<S-Down>', '<cmd> :resize -2<cr>', opts)
@@ -83,4 +69,5 @@ vim.keymap.set('n', '<C-b>', '<Cmd> lua require\'dap\'.toggle_breakpoint() <CR>'
 vim.keymap.set('n', '<S-k>', '<Cmd> lua require\'dap\'.step_out() <CR>', opts)
 vim.keymap.set('n', '<S-l>', '<Cmd> lua require\'dap\'.step_into() <CR>', opts)
 vim.keymap.set('n', '<S-j>', '<Cmd> lua require\'dap\'.step_over() <CR>', opts)
-
+vim.keymap.set('n', '<leader>dc', '<Cmd> DapContinue <CR>')
+vim.keymap.set('n', '<leader>du', '<Cmd> lua require\'dapui\'.toggle() <CR>')

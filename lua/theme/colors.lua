@@ -72,7 +72,6 @@ local M = {
 	neo_tree_root_background = "#1a304d",
 	neo_tree_winbar_background = "#1a304d",
 
-	toggle_term_background = base_colors.background2,
 	winbar_background = base_colors.background1,
 }
 

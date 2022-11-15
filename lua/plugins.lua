@@ -96,13 +96,13 @@ require('packer').startup(function(use)
 
   -- Debugging
   use "mfussenegger/nvim-dap"
-  use "rcarriga/nvim-dap-ui"
   use "mxsdev/nvim-dap-vscode-js"
   use {
       "microsoft/vscode-js-debug",
       opt = true,
       run = "npm install --legacy-peer-deps && npm run compile"
   }
+  use "rcarriga/nvim-dap-ui"
 
 end)
 
@@ -123,6 +123,7 @@ require "confs.nvim-treesitter-context"
 
 -- Debugger
 require "confs.nvim-dap"
+require "confs.dap-ui"
 
 --- Editor functionality
 require "confs.nvim-autopairs"
