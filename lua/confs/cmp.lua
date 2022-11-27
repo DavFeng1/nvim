@@ -71,8 +71,8 @@ cmp.setup {
     end,
   },
   mapping = {
-		["<C-b>"] = cmp.mapping.scroll_docs(-4),
-		["<C-f>"] = cmp.mapping.scroll_docs(4),
+		["<S-k>"] = cmp.mapping.scroll_docs(-1),
+		["<S-j>"] = cmp.mapping.scroll_docs(1),
 		["<C-k>"] = cmp.mapping.select_prev_item(),
 		["<C-j>"] = cmp.mapping.select_next_item(),
 		-- Set `select` to `false` to only confirm explicitly selected items.
