@@ -8,12 +8,7 @@ if not present then
 end
 
 local on_attach = function(client, bufnr)
-
-  local bufopts = { noremap=true, silent=true, buffer=bufnr }
   client.server_capabilities.document_formatting = true
-
-  vim.keymap.set('n', '<space>f', vim.lsp.buf.formatting, bufopts)
-
 end
 
 local lsp_flags = {
@@ -59,5 +54,24 @@ lspconfig.eslint.setup {
       mode = 'all',
     }
   },
+}
+
+lspconfig.jsonls.setup {
+  on_attach = on_attach,
+  flags = lsp_flags,
+  settings = {
+    json = {
+      schemas = {
+        {
+          fileMatch = {"package.json"},
+          url = "https://json.schemastore.org/package.json"
+        },
+        {
+          fileMatch = {"tsconfig*.json"},
+          url = "https://json.schemastore.org/tsconfig.json"
+        },
+      }
+    }
+  }
 }
 

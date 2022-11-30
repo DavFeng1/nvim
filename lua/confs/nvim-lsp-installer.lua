@@ -10,11 +10,11 @@ local options = {
    automatic_installation = true,
 
 	ui = {
-      	icons = {
+    icons = {
 			server_installed = " ",
 			server_pending = " ",
 			server_uninstalled = " ﮊ",
-      	},
+    },
 		keymaps = {
 			toggle_server_expand = "<CR>",
 			install_server = "i",

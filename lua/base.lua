@@ -25,9 +25,9 @@ vim.opt.list = true
 vim.cmd[[
     set fillchars+=eob:\ 
 ]]
-vim.cmd [[
-  autocmd BufWritePre *.tsx,*.ts,*.jsx,*.js EslintFixAll
-]]
+-- vim.cmd [[
+--   autocmd BufWritePre *.tsx,*.ts,*.jsx,*.js EslintFixAll
+-- ]]
 
 vim.opt.scrolloff = 20
 vim.opt.laststatus = 3
