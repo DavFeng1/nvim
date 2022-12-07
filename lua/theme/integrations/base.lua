@@ -13,6 +13,7 @@ vim.api.nvim_set_hl(0, 'Normal', {fg =  colors.white })
 vim.api.nvim_set_hl(0, 'Folded', {bg = colors.background1 })
 vim.api.nvim_set_hl(0, 'Statement', {fg = colors.purple })
 vim.api.nvim_set_hl(0, 'Search', {fg = colors.black, bg = colors.yellow })
+vim.api.nvim_set_hl(0, 'Todo', {fg = colors.black, bg = colors.yellow })
 
 -- Statusline
 vim.api.nvim_set_hl(0, 'StatusLine', {fg = colors.yellow})

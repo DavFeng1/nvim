@@ -3,7 +3,7 @@ vim.diagnostic.config({
    virtual_text = false,
 })
 
-vim.wo.wrap = false
+vim.wo.wrap = true
 
 vim.opt.termguicolors = true
 vim.opt.backspace = 'indent,eol,start'

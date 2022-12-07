@@ -8,6 +8,7 @@ const STUFF = {
 	field_c: true,
 }
 
+// WARN: abcdef
 console.log(STUFF)
 
 for (let i = 0; i < 50; i ++) {
