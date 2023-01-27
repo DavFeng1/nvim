@@ -115,6 +115,7 @@ require "confs.cmp"
 -- setup lsp Installer before lspconfig
 require "confs.nvim-lsp-installer"
 require "confs.lspconfig"
+require "confs.lspsaga"
 require "confs.telescope"
 
 -- Setup treesitter

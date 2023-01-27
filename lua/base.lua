@@ -5,6 +5,19 @@ vim.diagnostic.config({
 
 vim.wo.wrap = true
 
+-- Folding
+vim.opt.foldmethod = 'indent'
+vim.opt.foldminlines = 1
+vim.opt.foldlevelstart = 99
+function _G.customFoldText()
+  -- local line = vim.fn.getline(vim.v.foldstart)
+  local line_count = vim.v.foldend - vim.v.foldstart + 1
+  return " ⚡ " .. " ... " .. line_count .. " lines"
+end
+
+vim.opt.foldtext = 'v:lua.customFoldText()'
+
+
 vim.opt.termguicolors = true
 vim.opt.backspace = 'indent,eol,start'
 vim.opt.number = true
@@ -18,10 +31,18 @@ vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 
 -- Chars
+
 vim.opt.list = true
 -- vim.opt.listchars:append "space:⋅"
 
 -- " Note the space after the /
+-- vim.opt.fillchars={
+--   eob: ' ',
+--   fold: ' ',
+--   -- eob: " ",
+--   -- fold: " ",
+-- }
+
 vim.cmd[[
     set fillchars+=eob:\ 
 ]]
