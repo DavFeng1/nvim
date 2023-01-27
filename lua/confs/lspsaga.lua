@@ -4,7 +4,7 @@ local colors = require('theme.colors')
 if not present then return end
 
 
-lspsaga.init_lsp_saga {
+lspsaga.setup {
 	error_sign = '',
   warn_sign = '',
   hint_sign = '',
