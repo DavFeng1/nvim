@@ -12,7 +12,7 @@ const STUFF = {
 console.log(STUFF)
 
 for (let i = 0; i < 50; i ++) {
-    console.log("got ", i);
+  console.log("got ", i);
 };
 
 console.log('done');
