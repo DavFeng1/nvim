@@ -77,3 +77,6 @@ lspconfig.jsonls.setup {
   }
 }
 
+lspconfig.taplo.setup {}
+
+
