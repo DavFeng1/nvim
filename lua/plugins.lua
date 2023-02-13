@@ -3,7 +3,6 @@
 -- Only required if you have packer configured as `opt`
 vim.cmd [[packadd packer.nvim]]
 
-
 -- Remove legacy commands to neo-tree
 vim.cmd( [[ let g:neo_tree_remove_lgacy_commands = 1]])
 
@@ -28,8 +27,8 @@ require('packer').startup(function(use)
 	-- Fuzzy search
 	use 'nvim-lua/plenary.nvim'
 	use 'nvim-telescope/telescope.nvim'
-    use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
-    use 'nvim-telescope/telescope-file-browser.nvim'
+  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+  use 'nvim-telescope/telescope-file-browser.nvim'
 
 	-- Buffer + Tabs
 	use {'romgrk/barbar.nvim',
@@ -37,7 +36,8 @@ require('packer').startup(function(use)
 	}
 
 	--LSP
-	use 'williamboman/nvim-lsp-installer'
+  use "williamboman/mason.nvim"
+  use "williamboman/mason-lspconfig.nvim"
 	use 'neovim/nvim-lspconfig'
 
 	-- Indent line indicators
@@ -100,7 +100,7 @@ require('packer').startup(function(use)
   use {
       "microsoft/vscode-js-debug",
       opt = true,
-      run = "npm install --legacy-peer-deps && npm run compile"
+      run = "npm install --no-save --legacy-peer-deps && npm run compile"
   }
   use "rcarriga/nvim-dap-ui"
 
@@ -113,7 +113,7 @@ require "confs.web-devicons"
 require "confs.cmp"
 
 -- setup lsp Installer before lspconfig
-require "confs.nvim-lsp-installer"
+require "confs.mason"
 require "confs.lspconfig"
 require "confs.lspsaga"
 require "confs.telescope"
