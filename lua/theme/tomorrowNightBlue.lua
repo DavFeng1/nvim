@@ -1,6 +1,6 @@
 local M = {
 	-- Colors
-	background1 = "#002451",
+	background1 = "#0a234e",
 	black = "#000000",
 	blue = "#BBDAFF",
 	cyan = "#99FFFF",
