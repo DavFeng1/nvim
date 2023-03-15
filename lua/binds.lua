@@ -34,7 +34,7 @@ vim.keymap.set('n', '<leader>hi', '<cmd>so $VIMRUNTIME/syntax/hitest.vim<cr><cr>
 -- WSL copy to windows clipboard
 vim.keymap.set('v', '<Leader>y', ':<C-U>\'<,\'>w !clip.exe<cr><cr>', opts)
 -- Telescope
-vim.keymap.set('n', '<C-p>', '<Cmd>Telescope find_files<CR>', opts)
+vim.keymap.set('n', '<C-p>', '<Cmd>lua require(\'telescope.builtin\').fd({hidden=true, no_ignore=true})<CR>', opts)
 vim.keymap.set('n', '<C-f>', '<Cmd>Telescope live_grep<CR>', opts)
 vim.keymap.set('n', '<C-e>', '<Cmd>Telescope file_browser<CR>', opts)
 

@@ -14,17 +14,17 @@ vim.api.nvim_set_hl(0, '@Conditional', { fg = colors.purple })
 vim.api.nvim_set_hl(0, '@Keyword', { fg = colors.purple })
 
 vim.api.nvim_set_hl(0, '@Field', { fg = colors.blue })
-vim.api.nvim_set_hl(0, '@Variable', { fg = colors.pink })
+vim.api.nvim_set_hl(0, '@Variable', { fg = colors.orange })
 vim.api.nvim_set_hl(0, '@VariableBuiltin', { fg = colors.pink })
-vim.api.nvim_set_hl(0, '@Parameter', { fg = colors.pink })
+vim.api.nvim_set_hl(0, '@Parameter', { fg = colors.yellow })
 
-vim.api.nvim_set_hl(0, '@Property', { fg = colors.green })
+vim.api.nvim_set_hl(0, '@Property', { fg = colors.orange })
 
 vim.api.nvim_set_hl(0, '@Method', { fg = colors.blue })
 vim.api.nvim_set_hl(0, '@Include', { fg = colors.blue })
 vim.api.nvim_set_hl(0, '@Type', { fg = colors.yellow })
 
-vim.api.nvim_set_hl(0, '@PunctBracket', { fg = colors.red })
+vim.api.nvim_set_hl(0, '@PunctBracket', { fg = colors.blue })
 
 vim.api.nvim_set_hl(0, '@Constructor', { fg = colors.red })
 vim.api.nvim_set_hl(0, '@Label', { fg = colors.orange })

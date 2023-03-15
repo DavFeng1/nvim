@@ -6,14 +6,14 @@ end
 
 local actions = require "telescope.actions"
 
-telescope.setup {
+local config = {
     defaults = {
         path_display = { "truncate" },
         prompt_prefix = "🔍  ",
         selection_caret = "  ",
         entry_prefix = "   ",
         sorting_strategy = "ascending",
-        file_ignore_patterns = { "node_modules", "package-lock.json", ".git" },
+        file_ignore_patterns = { "node_modules", "package-lock.json", ".git"},
         layout_strategy = 'vertical',
         layout_config = {
             horizontal = {
@@ -39,7 +39,10 @@ telescope.setup {
     },
     pickers = {
         find_files = {
-            hidden = true,
+            find_command = {
+                'fd',
+                '-HI',
+            },
         },
         live_grep = {
             shorten_path = true,
@@ -54,6 +57,8 @@ telescope.setup {
         }
   },
 }
+
+telescope.setup(config)
 
 telescope.load_extension('fzf')
 telescope.load_extension('file_browser')
