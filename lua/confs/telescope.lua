@@ -41,7 +41,7 @@ local config = {
         find_files = {
             find_command = {
                 'fd',
-                '-HI',
+                '-H',
             },
         },
         live_grep = {
