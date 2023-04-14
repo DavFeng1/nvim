@@ -7,8 +7,8 @@ vim.cmd [[packadd packer.nvim]]
 vim.cmd( [[ let g:neo_tree_remove_lgacy_commands = 1]])
 
 require('packer').startup(function(use)
-  -- Packer can manage itself
-  use 'wbthomason/packer.nvim'
+    -- Packer can manage itself
+    use 'wbthomason/packer.nvim'
 
 	-- File Explorer
 	use {
@@ -27,8 +27,8 @@ require('packer').startup(function(use)
 	-- Fuzzy search
 	use 'nvim-lua/plenary.nvim'
 	use 'nvim-telescope/telescope.nvim'
-  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
-  use 'nvim-telescope/telescope-file-browser.nvim'
+    use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+    use 'nvim-telescope/telescope-file-browser.nvim'
 
 	-- Buffer + Tabs
 	use {'romgrk/barbar.nvim',
@@ -36,8 +36,8 @@ require('packer').startup(function(use)
 	}
 
 	--LSP
-  use "williamboman/mason.nvim"
-  use "williamboman/mason-lspconfig.nvim"
+    use "williamboman/mason.nvim"
+    use "williamboman/mason-lspconfig.nvim"
 	use 'neovim/nvim-lspconfig'
 
 	-- Indent line indicators
@@ -52,7 +52,7 @@ require('packer').startup(function(use)
 		run = ":TSUpdate",
 	}
 	use 'nvim-treesitter/playground'
-  use 'nvim-treesitter/nvim-treesitter-context'
+    use 'nvim-treesitter/nvim-treesitter-context'
 
 	-- Snippets
 	use "L3MON4D3/LuaSnip" --snippet engine
@@ -94,15 +94,15 @@ require('packer').startup(function(use)
 
 	use 'folke/neodev.nvim'
 
-  -- Debugging
-  use "mfussenegger/nvim-dap"
-  use "mxsdev/nvim-dap-vscode-js"
-  use {
-      "microsoft/vscode-js-debug",
-      opt = true,
-      run = "npm install --no-save --legacy-peer-deps && npm run compile"
-  }
-  use "rcarriga/nvim-dap-ui"
+    -- Debugging
+    use "mfussenegger/nvim-dap"
+    use "mxsdev/nvim-dap-vscode-js"
+    use {
+        "microsoft/vscode-js-debug",
+        opt = true,
+        run = "npm install --no-save --legacy-peer-deps && npm run compile"
+    }
+    use "rcarriga/nvim-dap-ui"
 
 end)
 
