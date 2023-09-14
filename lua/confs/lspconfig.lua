@@ -9,6 +9,7 @@ end
 
 local on_attach = function(client, bufnr)
   client.server_capabilities.document_formatting = true
+  client.server_capabilities.semanticTokensProvider = nil
 end
 
 local lsp_flags = {
