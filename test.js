@@ -2,9 +2,9 @@ let count = 0;
 
 console.log('string argument');
 
-const STUFF = {
+const STUFF2 = {
 	field_a: 123,
-	field_b: "1234"
+	field_b: "1234",
 	field_c: true,
 	field_d: (1, 2)
 }
