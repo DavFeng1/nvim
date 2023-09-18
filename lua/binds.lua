@@ -5,7 +5,14 @@ vim.g.mapleader = " "
 --- Keybindings
 local opts = { noremap = true, silent = true }
 
--- Save file
+
+-- Editor
+-- Move highlighted
+vim.keymap.set('v', "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv")
+
+vim.keymap.set('x', '<leader>p', "\"_dP")
+
 vim.keymap.set('n', '<C-s>', '<Cmd>w<CR>', opts)
 
 -- Clear search 
@@ -33,8 +40,8 @@ vim.keymap.set('n', '<leader>hi', '<cmd>so $VIMRUNTIME/syntax/hitest.vim<cr><cr>
 
 -- WSL copy to windows clipboard
 vim.keymap.set('v', '<Leader>y', ':<C-U>\'<,\'>w !clip.exe<cr><cr>', opts)
+
 -- Telescope
--- vim.keymap.set('n', '<C-p>', '<Cmd>lua require(\'telescope.builtin\').fd({hidden=true, no_ignore=true})<CR>', opts)
 vim.keymap.set('n', '<C-p>', '<Cmd>Telescope find_files<CR>', opts)
 vim.keymap.set('n', '<C-f>', '<Cmd>Telescope live_grep<CR>', opts)
 vim.keymap.set('n', '<C-e>', '<Cmd>Telescope file_browser<CR>', opts)
