@@ -1,4 +1,4 @@
 plugin
 .vscode
-
+**/*/dist
 .luarc.json

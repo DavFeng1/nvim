@@ -38,28 +38,31 @@ local config = {
         }
     },
     pickers = {
-        find_files = {
-            find_command = {
-                'fd',
-                '-H',
-            },
+      find_files = {
+        find_command = {
+          'fd',
+          '-H',
+          '--no-ignore-vcs',
+          '--ignore-file',
+          '~/.config/fd/ignore/.fdignore'
         },
-        live_grep = {
-            shorten_path = true,
-        },
+      },
+      live_grep = {
+          shorten_path = true,
+      },
     },
     extensions = {
-        fzf = {
-            fuzzy = true,                    -- false will only do exact matching
-            override_generic_sorter = true,  -- override the generic sorter
-            override_file_sorter = true,     -- override the file sorter
-            case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
-        }
+      fzf = {
+          fuzzy = true,                    -- false will only do exact matching
+          override_generic_sorter = true,  -- override the generic sorter
+          override_file_sorter = true,     -- override the file sorter
+          case_mode = "smart_case",        -- or "ignore_case" or "respect_case"
+      }
   },
 }
 
 telescope.setup(config)
 
-telescope.load_extension('fzf')
+-- telescope.load_extension('fzf')
 telescope.load_extension('file_browser')
 
