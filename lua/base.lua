@@ -46,7 +46,7 @@ vim.cmd[[
 --   autocmd BufWritePre *.tsx,*.ts,*.jsx,*.js EslintFixAll
 -- ]]
 
-vim.opt.scrolloff = 20
+vim.opt.scrolloff = 10
 vim.opt.laststatus = 3
 
 -- Left padding

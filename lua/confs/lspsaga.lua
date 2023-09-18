@@ -47,5 +47,8 @@ lspsaga.setup {
     kind = {
     },
   },
+  dependencies = {
+     'nvim-tree/nvim-web-devicons'
+  }
 }
 

@@ -36,8 +36,8 @@ require('packer').startup(function(use)
 	}
 
 	--LSP
-    use "williamboman/mason.nvim"
-    use "williamboman/mason-lspconfig.nvim"
+  use "williamboman/mason.nvim"
+  use "williamboman/mason-lspconfig.nvim"
 	use 'neovim/nvim-lspconfig'
 
 	-- Indent line indicators
@@ -113,7 +113,7 @@ require "confs.web-devicons"
 require "confs.cmp"
 
 -- setup lsp Installer before lspconfig
-require "confs.mason"
+require "confs.mason" -- Mason and mason-lspconfig are handled here
 require "confs.lspconfig"
 require "confs.lspsaga"
 require "confs.telescope"
