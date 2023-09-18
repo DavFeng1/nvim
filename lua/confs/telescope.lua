@@ -43,8 +43,8 @@ local config = {
           'fd',
           '-H',
           '--no-ignore-vcs',
-          '--ignore-file',
-          '~/.config/fd/ignore/.fdignore'
+          -- '--ignore-file',
+          -- '~/.config/fd/ignore/.fdignore'
         },
       },
       live_grep = {
