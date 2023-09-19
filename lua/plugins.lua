@@ -52,7 +52,7 @@ require('packer').startup(function(use)
 		run = ":TSUpdate",
 	}
 	use 'nvim-treesitter/playground'
-    use 'nvim-treesitter/nvim-treesitter-context'
+  use 'nvim-treesitter/nvim-treesitter-context'
 
 	-- Snippets
 	use "L3MON4D3/LuaSnip" --snippet engine

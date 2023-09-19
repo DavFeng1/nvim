@@ -15,6 +15,9 @@ vim.keymap.set('x', '<leader>p', "\"_dP")
 
 vim.keymap.set('n', '<C-s>', '<Cmd>w<CR>', opts)
 
+-- Close qukcflix
+vim.keymap.set('n', '<leader>c', '<Cmd>cclose<CR>', opts)
+
 -- Clear search 
 vim.keymap.set('n', '<Leader><Space>', ':noh<CR>', opts)
 
