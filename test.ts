@@ -2,6 +2,11 @@ let count = 0;
 
 console.log('string argument');
 
+
+type Four = {
+  hi: number
+}
+
 const STUFF = {
 	field_a: 123,
 	field_b: "1234",

@@ -31,6 +31,7 @@ function M.eval()
 	return '%#WinBarPath#'
 		.. ' '
 		.. file_path
+    .. ' '
 		.. file_icon_with_hl
 		.. ' '
 		.. '%#WinBarFileName#'

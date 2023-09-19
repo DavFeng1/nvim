@@ -10,7 +10,7 @@ lspsaga.setup {
   hint_sign = '',
   infor_sign = '',
 	symbol_in_winbar = {
-		in_custom = true
+    enable = true,
 	},
   ui = {
     -- Currently, only the round theme exists

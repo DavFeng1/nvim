@@ -34,6 +34,9 @@ vim.api.nvim_set_hl(0, 'PmenuSbar', { fg = colors.white, bg = colors.background2
 vim.api.nvim_set_hl(0, 'PmenuThumb', { bg = colors.red })
 vim.api.nvim_set_hl(0, 'Search', { fg = colors.pmenu_sel_bg })
 
+vim.api.nvim_set_hl(0, 'PreProc', { fg = colors.dark_purple })
+vim.api.nvim_set_hl(0, 'Title', { fg = colors.dark_purple })
+
 -- SPlit
 vim.api.nvim_set_hl(0, 'WinSeparator', { fg = colors.red })
 vim.api.nvim_set_hl(0, 'Visual', { bg = colors.lightbg })
