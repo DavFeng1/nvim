@@ -46,6 +46,14 @@ lspsaga.setup {
     },
     kind = {
     },
+    outline = {
+      win_width = 100,
+      win_position = 'right',
+      auto_close = true,
+      layout = 'normal',
+      auto_preview = false,
+      detail = true,
+    },
   },
   dependencies = {
      'nvim-tree/nvim-web-devicons'
