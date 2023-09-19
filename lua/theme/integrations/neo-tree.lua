@@ -14,10 +14,11 @@ vim.api.nvim_set_hl(0, 'NeoTreeGitModified', { fg = colors.neo_tree_modified })
 
 
 -- Winbar 
-vim.api.nvim_set_hl(0, 'NeoTreeTabActive', { bg = colors.neo_tree_background })
+vim.api.nvim_set_hl(0, 'NeoTreeTabActive', { fg = colors.dark_blue, bg = colors.neo_tree_background })
 vim.api.nvim_set_hl(0, 'NeoTreeTabSeparatorActive', { bg = colors.neo_tree_background })
-vim.api.nvim_set_hl(0, 'NeoTreeTabInactive', { })
+vim.api.nvim_set_hl(0, 'NeoTreeTabInactive', { fg = colors.grey, bg = colors.neo_tree_background })
 vim.api.nvim_set_hl(0, 'NeoTreeTabSeparatorInactive', { })
+
 
 -- Root
 vim.api.nvim_set_hl(0, 'NeoTreeRootName', { fg = colors.white })

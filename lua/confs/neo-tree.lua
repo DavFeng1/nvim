@@ -85,11 +85,12 @@ neo_tree.setup ({
 	},
 	source_selector = {
 		winbar = true,
+    statusline = false
 	},
   window = {
       position = "left", -- left, right, top, bottom, float, current
       width = 40,
-      height = 15,
+      height = 20,
   },
 })
 

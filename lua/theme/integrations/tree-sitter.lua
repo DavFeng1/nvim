@@ -5,7 +5,7 @@ vim.api.nvim_set_hl(0, 'Type', { fg = colors.yellow })
 
 -- " TREESITTER
 vim.api.nvim_set_hl(0, '@comment', { fg = colors.grey })
-vim.api.nvim_set_hl(0, '@string', { fg = colors.green})
+vim.api.nvim_set_hl(0, '@string', { fg = colors.green })
 vim.api.nvim_set_hl(0, '@constant', { fg = colors.pink })
 vim.api.nvim_set_hl(0, '@KeywordFunction', { fg = colors.purple })
 vim.api.nvim_set_hl(0, '@function', { fg = colors.dark_blue })
