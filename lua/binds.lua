@@ -50,7 +50,7 @@ vim.keymap.set('n', '<C-f>', '<Cmd>Telescope live_grep<CR>', opts)
 vim.keymap.set('n', '<C-e>', '<Cmd>Telescope file_browser<CR>', opts)
 
 -- Neo Tree
-vim.keymap.set('n', '<Leader>e', '<cmd>NeoTreeShowToggle<cr>', opts)
+vim.keymap.set('n', '<Leader>e', '<cmd>Neotree toggle<cr>', opts)
 
 -- Bufferline
 vim.keymap.set('n', '<Leader>1', '<Cmd>BufferGoto 1<CR>', opts)
