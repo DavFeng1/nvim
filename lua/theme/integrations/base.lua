@@ -16,6 +16,7 @@ vim.api.nvim_set_hl(0, 'Statement', {fg = colors.purple })
 vim.api.nvim_set_hl(0, 'Search', {fg = colors.black, bg = colors.pink })
 vim.api.nvim_set_hl(0, 'Todo', {fg = colors.black, bg = colors.yellow })
 vim.api.nvim_set_hl(0, 'Folded', {fg = colors.grey })
+vim.api.nvim_set_hl(0, 'DiagnosticUnderlineError', { gui = nil })
 
 -- Statusline
 vim.api.nvim_set_hl(0, 'StatusLine', {fg = colors.yellow})
