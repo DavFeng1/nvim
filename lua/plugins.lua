@@ -94,15 +94,18 @@ require('packer').startup(function(use)
 
 	use 'folke/neodev.nvim'
 
-    -- Debugging
-    use "mfussenegger/nvim-dap"
-    use "mxsdev/nvim-dap-vscode-js"
-    use {
-        "microsoft/vscode-js-debug",
-        opt = true,
-        run = "npm install --no-save --legacy-peer-deps && npm run compile"
-    }
-    use "rcarriga/nvim-dap-ui"
+  -- Debugging
+  use "mfussenegger/nvim-dap"
+  use "mxsdev/nvim-dap-vscode-js"
+  use {
+      "microsoft/vscode-js-debug",
+      opt = true,
+      run = "npm install --no-save --legacy-peer-deps && npm run compile"
+  }
+  use "rcarriga/nvim-dap-ui"
+
+  -- Latex
+  use 'lervag/vimtex'
 
 end)
 
