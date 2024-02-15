@@ -1,11 +1,9 @@
-local present, blankline = pcall(require, "indent_blankline")
+local present, blankline = pcall(require, "ibl")
 
 if not present then
-	return
+  return
 end
 
 
-blankline.setup {
-	show_current_context = true,
-}
+blankline.setup()
 

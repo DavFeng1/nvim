@@ -4,13 +4,17 @@ console.log('string argument');
 
 
 type Four = {
-  hi: number
+  hi: number,
+  {
+    hello: 'world',
+    goodbye: 'world',
+  }
 }
 
 const STUFF = {
-	field_a: 123,
-	field_b: "1234",
-	field_c: true,
+  field_a: 123,
+  field_b: "1234",
+  field_c: true,
 }
 
 // WARN: abcdef

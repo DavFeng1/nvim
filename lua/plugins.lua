@@ -41,7 +41,7 @@ require('packer').startup(function(use)
 	use 'neovim/nvim-lspconfig'
 
 	-- Indent line indicators
-	use 'lukas-reineke/indent-blankline.nvim'
+	use {'lukas-reineke/indent-blankline.nvim', main = 'ibl', opts = {}}
 
 	-- Status line
 	use 'nvim-lualine/lualine.nvim'
