@@ -90,7 +90,10 @@ require('packer').startup(function(use)
 	use 'norcalli/nvim-colorizer.lua'
 
 	-- Lsp saga
-	use 'glepnir/lspsaga.nvim'
+	use {'glepnir/lspsaga.nvim',
+    requires = {'kyazdani42/nvim-web-devicons'}
+  }
+
 
 	use 'folke/neodev.nvim'
 

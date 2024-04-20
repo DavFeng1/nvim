@@ -47,7 +47,7 @@ vim.opt.expandtab = true
 vim.opt.smartindent = true
 
 -- Chars
-
+vim.opt.encoding = 'utf-8'
 vim.opt.list = true
 -- vim.opt.listchars:append "space:⋅"
 

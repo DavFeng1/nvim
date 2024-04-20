@@ -5,7 +5,7 @@ console.log('string argument');
 
 type Four = {
   hi: number,
-  {
+  bean: {
     hello: 'world',
     goodbye: 'world',
   }
@@ -16,6 +16,9 @@ const STUFF = {
   field_b: "1234",
   field_c: true,
 }
+
+// An error here
+dafasd
 
 // WARN: abcdef
 console.log(STUFF)
