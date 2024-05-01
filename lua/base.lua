@@ -12,7 +12,6 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] =
     update_in_insert = false
   })
 
-
 vim.wo.wrap = true
 
 -- Folding
@@ -48,7 +47,7 @@ vim.opt.smartindent = true
 
 -- Chars
 vim.opt.encoding = 'utf-8'
-vim.opt.list = true
+-- vim.opt.list = true
 -- vim.opt.listchars:append "space:⋅"
 
 -- " Note the space after the /
