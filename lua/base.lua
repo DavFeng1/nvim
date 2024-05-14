@@ -56,9 +56,9 @@ vim.cmd[[
     set fillchars+=fold:\ 
 ]]
 
--- vim.cmd [[
---   autocmd BufWritePre *.tsx,*.ts,*.jsx,*.js EslintFixAll
--- ]]
+vim.cmd [[
+  autocmd BufWritePre *.tsx,*.ts,*.jsx,*.js EslintFixAll
+]]
 
 vim.opt.clipboard = 'unnamedplus'
 vim.opt.scrolloff = 10
