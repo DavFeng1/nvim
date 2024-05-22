@@ -88,9 +88,9 @@ neo_tree.setup ({
     statusline = false
 	},
   window = {
-      position = "right", -- left, right, top, bottom, float, current
-      width = 40,
-      height = 20,
+      position = "float", -- left, right, top, bottom, float, current
+      width = 100,
+      height = 30,
   },
 })
 

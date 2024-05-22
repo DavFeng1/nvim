@@ -10,6 +10,7 @@ vim.api.nvim_set_hl(0, '@constant', { fg = colors.pink })
 vim.api.nvim_set_hl(0, '@KeywordFunction', { fg = colors.purple })
 vim.api.nvim_set_hl(0, '@function', { fg = colors.dark_blue })
 vim.api.nvim_set_hl(0, '@function.call', { fg = colors.blue })
+vim.api.nvim_set_hl(0, '@function.builtin', { fg = colors.blue })
 
 vim.api.nvim_set_hl(0, '@conditional', { fg = colors.purple })
 vim.api.nvim_set_hl(0, '@keyword', { fg = colors.purple })

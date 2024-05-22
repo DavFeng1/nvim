@@ -43,7 +43,7 @@ vim.api.nvim_set_hl(0, 'Visual', { bg = colors.lightbg })
 
 -- Characters
 vim.api.nvim_set_hl(0, 'MatchParen', { fg = colors.black, bg = colors.blue })
-vim.api.nvim_set_hl(0, 'Directory', { fg = colors.cyan })
+vim.api.nvim_set_hl(0, 'Directory', { fg = colors.blue })
 vim.api.nvim_set_hl(0, 'NonText', { fg = colors.grey })
 
 -- Diagnostic
