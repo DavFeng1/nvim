@@ -51,7 +51,7 @@ local M = {
 	diagnostics_error = "#f14c4c",
 
 	-- Neo Tree
-	neo_tree_background = "#001733",
+	neo_tree_background = "#001126",
 	neo_tree_modified = "#e2a974",
 	neo_tree_root_background = "#1a304d",
 	neo_tree_winbar_background = "#1a304d",
