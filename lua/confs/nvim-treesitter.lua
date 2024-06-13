@@ -4,6 +4,7 @@ if not status_ok then
 end
 
 configs.setup {
+    opts_extend = { "ensure_installed" },
     ensure_installed = {
       "lua",
       "python",
