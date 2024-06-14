@@ -1,5 +1,7 @@
 -- lazy vim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+
+local lspPlugins = require('../plugins/lsp/init.lua')
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   vim.fn.system({
     "git",
@@ -47,6 +49,33 @@ local plugins = {
       "hrsh7th/cmp-buffer",
       "hrsh7th/cmp-path",
     }
+  },
+  {
+    'windwp/nvim-autopairs',
+    event = "InsertEnter",
+    config = true
+    -- use opts = {} for passing setup options
+    -- this is equalent to setup({}) function
+  },
+  {
+    "neovim/nvim-lspconfig",
+    -- event = "LazyFile", TODO 
+    dependencies = {
+      "mason.nvim",
+      "williamboman/mason-lspconfig.nvim",
+    },
+  },
+  {
+    "williamboman/mason.nvim",
+    cmd = "Mason",
+    build = ":MasonUpdate",
+    opts_extend = { "ensure_installed" },
+    opts = {
+      ensure_installed = {
+        "stylua",
+        "shfmt",
+      },
+    },
   }
 }
 
@@ -57,39 +86,34 @@ require "confs.nvim-treesitter"
 require "confs.neo-tree"
 
 ---- Configs
--- require "confs.web-devicons"
--- require "confs.cmp"
+require "confs.web-devicons"
+require "confs.cmp"
 
 -- setup lsp Installer before lspconfig
--- require "confs.mason" -- Mason and mason-lspconfig are handled here
--- require "confs.lspconfig"
--- require "confs.lspsaga"
+require "confs.mason" -- Mason and mason-lspconfig are handled here
+require "confs.lspconfig"
+require "confs.lspsaga"
 
 -- Setup treesitter
--- require "confs.nvim-treesitter-context"
+require "confs.nvim-treesitter-context"
 
 -- Debugger
--- require "confs.nvim-dap"
--- require "confs.dap-ui"
+require "confs.nvim-dap"
+require "confs.dap-ui"
 
 --- Editor functionality
--- require "confs.nvim-autopairs"
+require "confs.nvim-autopairs"
 
 -- UI
--- require "confs.indent-blankline"
--- require "confs.barbar"
--- require "confs.lualine"
--- require "confs.which-key"
--- require "confs.comment"
--- require "confs.gitsigns"
--- require "confs.alpha-nvim"
--- require "confs.nvim-colorizer"
+require "confs.indent-blankline"
+require "confs.barbar"
+require "confs.lualine"
+require "confs.which-key"
+require "confs.comment"
+require "confs.gitsigns"
+require "confs.alpha-nvim"
+require "confs.nvim-colorizer"
 
-
-
--- packer
--- Only required if you have packer configured as `opt`
--- vim.cmd [[packadd packer.nvim]]
 
 -- Remove legacy commands to neo-tree
 vim.cmd( [[ let g:neo_tree_remove_lgacy_commands = 1]])
