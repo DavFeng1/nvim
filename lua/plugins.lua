@@ -1,7 +1,8 @@
 -- lazy vim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 
-local lspPlugins = require('../plugins/lsp/init.lua')
+local lspPlugins = require 'plugins.lsp.init'
+
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
   vim.fn.system({
     "git",
