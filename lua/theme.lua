@@ -10,6 +10,7 @@ require "theme.integrations.gitsigns"
 require "theme.integrations.which-key"
 require "theme.integrations.lspsaga"
 require "theme.integrations.alpha"
+require "theme.integrations.notify"
 
 -- Custom
 require "theme.winbar"

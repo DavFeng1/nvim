@@ -109,6 +109,9 @@ local plugins = {
   },
   {
   'norcalli/nvim-colorizer.lua'
+  },
+  {
+    'rcarriga/nvim-notify'
   }
 }
 
@@ -117,6 +120,7 @@ require("lazy").setup(plugins)
 require "confs.telescope"
 require "confs.nvim-treesitter"
 require "confs.neo-tree"
+require "confs.notify"
 
 ---- Configs
 require "confs.web-devicons"

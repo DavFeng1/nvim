@@ -7,13 +7,19 @@ end
 
 require("alpha.term")
 
+local logo = {
+   "#    # #####  ###### ###### #    #  ####        #    # #   # ######",
+   "#    # #    # #      #      ##   # #    #        #  #   # #      # ",
+   "###### #    # #####  #####  # #  # #              ##     #      #  ",
+   "#    # #####  #      #      #  # # #  ###         ##     #     #   ", 
+   "#    # #   #  #      #      #   ## #    #  ###   #  #    #    #    ",
+   "#    # #    # #      ###### #    #  ####   ###  #    #   #   ######" 
+}
 
+dashboard.section.header.val = logo
 dashboard.section.buttons.val = {
     dashboard.button("CTRL P", "  Find File  ", ":Telescope find_files<CR>"),
-    dashboard.button("SPC f o", "  Recent File  ", ":Telescope oldfiles<CR>"),
-    dashboard.button("CTRL F", "  Find Word  ", ":Telescope live_grep<CR>"),
-    dashboard.button("SPC b m", "  Bookmarks  ", ":Telescope marks<CR>"),
-    dashboard.button("u", "   Update plugins", ":PackerSync <CR>"),
+    dashboard.button("u", "   Configure plugins", ":Lazy <CR>"),
     dashboard.button("q", "   Quit Neovim", ":qa<CR>"),
 }
 
