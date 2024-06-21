@@ -56,11 +56,3 @@ vim.api.nvim_set_hl(0, 'DiagnosticUnderlineError', { fg = colors.diagnostics_err
 vim.api.nvim_set_hl(0, 'DiagnosticUnderlineInfo',  {fg = colors.white})
 
 
--- Diagnostic signs
-local signs = { Error = " ", Warn = " ", Hint = " ", Info = " " }
-for type, icon in pairs(signs) do
-  local hl = "DiagnosticSign" .. type
-  vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = hl })
-end
-
-
