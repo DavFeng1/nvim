@@ -10,7 +10,6 @@ end
 
 require("luasnip/loaders/from_vscode").lazy_load()
 
---   פּ ﯟ   some other good icons
 local kind_icons = {
    Namespace = "",
    Text = " ",

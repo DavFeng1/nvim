@@ -82,7 +82,7 @@ vim.keymap.set('n', '<leader>o', '<Cmd>Lspsaga outline<CR>', opts)
 vim.keymap.set('n', '<C-b>', '<Cmd> lua require\'dap\'.toggle_breakpoint() <CR>', opts)
 vim.keymap.set('n', '<S-k>', '<Cmd> lua require\'dap\'.step_out() <CR>', opts)
 vim.keymap.set('n', '<S-l>', '<Cmd> lua require\'dap\'.step_into() <CR>', opts)
-vim.keymap.set('n', '<S-j>', '<Cmd> lua require\'dap\'.step_over() <CR>', opts)
+-- vim.keymap.set('n', '<S-j>', '<Cmd> lua require\'dap\'.step_over() <CR>', opts)
 vim.keymap.set('n', '<leader>dc', '<Cmd> DapContinue <CR>')
 vim.keymap.set('n', '<leader>du', '<Cmd> lua require\'dapui\'.toggle() <CR>')
 

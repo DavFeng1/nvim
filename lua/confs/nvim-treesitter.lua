@@ -17,7 +17,8 @@ configs.setup {
       "git_config",
       "markdown",
       "markdown_inline",
-      "json"
+      "json",
+      "vimdoc"
     },
     sync_install = false, -- install languages synchronously (only applied to `ensure_installed`)
     ignore_install = { "all" }, -- List of parsers to ignore installing

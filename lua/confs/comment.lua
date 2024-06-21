@@ -6,6 +6,6 @@ end
 
 comment.setup {
 	toggler = {
-		line = "<C-_>",
+		line = "<C-/>",
 	},
 }

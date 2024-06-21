@@ -19,11 +19,11 @@ vim.opt.rtp:prepend(lazypath)
 local plugins = {
   "folke/which-key.nvim",
   { 
+    -- Conf management (unsused)
     "folke/neoconf.nvim", 
     cmd = "Neoconf" 
   },
-  "folke/neodev.nvim",
-	"nvim-telescope/telescope.nvim",
+  { "nvim-telescope/telescope.nvim" },
   { 
     'nvim-telescope/telescope-fzf-native.nvim', 
     build = 'make' 
@@ -42,15 +42,6 @@ local plugins = {
       -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
     }
   },
-  -- auto completion
-  {
-    "hrsh7th/nvim-cmp",
-    dependencies= {
-      "hrsh7th/cmp-nvim-lsp",
-      "hrsh7th/cmp-buffer",
-      "hrsh7th/cmp-path",
-    }
-  },
   {
     'windwp/nvim-autopairs',
     event = "InsertEnter",
@@ -66,17 +57,58 @@ local plugins = {
       "williamboman/mason-lspconfig.nvim",
     },
   },
+  -- auto completion
+  {
+    "hrsh7th/nvim-cmp",
+    dependencies= {
+      "hrsh7th/cmp-nvim-lsp",
+      "hrsh7th/cmp-buffer",
+      "hrsh7th/cmp-path",
+      "hrsh7th/cmp-emoji",
+      -- snippets
+      "saadparwaiz1/cmp_luasnip",
+      "L3MON4D3/LuaSnip",
+      "rafamadriz/friendly-snippets"
+    },
+  },
   {
     "williamboman/mason.nvim",
     cmd = "Mason",
     build = ":MasonUpdate",
-    opts_extend = { "ensure_installed" },
+    -- TODO: from lazyvim
+    -- opts_extend = { "ensure_installed" },
     opts = {
       ensure_installed = {
         "stylua",
         "shfmt",
       },
     },
+  },
+  {
+    "folke/lazydev.nvim",
+    ft = "lua", -- only load on lua files
+    opts = {
+      library = {
+        -- See the configuration section for more details
+        -- Load luvit types when the `vim.uv` word is found
+        { path = "luvit-meta/library", words = { "vim%.uv" } },
+      },
+    },
+  },
+  {
+    "numToStr/Comment.nvim"
+  },
+  {
+    'lewis6991/gitsigns.nvim'
+  },
+  { 'nvim-lualine/lualine.nvim'},
+  { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
+  { 'goolord/alpha-nvim'},
+  {
+    'romgrk/barbar.nvim'
+  },
+  {
+  'norcalli/nvim-colorizer.lua'
   }
 }
 
@@ -88,12 +120,15 @@ require "confs.neo-tree"
 
 ---- Configs
 require "confs.web-devicons"
-require "confs.cmp"
 
 -- setup lsp Installer before lspconfig
 require "confs.mason" -- Mason and mason-lspconfig are handled here
 require "confs.lspconfig"
 require "confs.lspsaga"
+
+
+-- Autocomplete
+require "confs.cmp"
 
 -- Setup treesitter
 require "confs.nvim-treesitter-context"
@@ -119,75 +154,11 @@ require "confs.nvim-colorizer"
 -- Remove legacy commands to neo-tree
 vim.cmd( [[ let g:neo_tree_remove_lgacy_commands = 1]])
 
--- require('packer').startup(function(use)
---     -- Packer can manage itself
---     use 'wbthomason/packer.nvim'
---
--- 	-- Dev Icons
--- 	use 'kyazdani42/nvim-web-devicons'
---
 -- 	-- Fuzzy search
 --   use 'nvim-lua/plenary.nvim'
 --
--- 	-- Buffer + Tabs
--- 	use {'romgrk/barbar.nvim',
--- 		-- requires = {'kyazdani42/nvim-web-devicons'}
--- 	}
---
--- 	--LSP
---   use "williamboman/mason.nvim"
---   use "williamboman/mason-lspconfig.nvim"
--- 	use 'neovim/nvim-lspconfig'
---
--- 	-- Indent line indicators
--- 	use {'lukas-reineke/indent-blankline.nvim', main = 'ibl', opts = {}}
---
--- 	-- Status line
--- 	use 'nvim-lualine/lualine.nvim'
---
---
--- 	-- Snippets
--- 	use "L3MON4D3/LuaSnip" --snippet engine
--- 	use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
---
--- 	-- Autocomplete
--- 	use "hrsh7th/nvim-cmp" -- The completion plugin
--- 	use "hrsh7th/cmp-buffer" -- buffer completions
--- 	use "hrsh7th/cmp-path" -- path completions
--- 	use "hrsh7th/cmp-cmdline" -- cmdline completions
---
--- 	-- Integration
--- 	use "hrsh7th/cmp-nvim-lsp"
--- 	use "saadparwaiz1/cmp_luasnip" -- snippet completions
---
--- 	-- Whichkey
--- 	use 'folke/which-key.nvim'
---
 -- 	-- Theme
 -- 	use 'base16-project/base16-vim'
---
--- 	-- Comment toggling
--- 	use 'numToStr/Comment.nvim'
---
--- 	-- Git signs
--- 	use 'lewis6991/gitsigns.nvim'
---
--- 	-- Auto pairs
--- 	use 'windwp/nvim-autopairs'
---
--- 	-- Dashboard
--- 	use 'goolord/alpha-nvim'
---
--- 	-- Colorizer
--- 	use 'norcalli/nvim-colorizer.lua'
---
--- 	-- Lsp saga
--- 	use {'glepnir/lspsaga.nvim',
---     requires = {'kyazdani42/nvim-web-devicons'}
---   }
---
---
--- 	use 'folke/neodev.nvim'
 --
 --   -- Debugging
 --   use "mfussenegger/nvim-dap"
@@ -204,5 +175,4 @@ vim.cmd( [[ let g:neo_tree_remove_lgacy_commands = 1]])
 --
 -- end)
 
---- Initialize all plugins
 
