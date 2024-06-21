@@ -18,11 +18,12 @@ vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
   "folke/which-key.nvim",
-  { 
-    -- Conf management (unsused)
-    "folke/neoconf.nvim", 
-    cmd = "Neoconf" 
-  },
+  { 'rcarriga/nvim-notify' },
+  -- Conf management
+  -- { 
+  --   "folke/neoconf.nvim", 
+  --   cmd = "Neoconf" 
+  -- },
   { "nvim-telescope/telescope.nvim" },
   { 
     'nvim-telescope/telescope-fzf-native.nvim', 
@@ -110,9 +111,6 @@ local plugins = {
   {
   'norcalli/nvim-colorizer.lua'
   },
-  {
-    'rcarriga/nvim-notify'
-  }
 }
 
 require("lazy").setup(plugins)

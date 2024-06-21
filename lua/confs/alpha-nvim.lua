@@ -7,19 +7,18 @@ end
 
 require("alpha.term")
 
-local logo = {
-   "#    # #####  ###### ###### #    #  ####        #    # #   # ######",
-   "#    # #    # #      #      ##   # #    #        #  #   # #      # ",
-   "###### #    # #####  #####  # #  # #              ##     #      #  ",
-   "#    # #####  #      #      #  # # #  ###         ##     #     #   ", 
-   "#    # #   #  #      #      #   ## #    #  ###   #  #    #    #    ",
-   "#    # #    # #      ###### #    #  ####   ###  #    #   #   ######" 
-}
+local logo = [[
+  ⠀⠀⣀⣀⡀⠀⠀⣀⣀⣀⣀⣀⣀⠀⠀⠀⣀⣀⣀⠀⠀⠀⠀⠀⣀⣀⠀⠀⠀⠀⣀⣀⡀⠀⢀⣀⡀⠀⢀⣀⣀⣀⣀⣀⡀⠀⠀
+  ⣴⣿⠟⠛⢿⣦⡀⣿⡟⠛⠛⠛⣿⣷⣰⣿⠟⠛⢿⣷⡄⢠⣠⣤⣿⠻⠗⠀⣴⣿⠟⠛⢿⣦⣸⣿⣧⣾⡿⢛⣿⡿⠟⠻⣿⣦⠀
+  ⣿⡇⠀⠀⠀⣿⡇⣿⣷⣄⡀⠀⠉⠁⣿⣇⠀⠀⠀⣿⡇⣀⡉⠻⢿⣶⣄⡰⣿⣇⠀⠀⠀⣿⡿⣿⣿⣅⡀⢸⣿⡀⠀⠀⢸⣿⠀
+  ⠙⠿⣷⣶⣦⣿⡇⠛⠋⠛⢿⣷⣤⡀⠙⠿⣷⣶⡦⣿⡇⢿⣷⣶⣶⣿⣿⣿⠙⠿⣷⣶⡆⣿⡟⠛⠋⠻⢿⣶⣿⣿⣷⣶⣼⣿
+]]
 
-dashboard.section.header.val = logo
+dashboard.section.header.val = vim.split(logo, "\n")
 dashboard.section.buttons.val = {
     dashboard.button("CTRL P", "  Find File  ", ":Telescope find_files<CR>"),
-    dashboard.button("u", "   Configure plugins", ":Lazy <CR>"),
+    dashboard.button("p", "   Configure plugins", ":Lazy <CR>"),
+    dashboard.button("l", "   Configure lsp ", ":Mason <CR>"),
     dashboard.button("q", "   Quit Neovim", ":qa<CR>"),
 }
 
