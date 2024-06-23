@@ -75,7 +75,7 @@ cmp.setup {
 		["<C-k>"] = cmp.mapping.select_prev_item(),
 		["<C-j>"] = cmp.mapping.select_next_item(),
 		-- Set `select` to `false` to only confirm explicitly selected items.
-		["<CR>"] = cmp.mapping.confirm { select = true },
+		["<CR>"] = cmp.mapping.confirm { select = false },
 	},
 	formatting = {
 		fields = { "kind", "abbr", "menu" },
