@@ -13,7 +13,6 @@ type Four = {
 
 
 
-
 const STUFF = {
   field_a: 123,
   field_b: "1234",
@@ -24,7 +23,7 @@ const STUFF = {
 // WARN: abcdef
 console.log(STUFF)
 
-for (let i = 0; i < 50; i ++) {
+for (let i = 0; i < 50; i++) {
   console.log("got ", i);
 };
 

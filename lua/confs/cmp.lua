@@ -74,8 +74,7 @@ cmp.setup({
 		["<S-j>"] = cmp.mapping.scroll_docs(1),
 		["<C-k>"] = cmp.mapping.select_prev_item(),
 		["<C-j>"] = cmp.mapping.select_next_item(),
-		-- TODO: does't work
-		-- ["<C-Space>"] = cmp.mapping.open_docs(),
+		-- TODO: toggle completion window
 		-- Set `select` to `false` to only confirm explicitly selected items.
 		["<CR>"] = cmp.mapping.confirm({ select = false }),
 	},
