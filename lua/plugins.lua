@@ -1,7 +1,9 @@
 -- lazy vim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 
-local lspPlugins = require("plugins.lsp.init")
+local coding_plugins = require("plugins.coding")
+local lsp_plugins = require("plugins.lsp")
+local ui_plugins = require("plugins.ui")
 
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
 	vim.fn.system({
@@ -19,119 +21,9 @@ vim.opt.rtp:prepend(lazypath)
 local plugins = {
 	{ "rcarriga/nvim-notify" },
 	"folke/which-key.nvim",
-	{
-		"stevearc/conform.nvim",
-		lazy = true,
-		cmd = "ConformInfo",
-		opts = function()
-			local plugin = require("lazy.core.config").plugins["conform.nvim"]
-			---@class ConformOpts
-			local opts = {
-				---@type table<string, conform.FormatterUnit[]>
-				formatters_by_ft = {
-					lua = { "stylua" },
-				},
-				format_on_save = {
-					-- These options will be passed to conform.format()
-					timeout_ms = 500,
-					lsp_format = "fallback",
-				},
-			}
-			return opts
-		end,
-	},
-	-- Conf management
-	-- {
-	--   "folke/neoconf.nvim",
-	--   cmd = "Neoconf"
-	-- },
-	{ "nvim-telescope/telescope.nvim" },
-	{
-		"nvim-telescope/telescope-fzf-native.nvim",
-		build = "make",
-	},
-	{
-		"nvim-treesitter/nvim-treesitter",
-		build = ":TSUpdate",
-	},
-	{
-		"nvim-neo-tree/neo-tree.nvim",
-		branch = "v3.x",
-		dependencies = {
-			"nvim-lua/plenary.nvim",
-			"nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
-			"MunifTanjim/nui.nvim",
-			-- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
-		},
-	},
-	{
-		"windwp/nvim-autopairs",
-		event = "InsertEnter",
-		config = true,
-		-- use opts = {} for passing setup options
-		-- this is equalent to setup({}) function
-	},
-	{
-		"neovim/nvim-lspconfig",
-		-- event = "LazyFile", TODO
-		dependencies = {
-			"mason.nvim",
-			"williamboman/mason-lspconfig.nvim",
-		},
-	},
-	-- auto completion
-	{
-		"hrsh7th/nvim-cmp",
-		dependencies = {
-			"hrsh7th/cmp-nvim-lsp",
-			"hrsh7th/cmp-buffer",
-			"hrsh7th/cmp-path",
-			"hrsh7th/cmp-emoji",
-			-- snippets
-			"saadparwaiz1/cmp_luasnip",
-			"L3MON4D3/LuaSnip",
-			"rafamadriz/friendly-snippets",
-		},
-	},
-	{
-		"williamboman/mason.nvim",
-		cmd = "Mason",
-		build = ":MasonUpdate",
-		-- TODO: from lazyvim
-		-- opts_extend = { "ensure_installed" },
-		opts = {
-			ensure_installed = {
-				"stylua",
-				"shfmt",
-			},
-		},
-	},
-	{
-		"folke/lazydev.nvim",
-		ft = "lua", -- only load on lua files
-		opts = {
-			library = {
-				-- See the configuration section for more details
-				-- Load luvit types when the `vim.uv` word is found
-				{ path = "luvit-meta/library", words = { "vim%.uv" } },
-			},
-		},
-	},
-	{
-		"numToStr/Comment.nvim",
-	},
-	{
-		"lewis6991/gitsigns.nvim",
-	},
-	{ "nvim-lualine/lualine.nvim" },
-	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
-	{ "goolord/alpha-nvim" },
-	{
-		"romgrk/barbar.nvim",
-	},
-	{
-		"norcalli/nvim-colorizer.lua",
-	},
+	coding_plugins,
+	lsp_plugins,
+	ui_plugins,
 }
 
 require("lazy").setup(plugins)
@@ -171,9 +63,6 @@ require("confs.comment")
 require("confs.gitsigns")
 require("confs.alpha-nvim")
 require("confs.nvim-colorizer")
-
--- Remove legacy commands to neo-tree
-vim.cmd([[ let g:neo_tree_remove_lgacy_commands = 1]])
 
 -- 	-- Fuzzy search
 --   use 'nvim-lua/plenary.nvim'
