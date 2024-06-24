@@ -31,7 +31,6 @@ vim.opt.incsearch = true
 
 vim.opt.termguicolors = true
 vim.opt.backspace = "indent,eol,start"
-
 vim.opt.number = true
 vim.opt.relativenumber = true
 
