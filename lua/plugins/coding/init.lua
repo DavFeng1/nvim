@@ -1,4 +1,7 @@
+local telescope = require("plugins.coding.telescope")
+
 return {
+	telescope,
 	{
 		"stevearc/conform.nvim",
 		lazy = false,
@@ -20,16 +23,6 @@ return {
 			}
 			return opts
 		end,
-	},
-	-- Conf management
-	-- {
-	--   "folke/neoconf.nvim",
-	--   cmd = "Neoconf"
-	-- },
-	{ "nvim-telescope/telescope.nvim" },
-	{
-		"nvim-telescope/telescope-fzf-native.nvim",
-		build = "make",
 	},
 	{
 		"nvim-treesitter/nvim-treesitter",

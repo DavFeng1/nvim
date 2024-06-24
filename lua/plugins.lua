@@ -1,9 +1,9 @@
 -- lazy vim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 
-local coding_plugins = require("plugins.coding")
-local lsp_plugins = require("plugins.lsp")
-local ui_plugins = require("plugins.ui")
+local coding_plugins = require("plugins.coding.init")
+local lsp_plugins = require("plugins.lsp.init")
+local ui_plugins = require("plugins.ui.init")
 
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
 	vim.fn.system({
@@ -19,17 +19,14 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
-	{ "rcarriga/nvim-notify" },
-	"folke/which-key.nvim",
+	ui_plugins,
 	coding_plugins,
 	lsp_plugins,
-	ui_plugins,
 }
 
 require("lazy").setup(plugins)
 
-require("confs.notify")
-require("confs.telescope")
+-- require("confs.telescope")
 require("confs.nvim-treesitter")
 require("confs.neo-tree")
 
