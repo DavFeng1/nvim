@@ -29,7 +29,7 @@ require("lazy").setup(plugins)
 require("confs.nvim-treesitter")
 require("confs.neo-tree")
 
----- Configs
+-- Configs
 require("confs.web-devicons")
 
 -- setup lsp Installer before lspconfig
@@ -55,7 +55,6 @@ require("confs.indent-blankline")
 require("confs.barbar")
 require("confs.lualine")
 require("confs.which-key")
-require("confs.comment")
 require("confs.gitsigns")
 require("confs.alpha-nvim")
 require("confs.nvim-colorizer")
