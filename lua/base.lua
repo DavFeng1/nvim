@@ -1,13 +1,13 @@
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
-	-- Disable underline, it's very annoying
-	underline = false,
-	virtual_text = false,
-	-- Enable virtual text, override spacing to 4
-	-- virtual_text = {spacing = 4},
-	-- Use a function to dynamically turn signs off
-	-- and on, using buffer local variables
-	signs = true,
-	update_in_insert = false,
+  -- Disable underline, it's very annoying
+  underline = false,
+  virtual_text = false,
+  -- Enable virtual text, override spacing to 4
+  -- virtual_text = {spacing = 4},
+  -- Use a function to dynamically turn signs off
+  -- and on, using buffer local variables
+  signs = true,
+  update_in_insert = false,
 })
 
 vim.wo.wrap = true
@@ -20,10 +20,13 @@ vim.opt.foldlevelstart = 99
 -- Dont conitnue comments on next line after enter
 vim.cmd([[autocmd FileType * set formatoptions-=cro]])
 
+-- Set syntax to shell for envrc
+vim.cmd([[autocmd BufNewFile,BufRead *.envrc set syntax=sh]])
+
 function _G.customFoldText()
-	-- local line = vim.fn.getline(vim.v.foldstart)
-	local line_count = vim.v.foldend - vim.v.foldstart + 1
-	return " ⚡ " .. " ... " .. line_count .. " lines"
+  -- local line = vim.fn.getline(vim.v.foldstart)
+  local line_count = vim.v.foldend - vim.v.foldstart + 1
+  return " ⚡ " .. " ... " .. line_count .. " lines"
 end
 
 vim.opt.foldtext = "v:lua.customFoldText()"
@@ -52,8 +55,8 @@ vim.opt.encoding = "utf-8"
 
 -- " Note the space after the /
 vim.cmd([[
-    set fillchars+=eob:\ 
-    set fillchars+=fold:\ 
+    set fillchars+=eob:\
+    set fillchars+=fold:\
 ]])
 
 vim.cmd([[
