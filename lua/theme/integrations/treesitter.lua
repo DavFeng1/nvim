@@ -2,6 +2,7 @@ local colors = require("theme.colors")
 
 -- Built in
 vim.api.nvim_set_hl(0, "Type", { fg = colors.yellow })
+vim.api.nvim_set_hl(0, "Special", { fg = colors.yellow })
 
 -- " TREESITTER
 vim.api.nvim_set_hl(0, "@comment", { fg = colors.grey })
@@ -26,6 +27,7 @@ vim.api.nvim_set_hl(0, "@parameter", { fg = colors.orange })
 vim.api.nvim_set_hl(0, "@method", { fg = colors.blue })
 vim.api.nvim_set_hl(0, "@include", { fg = colors.blue })
 vim.api.nvim_set_hl(0, "@type", { fg = colors.yellow })
+vim.api.nvim_set_hl(0, "@type.builtin.typescript", { fg = colors.yellow })
 vim.api.nvim_set_hl(0, "@type.qualifier", { fg = colors.purple })
 
 vim.api.nvim_set_hl(0, "@punctuation.bracket", { fg = colors.blue })
