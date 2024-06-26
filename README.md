@@ -1,5 +1,8 @@
 # Neovim Configuration
-Neovim v0.10.0 or above required
+
+My custom neovim configuration
+
+
 
 Supports
 -  Custom color theming which maps to highlight groups of all plugins
@@ -14,3 +17,8 @@ Supports
 ![alt text](/static/preview2.png)
 ![alt text](/static/preview3.png)
 ![alt text](/static/preview4.png)
+
+
+### Requirements
+- Neovim >= v0.10.0
+- fd https://github.com/sharkdp/fd
