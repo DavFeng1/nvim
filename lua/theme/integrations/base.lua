@@ -18,6 +18,10 @@ vim.api.nvim_set_hl(0, "Todo", { fg = colors.black, bg = colors.yellow })
 vim.api.nvim_set_hl(0, "Folded", { fg = colors.grey })
 vim.api.nvim_set_hl(0, "DiagnosticUnderlineError", { gui = nil })
 
+-- Built in
+vim.api.nvim_set_hl(0, "Type", { fg = colors.yellow })
+vim.api.nvim_set_hl(0, "Special", { fg = colors.yellow })
+
 -- Statusline
 vim.api.nvim_set_hl(0, "StatusLine", { fg = colors.yellow })
 vim.api.nvim_set_hl(0, "StatusLineNC", { fg = colors.green })
@@ -34,7 +38,7 @@ vim.api.nvim_set_hl(0, "PmenuSel", { fg = colors.pmenu_bg, bg = colors.pmenu_sel
 vim.api.nvim_set_hl(0, "PmenuSbar", { fg = colors.white, bg = colors.background2 })
 vim.api.nvim_set_hl(0, "PmenuThumb", { bg = colors.red })
 
-vim.api.nvim_set_hl(0, "PreProc", { fg = colors.dark_purple })
+vim.api.nvim_set_hl(0, "PreProc", { fg = colors.blue })
 vim.api.nvim_set_hl(0, "Title", { fg = colors.dark_purple })
 
 -- SPlit

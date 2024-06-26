@@ -1,9 +1,5 @@
 local colors = require("theme.colors")
 
--- Built in
-vim.api.nvim_set_hl(0, "Type", { fg = colors.yellow })
-vim.api.nvim_set_hl(0, "Special", { fg = colors.yellow })
-
 -- " TREESITTER
 vim.api.nvim_set_hl(0, "@comment", { fg = colors.grey })
 vim.api.nvim_set_hl(0, "@string", { fg = colors.green })
