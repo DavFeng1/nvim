@@ -17,6 +17,9 @@ vim.opt.foldmethod = "indent"
 vim.opt.foldminlines = 1
 vim.opt.foldlevelstart = 99
 
+-- Dont conitnue comments on next line after enter
+vim.cmd([[autocmd FileType * set formatoptions-=ro]])
+
 function _G.customFoldText()
 	-- local line = vim.fn.getline(vim.v.foldstart)
 	local line_count = vim.v.foldend - vim.v.foldstart + 1

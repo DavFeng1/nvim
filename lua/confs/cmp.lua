@@ -96,7 +96,6 @@ cmp.setup({
 		{ name = "luasnip" },
 		{ name = "buffer" },
 		{ name = "path" },
-		{ name = "lazy-dev", group_index = 0 },
 	},
 	confirm_opts = {
 		behavior = cmp.ConfirmBehavior.Replace,
@@ -115,6 +114,9 @@ cmp.setup({
 	},
 	experimental = {
 		ghost_text = false,
+		-- ghost_text = {
+		-- 	hl_group = "CmpGhostText",
+		-- },
 		native_menu = false,
 	},
 })
