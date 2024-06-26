@@ -18,7 +18,7 @@ vim.opt.foldminlines = 1
 vim.opt.foldlevelstart = 99
 
 -- Dont conitnue comments on next line after enter
-vim.cmd([[autocmd FileType * set formatoptions-=ro]])
+vim.cmd([[autocmd FileType * set formatoptions-=cro]])
 
 function _G.customFoldText()
 	-- local line = vim.fn.getline(vim.v.foldstart)
