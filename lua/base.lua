@@ -24,7 +24,7 @@ vim.cmd([[autocmd FileType * set formatoptions-=cro]])
 vim.cmd([[autocmd BufNewFile,BufRead *.envrc set syntax=sh]])
 
 function _G.customFoldText()
-  -- local line = vim.fn.getline(vim.v.foldstart)
+  local line = vim.fn.getline(vim.v.foldstart)
   local line_count = vim.v.foldend - vim.v.foldstart + 1
   return " ⚡ " .. " ... " .. line_count .. " lines"
 end
@@ -57,10 +57,6 @@ vim.opt.encoding = "utf-8"
 vim.cmd([[
     set fillchars+=eob:\
     set fillchars+=fold:\
-]])
-
-vim.cmd([[
-  autocmd BufWritePre *.tsx,*.ts,*.jsx,*.js EslintFixAll
 ]])
 
 vim.opt.clipboard = "unnamedplus"
