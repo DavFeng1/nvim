@@ -39,10 +39,10 @@ return {
 				find_files = {
 					find_command = {
 						"fd",
+						"-t",
+						"f",
 						"-H",
 						"--no-ignore-vcs",
-						-- '--ignore-file',
-						-- '~/.config/fd/ignore/.fdignore'
 					},
 				},
 				live_grep = {
@@ -59,4 +59,13 @@ return {
 			},
 		}
 	end,
+	init = function()
+		require("telescope").load_extension("fzf")
+	end,
+	dependencies = {
+		{
+			"nvim-telescope/telescope-fzf-native.nvim",
+			build = "make",
+		},
+	},
 }

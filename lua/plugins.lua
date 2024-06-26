@@ -26,7 +26,6 @@ local plugins = {
 
 require("lazy").setup(plugins)
 
--- require("confs.telescope")
 require("confs.nvim-treesitter")
 require("confs.neo-tree")
 
