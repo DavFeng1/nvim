@@ -60,6 +60,8 @@ vim.keymap.set("n", "<leader>6", "<Cmd>BufferGoto 6<CR>", opts)
 vim.keymap.set("n", "<leader>7", "<Cmd>BufferGoto 7<CR>", opts)
 vim.keymap.set("n", "<leader>8", "<Cmd>BufferGoto 8<CR>", opts)
 vim.keymap.set("n", "<leader>9", "<Cmd>BufferGoto 9<CR>", opts)
+vim.keymap.set("n", "<S-h>", "<Cmd>BufferMovePrevious<CR>", opts)
+vim.keymap.set("n", "<S-l>", "<Cmd>BufferMoveNext<CR>", opts)
 
 -- LSP
 vim.keymap.set("n", "<C-d>", "<Cmd> lua vim.lsp.buf.definition()<cr>", opts)
@@ -75,9 +77,9 @@ vim.keymap.set("n", "<C-a>", "<Cmd>Lspsaga code_action<CR>", opts)
 vim.keymap.set("n", "<leader>o", "<Cmd>Lspsaga outline<CR>", opts)
 
 -- Debug
-vim.keymap.set("n", "<C-b>", "<Cmd> lua require'dap'.toggle_breakpoint() <CR>", opts)
-vim.keymap.set("n", "<S-k>", "<Cmd> lua require'dap'.step_out() <CR>", opts)
-vim.keymap.set("n", "<S-l>", "<Cmd> lua require'dap'.step_into() <CR>", opts)
+-- vim.keymap.set("n", "<C-b>", "<Cmd> lua require'dap'.toggle_breakpoint() <CR>", opts)
+-- vim.keymap.set("n", "<S-k>", "<Cmd> lua require'dap'.step_out() <CR>", opts)
+-- vim.keymap.set("n", "<S-l>", "<Cmd> lua require'dap'.step_into() <CR>", opts)
 -- vim.keymap.set('n', '<S-j>', '<Cmd> lua require\'dap\'.step_over() <CR>', opts)
-vim.keymap.set("n", "<leader>dc", "<Cmd> DapContinue <CR>")
-vim.keymap.set("n", "<leader>du", "<Cmd> lua require'dapui'.toggle() <CR>")
+-- vim.keymap.set("n", "<leader>dc", "<Cmd> DapContinue <CR>")
+-- vim.keymap.set("n", "<leader>du", "<Cmd> lua require'dapui'.toggle() <CR>")
