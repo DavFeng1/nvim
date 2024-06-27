@@ -6,22 +6,22 @@ local lsp_plugins = require("plugins.lsp.init")
 local ui_plugins = require("plugins.ui.init")
 
 if not (vim.uv or vim.loop).fs_stat(lazypath) then
-	vim.fn.system({
-		"git",
-		"clone",
-		"--filter=blob:none",
-		"https://github.com/folke/lazy.nvim.git",
-		"--branch=stable", -- latest stable release
-		lazypath,
-	})
+  vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable", -- latest stable release
+    lazypath,
+  })
 end
 
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
-	ui_plugins,
-	coding_plugins,
-	lsp_plugins,
+  ui_plugins,
+  coding_plugins,
+  lsp_plugins,
 }
 
 require("lazy").setup(plugins)
@@ -35,7 +35,7 @@ require("confs.web-devicons")
 -- setup lsp Installer before lspconfig
 require("confs.mason") -- Mason and mason-lspconfig are handled here
 require("confs.lspconfig")
-require("confs.lspsaga")
+-- require("confs.lspsaga")
 
 -- Autocomplete
 require("confs.cmp")
