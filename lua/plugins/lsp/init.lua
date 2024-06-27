@@ -77,7 +77,7 @@ return {
           -- This option only works in Neovim 0.9
           title = true,
           -- Border type can be single, double, rounded, solid, shadow.
-          border = "single",
+          border = "rounded",
           winblend = 0,
           expand = "",
           collapse = "",
@@ -103,8 +103,7 @@ return {
             white = colors.white,
             black = colors.black,
           },
-          kind = {
-          },
+          kind = {},
           outline = {
             win_width = 100,
             win_position = 'right',

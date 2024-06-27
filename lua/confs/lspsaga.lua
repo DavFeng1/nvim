@@ -5,13 +5,13 @@ if not present then return end
 
 
 lspsaga.setup {
-	error_sign = '',
+  error_sign = '',
   warn_sign = '',
   hint_sign = '',
   infor_sign = '',
-	symbol_in_winbar = {
+  symbol_in_winbar = {
     enable = true,
-	},
+  },
   ui = {
     -- Currently, only the round theme exists
     theme = "round",
@@ -56,7 +56,6 @@ lspsaga.setup {
     },
   },
   dependencies = {
-     'nvim-tree/nvim-web-devicons'
+    'nvim-tree/nvim-web-devicons'
   }
 }
-
