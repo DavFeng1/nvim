@@ -17,7 +17,7 @@ vim.opt.foldminlines = 1
 vim.opt.foldlevelstart = 99
 
 -- transparent background
-vim.o.pumblend = 5;
+vim.o.pumblend = 10;
 
 -- Case insensitive search
 vim.opt.ignorecase = true
