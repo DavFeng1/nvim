@@ -11,11 +11,13 @@ vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagn
 })
 
 vim.wo.wrap = true
-
 -- Folding
 vim.opt.foldmethod = "indent"
 vim.opt.foldminlines = 1
 vim.opt.foldlevelstart = 99
+
+-- transparent background
+vim.o.pumblend = 5;
 
 -- Case insensitive search
 vim.opt.ignorecase = true
