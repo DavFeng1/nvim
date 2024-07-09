@@ -1,7 +1,5 @@
 -- Built-in configs
-
 require "base"
-
 require "binds"
 
 if vim.g.vscode then
@@ -24,8 +22,6 @@ if vim.g.vscode then
   ]])
 else
   require "latex"
-
-  require "theme"
-
   require "plugins"
+  require "theme"
 end

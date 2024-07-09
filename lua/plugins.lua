@@ -38,7 +38,7 @@ require("confs.lspconfig")
 -- require("confs.lspsaga")
 
 -- Autocomplete
-require("confs.cmp")
+-- require("confs.cmp")
 
 -- Setup treesitter
 require("confs.nvim-treesitter-context")

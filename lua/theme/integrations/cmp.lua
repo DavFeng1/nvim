@@ -1,20 +1,20 @@
 local colors = require("theme.colors")
 
 -- Menu
-vim.api.nvim_set_hl(0, "CmpPmenu", { fg = colors.white, bg = colors.background2 })
+vim.api.nvim_set_hl(0, "CmpPmenu", { fg = colors.white, bg = colors.background3 })
 vim.api.nvim_set_hl(0, "CmpBorder", { fg = colors.red })
 
-vim.api.nvim_set_hl(0, "CmpDocBorder", { fg = colors.red, bg = colors.background2 })
-vim.api.nvim_set_hl(0, "CmpDocPMenu", { fg = colors.white, bg = colors.background2 })
+vim.api.nvim_set_hl(0, "CmpDocBorder", { fg = colors.red, bg = colors.background3 })
+vim.api.nvim_set_hl(0, "CmpDocPMenu", { fg = colors.white, bg = colors.background3 })
 vim.api.nvim_set_hl(0, "CmpPmenuBorder", { bg = colors.yellow })
-
--- Matches
-vim.api.nvim_set_hl(0, "CmpItemAbbrMatchDefault", { fg = colors.green })
 
 -- Defaults
 vim.api.nvim_set_hl(0, "CmpItemKindDefault", { fg = colors.white })
 vim.api.nvim_set_hl(0, "CmpItemMenuDefault", { fg = colors.white })
-vim.api.nvim_set_hl(0, "CmpItemAbbrDefault", { fg = colors.grey })
+-- vim.api.nvim_set_hl(0, "CmpItemAbbrDefault", { fg = colors.grey })
+
+-- Matches
+vim.api.nvim_set_hl(0, "CmpItemAbbrMatchDefault", { fg = colors.green })
 
 -- Kinds
 vim.api.nvim_set_hl(0, "CmpItemKindField", { fg = colors.pink })

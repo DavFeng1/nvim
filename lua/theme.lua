@@ -1,3 +1,6 @@
+-- Base theme
+require("theme.integrations.base")
+
 -- Plugin integrations
 require("theme.integrations.neo-tree")
 require("theme.integrations.telescope")
@@ -14,6 +17,3 @@ require("theme.integrations.notify")
 
 -- Custom
 require("theme.winbar")
-
--- Base theme
-require("theme.integrations.base")
