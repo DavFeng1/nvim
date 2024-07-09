@@ -37,9 +37,6 @@ require("confs.mason") -- Mason and mason-lspconfig are handled here
 require("confs.lspconfig")
 -- require("confs.lspsaga")
 
--- Autocomplete
--- require("confs.cmp")
-
 -- Setup treesitter
 require("confs.nvim-treesitter-context")
 
