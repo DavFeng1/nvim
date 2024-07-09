@@ -1,11 +1,31 @@
 -- Built-in configs
-require "base"
 
-require "latex"
+require "base"
 
 require "binds"
 
-require "theme"
+if vim.g.vscode then
+  vim.cmd([[
+    nnoremap zc :call VSCodeNotify('editor.fold')<CR>
+    nnoremap zC :call VSCodeNotify('editor.foldRecursively')<CR>
+    nnoremap zo :call VSCodeNotify('editor.unfold')<CR>
+    nnoremap zO :call VSCodeNotify('editor.unfoldRecursively')<CR>
 
-require "plugins"
+    function! MoveCursor(direction) abort
+      if(reg_recording() == '' && reg_executing() == '')
+        return 'g'.a:direction
+      else
+        return a:direction
+      endif
+    endfunction
 
+    nmap <expr> j MoveCursor('j')
+    nmap <expr> k MoveCursor('k')
+  ]])
+else
+  require "latex"
+
+  require "theme"
+
+  require "plugins"
+end
