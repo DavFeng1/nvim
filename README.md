@@ -21,4 +21,5 @@ Supports
 
 ### Requirements
 - Neovim >= v0.10.0
-- fd https://github.com/sharkdp/fd
+- `brew install fd` https://github.com/sharkdp/fd
+- `brew install ripgrep`
