@@ -2,7 +2,13 @@ local notify = require("plugins.ui.notify")
 
 return {
   notify,
-  { "folke/which-key.nvim" },
+  { 
+    "folke/which-key.nvim",
+    event = "VeryLazy",
+    opts = {
+
+    }
+  },
   { "lewis6991/gitsigns.nvim" },
   { "nvim-lualine/lualine.nvim" },
   { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
