@@ -1,7 +1,7 @@
 local present, lspconfig = pcall(require, "lspconfig")
 
 if not present then
-   return
+  return
 end
 
 local on_attach = function(client, bufnr)
@@ -14,8 +14,8 @@ local lsp_flags = {
 }
 
 lspconfig.tsserver.setup {
-	on_attach = on_attach,
-	flags = lsp_flags
+  on_attach = on_attach,
+  flags = lsp_flags
 }
 
 lspconfig.lua_ls.setup {
@@ -30,18 +30,18 @@ lspconfig.lua_ls.setup {
 }
 
 lspconfig.vimls.setup {
-	on_attach = on_attach,
-	flags = lsp_flags,
+  on_attach = on_attach,
+  flags = lsp_flags,
 }
 
 lspconfig.pyright.setup {
-	on_attach = on_attach,
-	flags = lsp_flags,
+  on_attach = on_attach,
+  flags = lsp_flags,
 }
 
 lspconfig.rust_analyzer.setup {
-	on_attach = on_attach,
-	flags = lsp_flags,
+  on_attach = on_attach,
+  flags = lsp_flags,
 }
 
 lspconfig.eslint.setup {
@@ -57,6 +57,8 @@ lspconfig.eslint.setup {
   end,
 }
 
+lspconfig.biome.setup {}
+
 lspconfig.jsonls.setup {
   on_attach = on_attach,
   flags = lsp_flags,
@@ -64,11 +66,11 @@ lspconfig.jsonls.setup {
     json = {
       schemas = {
         {
-          fileMatch = {"package.json"},
+          fileMatch = { "package.json" },
           url = "https://json.schemastore.org/package.json"
         },
         {
-          fileMatch = {"tsconfig*.json"},
+          fileMatch = { "tsconfig*.json" },
           url = "https://json.schemastore.org/tsconfig.json"
         },
       }
@@ -77,5 +79,3 @@ lspconfig.jsonls.setup {
 }
 
 lspconfig.taplo.setup {}
-
-

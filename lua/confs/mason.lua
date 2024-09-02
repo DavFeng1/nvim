@@ -3,7 +3,7 @@ local mason_lspconfig_present, mason_lspconfig = pcall(require, "mason-lspconfig
 
 
 if not mason_present or not mason_lspconfig_present then
-   return
+  return
 end
 
 mason.setup()
