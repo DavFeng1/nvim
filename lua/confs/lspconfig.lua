@@ -65,19 +65,6 @@ lspconfig.rust_analyzer.setup {
   flags = lsp_flags,
 }
 
-lspconfig.eslint.setup {
-  flags = lsp_flags,
-  on_attach = function(client)
-    local group = vim.api.nvim_create_augroup("Eslint", {})
-    vim.api.nvim_create_autocmd("BufWritePre", {
-      group = group,
-      pattern = "<buffer>",
-      command = "EslintFixAll",
-      desc = "Run eslint when saving buffer.",
-    })
-  end,
-}
-
 lspconfig.biome.setup {}
 
 lspconfig.jsonls.setup {
