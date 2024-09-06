@@ -65,16 +65,8 @@ vim.keymap.set("n", "<S-l>", "<Cmd>BufferMoveNext<CR>", opts)
 
 -- LSP
 vim.keymap.set("n", "<C-d>", "<Cmd> lua vim.lsp.buf.definition()<cr>", opts)
-
--- LSP Saga
-vim.keymap.set("n", "<C-j>", "<Cmd>Lspsaga diagnostic_jump_next<CR>", opts)
-vim.keymap.set("n", "<C-k>", "<Cmd>Lspsaga diagnostic_jump_prev<CR>", opts)
-vim.keymap.set("n", "<C-h>", "<Cmd>lua vim.lsp.buf.signature_help()<CR>", opts)
-vim.keymap.set("n", "<C-u>", "<Cmd>Lspsaga finder<CR>", opts)
--- vim.keymap.set('n', '<C-l>', '<Cmd>Lspsaga signature_help<CR>', opts)
--- vim.keymap.set('n', '<C-i>', '<Cmd>Lspsaga peek_definition<CR>', opts)
-vim.keymap.set("n", "<C-a>", "<Cmd>Lspsaga code_action<CR>", opts)
-vim.keymap.set("n", "<leader>o", "<Cmd>Lspsaga outline<CR>", opts)
+vim.keymap.set("n", "<C-k>", vim.diagnostic.goto_next)
+vim.keymap.set("n", "<C-j>", vim.diagnostic.goto_prev)
 
 -- Debug
 -- vim.keymap.set("n", "<C-b>", "<Cmd> lua require'dap'.toggle_breakpoint() <CR>", opts)

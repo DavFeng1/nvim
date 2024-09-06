@@ -1,4 +1,3 @@
-local lspsaga = require("plugins.lsp.lspsaga")
 local cmp = require('plugins.lsp.cmp')
 
 return {
@@ -41,7 +40,6 @@ return {
     event = "VeryLazy",
     enabled = vim.fn.has("nvim-0.10.0") == 1,
   },
-  lspsaga,
   {
     "folke/trouble.nvim",
     opts = {}, -- for default options, refer to the configuration section for custom setup.
