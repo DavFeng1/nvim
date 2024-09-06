@@ -27,7 +27,6 @@ local plugins = {
 require("lazy").setup(plugins)
 
 require("confs.nvim-treesitter")
-require("confs.neo-tree")
 
 -- Configs
 require("confs.web-devicons")
@@ -35,10 +34,6 @@ require("confs.web-devicons")
 -- setup lsp Installer before lspconfig
 require("confs.mason") -- Mason and mason-lspconfig are handled here
 require("confs.lspconfig")
--- require("confs.lspsaga")
-
--- Setup treesitter
-require("confs.nvim-treesitter-context")
 
 -- Debugger
 require("confs.nvim-dap")
@@ -48,7 +43,6 @@ require("confs.dap-ui")
 require("confs.nvim-autopairs")
 
 -- UI
-require("confs.indent-blankline")
 require("confs.barbar")
 require("confs.lualine")
 require("confs.gitsigns")

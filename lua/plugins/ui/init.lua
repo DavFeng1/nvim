@@ -13,9 +13,15 @@ return {
   },
   { "lewis6991/gitsigns.nvim" },
   { "nvim-lualine/lualine.nvim" },
-  { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
+  {
+    "lukas-reineke/indent-blankline.nvim",
+    main = "ibl",
+    ---@module "ibl"
+    ---@type ibl.config
+    opts = {}
+
+  },
   { "goolord/alpha-nvim" },
   { "romgrk/barbar.nvim" },
   { "norcalli/nvim-colorizer.lua" },
-  { "wfxr/minimap.vim" },
 }
