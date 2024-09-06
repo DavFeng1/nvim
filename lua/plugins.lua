@@ -52,7 +52,6 @@ require("confs.indent-blankline")
 require("confs.barbar")
 require("confs.lualine")
 require("confs.gitsigns")
-require("confs.alpha-nvim")
 require("confs.nvim-colorizer")
 
 -- 	-- Fuzzy search

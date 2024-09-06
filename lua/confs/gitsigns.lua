@@ -6,7 +6,6 @@ end
 
 gitsigns.setup {
   signs                        = {
-    add = { text = '│' },
     change = { text = '│' },
     add = { text = '│' },
     delete = { text = '_' },

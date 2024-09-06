@@ -1,8 +1,10 @@
 local notify = require("plugins.ui.notify")
+local alpha = require "plugins.ui.alpha"
 
 return {
   notify,
-  { 
+  alpha,
+  {
     "folke/which-key.nvim",
     event = "VeryLazy",
     opts = {
