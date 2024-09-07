@@ -22,6 +22,6 @@ if vim.g.vscode then
   ]])
 else
   require "latex"
-  require "plugins"
   require "theme"
+  require "plugins"
 end

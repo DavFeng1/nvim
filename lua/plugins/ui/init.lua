@@ -1,5 +1,6 @@
 local notify = require("plugins.ui.notify")
 local alpha = require "plugins.ui.alpha"
+local indent_blankline = require "plugins.ui.indent-blankline"
 
 return {
   notify,
@@ -13,15 +14,8 @@ return {
   },
   { "lewis6991/gitsigns.nvim" },
   { "nvim-lualine/lualine.nvim" },
-  {
-    "lukas-reineke/indent-blankline.nvim",
-    main = "ibl",
-    ---@module "ibl"
-    ---@type ibl.config
-    opts = {}
-
-  },
   { "goolord/alpha-nvim" },
   { "romgrk/barbar.nvim" },
+  indent_blankline,
   { "norcalli/nvim-colorizer.lua" },
 }

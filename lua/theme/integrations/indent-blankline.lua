@@ -1,4 +1,4 @@
-local colors = require("theme.colors")
+local colors = require "theme.colors"
 
 -- " BlankLine
 vim.api.nvim_set_hl(0, "IblIndent", { fg = colors.line })

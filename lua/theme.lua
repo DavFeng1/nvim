@@ -7,7 +7,7 @@ require("theme.integrations.telescope")
 require("theme.integrations.cmp")
 require("theme.integrations.barbar")
 require("theme.integrations.treesitter")
-require("theme.integrations.blankline")
+require "theme.integrations.indent-blankline"
 require("theme.integrations.lualine")
 require("theme.integrations.gitsigns")
 require("theme.integrations.which-key")
