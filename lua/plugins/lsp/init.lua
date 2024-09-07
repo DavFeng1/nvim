@@ -1,4 +1,5 @@
 local cmp = require('plugins.lsp.cmp')
+local lazydev = require "plugins.lsp.lazydev"
 
 return {
   {
@@ -9,18 +10,8 @@ return {
       "williamboman/mason-lspconfig.nvim",
     },
   },
-  {
-    "folke/lazydev.nvim",
-    ft = "lua", -- only load on lua files
-    opts = {
-      library = {
-        --See the configuration section for more details
-        -- Load luvit types when the `vim.uv` word is found
-        { path = "luvit-meta/library", words = { "vim%.uv" } },
-      },
-    },
-  },
   cmp,
+  lazydev,
   {
     "williamboman/mason.nvim",
     cmd = "Mason",
