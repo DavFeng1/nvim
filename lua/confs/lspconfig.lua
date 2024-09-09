@@ -67,6 +67,8 @@ lspconfig.rust_analyzer.setup {
 
 lspconfig.biome.setup {}
 
+lspconfig.leanls.setup { mappings = true }
+
 lspconfig.jsonls.setup {
   on_attach = on_attach,
   flags = lsp_flags,
