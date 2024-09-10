@@ -1,4 +1,3 @@
-local colors = require('theme.tomorrowNightBlue')
+local colors = require 'theme.tomorrowNightBlue'
 
 return colors
-

@@ -82,7 +82,6 @@ vim.opt.mouse = "nvi"
 
 vim.opt.winbar = "%{%v:lua.require('winbar').eval()%}"
 
-
 -- minimap
 -- vim.g.minimap_width = 10
 -- vim.g.minimap_auto_start = 1

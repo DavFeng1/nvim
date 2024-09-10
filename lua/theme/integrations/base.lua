@@ -27,11 +27,6 @@ vim.api.nvim_set_hl(0, "Special", { fg = colors.yellow })
 vim.api.nvim_set_hl(0, "StatusLine", { fg = colors.yellow })
 vim.api.nvim_set_hl(0, "StatusLineNC", { fg = colors.green })
 
--- Cursor
-vim.api.nvim_set_hl(0, "Cursor", { fg = colors.background1 })
-vim.api.nvim_set_hl(0, "CursorLine", { bg = colors.cursor_line_background })
-vim.api.nvim_set_hl(0, "CursorLineNr", { fg = colors.light_white })
-vim.api.nvim_set_hl(0, "LineNr", { fg = colors.grey })
 
 -- PMenu
 vim.api.nvim_set_hl(0, "PMenu", { fg = colors.white, bg = colors.pmenu_bg })
@@ -51,6 +46,12 @@ vim.api.nvim_set_hl(0, "MatchParen", { fg = colors.black, bg = colors.blue })
 vim.api.nvim_set_hl(0, "Directory", { fg = colors.blue })
 -- Use terminal emulator's background color
 vim.api.nvim_set_hl(0, "NonText", { fg = colors.grey })
+
+-- Cursor
+vim.api.nvim_set_hl(0, "Cursor", { bg = colors.light_white })
+vim.api.nvim_set_hl(0, "CursorLine", { bg = colors.cursor_line_background })
+vim.api.nvim_set_hl(0, "CursorLineNr", { fg = colors.light_white })
+vim.api.nvim_set_hl(0, "LineNr", { fg = colors.grey })
 
 -- Diagnostic
 vim.api.nvim_set_hl(0, "DiagnosticInfo", { fg = colors.dark_purple })

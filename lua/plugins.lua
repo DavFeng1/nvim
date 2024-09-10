@@ -39,8 +39,6 @@ require("confs.lspconfig")
 require("confs.nvim-dap")
 require("confs.dap-ui")
 
---- Editor functionality
-require("confs.nvim-autopairs")
 
 -- UI
 require("confs.barbar")
