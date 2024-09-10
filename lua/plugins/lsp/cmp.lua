@@ -20,10 +20,15 @@ return {
         ["<CR>"] = cmp.mapping.confirm({ select = false }),
       }),
       formatting = {
-        fields = { "abbr", "kind" },
         expandable_indicator = true,
-        format = function(_, vim_item)
-          vim_item.kind = string.format("   %s %s  ", kind_icons[vim_item.kind], vim_item.kind)
+        format = function(entry, vim_item)
+          vim_item.kind = string.format("   %s %s    ", kind_icons[vim_item.kind], vim_item.kind)
+          vim_item.menu = ({
+            buffer = "Buf",
+            nvim_lsp = "Lsp",
+            nvim_lua = "Lua"
+          })[entry.source.name]
+
           return vim_item
         end,
       },
@@ -40,7 +45,8 @@ return {
         completion = {
           border = nil,
           winhighlight = "Normal:CmpPmenu,CursorLine:PmenuSel,Search:None",
-          side_padding = 4,
+          side_padding = 1,
+          max_width = 0
         },
         documentation = {
           border = nil,
