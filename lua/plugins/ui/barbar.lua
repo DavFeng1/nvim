@@ -1,0 +1,1 @@
+return { "romgrk/barbar.nvim" }

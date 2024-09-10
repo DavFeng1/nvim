@@ -1,4 +1,4 @@
-local colors = require("theme.colors")
+local colors = require "theme.colors"
 
 -- Offset
 vim.api.nvim_set_hl(0, "BufferOffset", { bg = colors.neo_tree_background, fg = colors.light_white })
