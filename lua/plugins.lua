@@ -41,7 +41,6 @@ require("confs.dap-ui")
 
 
 -- UI
-require("confs.barbar")
 require("confs.lualine")
 require("confs.gitsigns")
 require("confs.nvim-colorizer")
