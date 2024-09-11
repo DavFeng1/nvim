@@ -16,23 +16,11 @@ vim.api.nvim_set_hl(0, "LuaLineDiffDelete", { fg = colors.red })
 
 
 local custom_theme = {
-  normal = {
-    a = { fg = colors.black, bg = colors.background2 },
-    b = { fg = colors.red, bg = colors.background2 },
-    c = { fg = colors.red, bg = colors.background2 },
-    x = { fg = colors.red, bg = colors.background2 },
-    y = { fg = colors.red, bg = colors.background2 },
-    z = { fg = colors.red, bg = colors.background2 },
-  },
-
-  insert = { a = { fg = colors.light_white, bg = colors.lualine_background2 } },
-  visual = { a = { fg = colors.black, bg = colors.green } },
-  replace = { a = { fg = colors.black, bg = colors.purple } },
-  inactive = {
-    a = { fg = colors.white, bg = colors.black },
-    b = { fg = colors.white, bg = colors.black },
-    c = { fg = colors.white, bg = colors.black },
-  },
+  normal = { c = { fg = colors.red, bg = colors.background2 }, },
+  insert = { c = { fg = colors.blue, bg = colors.lualine_background2 } },
+  visual = { c = { fg = colors.pink, bg = colors.background2 } },
+  replace = { c = { fg = colors.cyan, bg = colors.background2 } },
+  inactive = { c = { fg = colors.grey, bg = colors.background2 }, },
 }
 
 local config = {
@@ -57,10 +45,7 @@ local config = {
     },
     lualine_b = {},
     lualine_c = {
-      {
-        'mode',
-        color = { fg = colors.red, bg = colors.background2 },
-      },
+      { 'mode', },
       {
         'branch',
         color = { fg = colors.purple },
