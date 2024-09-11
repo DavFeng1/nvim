@@ -16,11 +16,26 @@ vim.api.nvim_set_hl(0, "LuaLineDiffDelete", { fg = colors.red })
 
 
 local custom_theme = {
-  normal = { c = { fg = colors.red, bg = colors.background2 }, },
-  insert = { c = { fg = colors.blue, bg = colors.lualine_background2 } },
-  visual = { c = { fg = colors.pink, bg = colors.background2 } },
-  replace = { c = { fg = colors.cyan, bg = colors.background2 } },
-  inactive = { c = { fg = colors.grey, bg = colors.background2 }, },
+  normal = {
+    a = { fg = colors.red, bg = colors.background2 },
+    z = { fg = colors.red, bg = colors.background2 },
+  },
+  insert = {
+    a = { fg = colors.dark_green, bg = colors.background2 },
+    z = { fg = colors.dark_green, bg = colors.background2 }
+  },
+  visual = {
+    a = { fg = colors.dark_blue, bg = colors.background2 },
+    z = { fg = colors.dark_blue, bg = colors.lualine_background2 }
+  },
+  replace = {
+    a = { fg = colors.cyan, bg = colors.background2 },
+    z = { fg = colors.cyan, bg = colors.lualine_background2 }
+  },
+  inactive = {
+    a = { fg = colors.grey, bg = colors.background2 },
+    z = { fg = colors.grey, bg = colors.lualine_background2 }
+  },
 }
 
 local config = {
@@ -39,13 +54,12 @@ local config = {
         function()
           return '▊'
         end,
-        color = { fg = colors.red }, -- Sets highlighting of component
-        padding = { right = 1 },     -- We don't need space before this
+        padding = { right = 1 }, -- We don't need space before this
       },
+      { 'mode', },
     },
     lualine_b = {},
     lualine_c = {
-      { 'mode', },
       {
         'branch',
         color = { fg = colors.purple },
@@ -101,10 +115,12 @@ local config = {
         color = { fg = colors.blue },
       },
       {
-        'location'
+        'location',
+        color = { fg = colors.red },
       },
       {
-        'progress'
+        'progress',
+        color = { fg = colors.red },
       }
     },
     lualine_y = {},
@@ -113,8 +129,7 @@ local config = {
         function()
           return '▊'
         end,
-        color = { fg = colors.red }, -- Sets highlighting of component
-        padding = { left = 1 },      -- We don't need space before this
+        padding = { left = 1 }, -- We don't need space before this
       },
     },
   },
