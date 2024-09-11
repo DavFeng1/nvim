@@ -46,7 +46,7 @@ local M = {
 
   -- Git Signs
   git_signs_add = "#487e02",
-  git_signs_blame = "#35577d",
+  git_signs_blame = "#35507d",
 
   -- Diagnostics
   diagnostics_error = "#f14c4c",
