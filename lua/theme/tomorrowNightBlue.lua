@@ -34,8 +34,9 @@ local M = {
   telescope_background = "#071B3E",
 
   -- Lualine
-  lualine_background = "#071B3E",
-  lualine_background2 = "#2a75a6",
+  -- lualine_background = "#071B3E",
+  lualine_background = "#0a234e",
+  lualine_background2 = "#0a234e",
 
   -- Bufferline
   barbar_background = "#0a234e",
