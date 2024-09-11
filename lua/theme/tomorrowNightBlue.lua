@@ -61,7 +61,7 @@ local M = {
   toggle_term_background = "#001c40",
 
   -- Winbar
-  winbar_background = "#002451",
+  winbar_background = "#071B3E",
 }
 
 return M

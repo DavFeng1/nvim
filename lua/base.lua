@@ -75,7 +75,8 @@ vim.opt.numberwidth = 1
 -- Set sign column always show
 vim.opt.signcolumn = "yes:2"
 
-vim.opt.cmdheight = 1
+-- Cmdline replaces statusline
+vim.opt.cmdheight = 0
 
 vim.opt.timeoutlen = 500
 vim.opt.mouse = "nvi"
