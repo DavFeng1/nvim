@@ -17,10 +17,10 @@ vim.api.nvim_set_hl(0, "LuaLineDiffDelete", { fg = colors.red })
 
 local custom_theme = {
   normal = {
-    a = { fg = colors.black, bg = colors.red },
+    a = { fg = colors.black, bg = colors.background2 },
     b = { fg = colors.red, bg = colors.background2 },
     c = { fg = colors.red, bg = colors.background2 },
-    x = { fg = colors.light_white, bg = colors.background2 },
+    x = { fg = colors.red, bg = colors.background2 },
     y = { fg = colors.red, bg = colors.background2 },
     z = { fg = colors.red, bg = colors.background2 },
   },
@@ -39,36 +39,50 @@ local config = {
   options = {
     icons_enabled = true,
     theme = custom_theme,
-    -- component_separators = { left = '', right = '' },
-    -- section_separators = { left = '', right = '' },
-    component_separators = { left = ' ', right = ' ' },
-    section_separators = { left = ' ', right = ' ' },
+    component_separators = { left = '', right = '' },
+    section_separators = { left = '', right = '' },
     disabled_filetypes = {},
     always_divide_middle = true,
     globalstatus = true,
   },
   sections = {
-    lualine_a = { { 'mode', color = { fg = colors.red, bg = colors.background2 } } },
-    lualine_b = { { 'branch', color = { fg = colors.purple } },
+    lualine_a = {
+      {
+        function()
+          return '▊'
+        end,
+        color = { fg = colors.red }, -- Sets highlighting of component
+        padding = { right = 1 },     -- We don't need space before this
+      },
+    },
+    lualine_b = {},
+    lualine_c = {
+      {
+        'mode',
+        color = { fg = colors.red, bg = colors.background2 },
+      },
+      {
+        'branch',
+        color = { fg = colors.purple },
+        padding = { left = 3 }
+      },
       {
         'filetype',
         colored = true,            -- Displays filetype icon in color if set to true
         icon_only = false,         -- Display only an icon for filetype
         icon = { align = 'left' }, -- Display filetype icon on the right hand side
-        color = { fg = colors.white }
-      }
-    },
-    lualine_c = {
+        color = { fg = colors.blue },
+        padding = { left = 3 }
+      },
       {
         'diff',
         symbols = {
           added = icons.git.added,
           modified = icons.git.modified,
           removed = icons.git.removed,
-        }
+        },
+        padding = { left = 3 }
       },
-    },
-    lualine_x = {
       {
         "diagnostics",
         symbols = {
@@ -77,12 +91,14 @@ local config = {
           info = icons.diagnostics.Info,
           hint = icons.diagnostics.Hint,
         },
+        padding = { left = 3 }
       },
+    },
+    lualine_x = {
       {
         -- Lsp server name .
         function()
           local msg = 'No Active Lsp'
-          -- local buf_ft = vim.api.nvim_buf_get_option(0, 'filetype')
           local buf_ft = vim.api.nvim_get_option_value('filetype', { buf = 0 })
           local clients = vim.lsp.get_clients()
           if next(clients) == nil then
@@ -97,17 +113,31 @@ local config = {
           return msg
         end,
         icon = ' ',
-        color = { fg = colors.green },
+        color = { fg = colors.blue },
+      },
+      {
+        'location'
+      },
+      {
+        'progress'
       }
     },
-    lualine_y = { 'location' },
-    lualine_z = { 'progress' },
+    lualine_y = {},
+    lualine_z = {
+      {
+        function()
+          return '▊'
+        end,
+        color = { fg = colors.red }, -- Sets highlighting of component
+        padding = { left = 1 },      -- We don't need space before this
+      },
+    },
   },
   inactive_sections = {
     lualine_a = {},
     lualine_b = {},
-    lualine_c = { 'filename' },
-    lualine_x = { 'location' },
+    lualine_c = {},
+    lualine_x = {},
     lualine_y = {},
     lualine_z = {}
   },
