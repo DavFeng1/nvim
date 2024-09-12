@@ -67,6 +67,8 @@ lspconfig.rust_analyzer.setup {
 
 lspconfig.biome.setup {}
 
+lspconfig.dockerls.setup {}
+
 lspconfig.leanls.setup { mappings = true }
 
 lspconfig.jsonls.setup {
