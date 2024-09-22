@@ -68,6 +68,9 @@ vim.keymap.set("n", "<C-d>", "<Cmd> lua vim.lsp.buf.definition()<cr>", opts)
 vim.keymap.set("n", "<C-k>", vim.diagnostic.goto_next)
 vim.keymap.set("n", "<C-j>", vim.diagnostic.goto_prev)
 
+-- Notifications
+vim.keymap.set('', '<Esc>', "<Cmd> lua require('notify').dismiss() <CR>", { silent = true })
+
 -- Debug
 -- vim.keymap.set("n", "<C-b>", "<Cmd> lua require'dap'.toggle_breakpoint() <CR>", opts)
 -- vim.keymap.set("n", "<S-k>", "<Cmd> lua require'dap'.step_out() <CR>", opts)
