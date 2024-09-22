@@ -19,8 +19,8 @@ return {
       lsp_doc_border = false,       -- add a border to hover docs and signature help
     },
     routes = {
-      { filter = { find = "E486" }, view = "mini" },
-      { filter = { find = "E486" }, view = "mini" }
+      { filter = { find = "E486" },                                   view = "mini" },
+      { filter = { event = "msg_show", kind = "", find = "written" }, view = "mini" },
     }
   },
   dependencies = {
