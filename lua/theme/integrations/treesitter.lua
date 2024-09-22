@@ -15,6 +15,7 @@ vim.api.nvim_set_hl(0, "@keyword", { fg = colors.purple })
 vim.api.nvim_set_hl(0, "@field", { fg = colors.blue })
 vim.api.nvim_set_hl(0, "@variable", { fg = colors.orange })
 vim.api.nvim_set_hl(0, "@variable.builtin", { fg = colors.pink })
+vim.api.nvim_set_hl(0, "@variable.member", { fg = colors.blue })
 vim.api.nvim_set_hl(0, "@operator", { fg = colors.cyan })
 
 vim.api.nvim_set_hl(0, "@property", { fg = colors.orange })
