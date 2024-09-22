@@ -28,9 +28,6 @@ require("lazy").setup(plugins)
 
 require("confs.nvim-treesitter")
 
--- Configs
-require("confs.web-devicons")
-
 -- setup lsp Installer before lspconfig
 require("confs.mason") -- Mason and mason-lspconfig are handled here
 require("confs.lspconfig")

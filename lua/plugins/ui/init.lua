@@ -2,10 +2,12 @@ local notify = require("plugins.ui.notify")
 local alpha = require "plugins.ui.alpha"
 local indent_blankline = require "plugins.ui.indent-blankline"
 local barbar = require "plugins.ui.barbar"
+-- local solarized_osaka = require "plugins.ui.solarized-osaka"
 
 return {
   notify,
   alpha,
+  -- solarized_osaka,
   {
     "folke/which-key.nvim",
     event = "VeryLazy",

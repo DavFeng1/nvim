@@ -1,6 +1,6 @@
 -- Built-in configs
 require "base"
-require "binds"
+require "confs.keymaps"
 
 if vim.g.vscode then
   vim.cmd([[
