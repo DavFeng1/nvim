@@ -1,5 +1,6 @@
 local colors = require("theme.colors")
 
+vim.api.nvim_set_hl(0, "MsgArea", { fg = colors.red })
 vim.api.nvim_set_hl(0, "DefinitionBorder", { fg = colors.red })
 vim.api.nvim_set_hl(0, "Delimiter", { fg = colors.dark_blue })
 vim.api.nvim_set_hl(0, "DiffAdd", { fg = colors.green })

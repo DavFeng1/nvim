@@ -87,14 +87,9 @@ vim.opt.numberwidth = 1
 vim.opt.signcolumn = "yes:2"
 
 -- Cmdline replaces statusline
-vim.opt.cmdheight = 0
+vim.opt.cmdheight = 1
 
 vim.opt.timeoutlen = 500
 vim.opt.mouse = "nvi"
 
 vim.opt.winbar = "%{%v:lua.require('winbar').eval()%}"
-
--- minimap
--- vim.g.minimap_width = 10
--- vim.g.minimap_auto_start = 1
--- vim.g.minimap_auto_start_win_enter = 1
