@@ -26,8 +26,6 @@ local plugins = {
 
 require("lazy").setup(plugins)
 
-require("confs.nvim-treesitter")
-
 -- setup lsp Installer before lspconfig
 require("confs.lspconfig")
 
