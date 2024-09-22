@@ -23,6 +23,10 @@ local base_colors = {
 
 local M = {
   -- Base Colors
+  background_dark = "#020c1a",
+  black = "#002831",
+  background_light = "#002B36",
+  background_lighter = "#073642",
   background1 = base_colors.background1,
   background2 = base_colors.background2,
   black = base_colors.black,
