@@ -29,7 +29,6 @@ require("lazy").setup(plugins)
 require("confs.nvim-treesitter")
 
 -- setup lsp Installer before lspconfig
-require("confs.mason") -- Mason and mason-lspconfig are handled here
 require("confs.lspconfig")
 
 -- Debugger
@@ -39,7 +38,6 @@ require("confs.dap-ui")
 
 -- UI
 require("confs.lualine")
-require("confs.gitsigns")
 require("confs.nvim-colorizer")
 
 -- 	-- Fuzzy search

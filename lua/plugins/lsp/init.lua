@@ -1,7 +1,9 @@
 local cmp = require('plugins.lsp.cmp')
 local lazydev = require "plugins.lsp.lazydev"
+local mason = require "plugins.lsp.mason"
 
 return {
+  mason,
   {
     "neovim/nvim-lspconfig",
     -- event = "LazyFile", TODO

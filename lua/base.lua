@@ -22,23 +22,6 @@ vim.o.pumblend = 10;
 -- Case insensitive search
 vim.opt.ignorecase = true
 
--- Dont continue comments on next line after enter
-vim.cmd([[autocmd FileType * set formatoptions-=cro]])
-
--- Set syntax to shell for envrc
-vim.cmd([[autocmd BufNewFile,BufRead *.envrc set syntax=sh]])
-
-vim.api.nvim_create_autocmd("TextYankPost", {
-  callback = function()
-    vim.highlight.on_yank({
-      higroup = 'Visual',
-      timeout = 300,
-    })
-  end
-})
-
--- vim.cmd([[autocmd TextYankPost * silent! lua vim.highlight.on_yank {higroup='Visual', timeout=300}]])
-
 function _G.customFoldText()
   local line = vim.fn.getline(vim.v.foldstart)
   local line_count = vim.v.foldend - vim.v.foldstart + 1

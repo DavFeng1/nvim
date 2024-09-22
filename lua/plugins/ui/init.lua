@@ -2,6 +2,7 @@ local alpha = require "plugins.ui.alpha"
 local indent_blankline = require "plugins.ui.indent-blankline"
 local barbar = require "plugins.ui.barbar"
 local noice = require "plugins.ui.noice"
+local gitsigns = require "plugins.ui.gitsigns"
 
 return {
   noice,
@@ -11,7 +12,7 @@ return {
     event = "VeryLazy",
     opts = {}
   },
-  { "lewis6991/gitsigns.nvim" },
+  gitsigns,
   { "nvim-lualine/lualine.nvim" },
   { "goolord/alpha-nvim" },
   barbar,
