@@ -1,5 +1,6 @@
 -- Built-in configs
 require "base"
+require "confs.autocmds"
 require "confs.keymaps"
 
 if vim.g.vscode then
