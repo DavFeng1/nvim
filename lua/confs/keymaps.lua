@@ -69,7 +69,7 @@ vim.keymap.set("n", "<C-k>", vim.diagnostic.goto_next)
 vim.keymap.set("n", "<C-j>", vim.diagnostic.goto_prev)
 
 -- Notifications
-vim.keymap.set('', '<Leader> dn', "<Cmd> lua require('notify').dismiss() <CR>", { silent = true })
+vim.keymap.set('', '<Leader>d', "<Cmd> lua require('notify').dismiss() <CR>", { silent = true })
 
 -- Debug
 -- vim.keymap.set("n", "<C-b>", "<Cmd> lua require'dap'.toggle_breakpoint() <CR>", opts)
@@ -77,4 +77,3 @@ vim.keymap.set('', '<Leader> dn', "<Cmd> lua require('notify').dismiss() <CR>", 
 -- vim.keymap.set("n", "<S-l>", "<Cmd> lua require'dap'.step_into() <CR>", opts)
 -- vim.keymap.set('n', '<S-j>', '<Cmd> lua require\'dap\'.step_over() <CR>', opts)
 -- vim.keymap.set("n", "<leader>dc", "<Cmd> DapContinue <CR>")
-

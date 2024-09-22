@@ -2,10 +2,12 @@ local notify = require("plugins.ui.notify")
 local alpha = require "plugins.ui.alpha"
 local indent_blankline = require "plugins.ui.indent-blankline"
 local barbar = require "plugins.ui.barbar"
+local noice = require "plugins.ui.noice"
 -- local solarized_osaka = require "plugins.ui.solarized-osaka"
 
 return {
-  notify,
+  -- notify,
+  noice,
   alpha,
   -- solarized_osaka,
   {
