@@ -1,7 +1,7 @@
 return {
   "folke/noice.nvim",
   event = "VeryLazy",
-  config = {
+  opts = {
     lsp = {
       -- override markdown rendering so that **cmp** and other plugins use **Treesitter**
       override = {
@@ -18,9 +18,10 @@ return {
       inc_rename = false,           -- enables an input dialog for inc-rename.nvim
       lsp_doc_border = false,       -- add a border to hover docs and signature help
     },
-  },
-  opts = {
-    -- add any options here
+    routes = {
+      { filter = { find = "E486" }, view = "mini" },
+      { filter = { find = "E486" }, view = "mini" }
+    }
   },
   dependencies = {
     "MunifTanjim/nui.nvim",

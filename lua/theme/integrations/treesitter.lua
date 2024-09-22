@@ -13,13 +13,13 @@ vim.api.nvim_set_hl(0, "@conditional", { fg = colors.purple })
 vim.api.nvim_set_hl(0, "@keyword", { fg = colors.purple })
 
 vim.api.nvim_set_hl(0, "@field", { fg = colors.blue })
-vim.api.nvim_set_hl(0, "@variable", { fg = colors.orange })
+vim.api.nvim_set_hl(0, "@variable", { fg = colors.red })
 vim.api.nvim_set_hl(0, "@variable.builtin", { fg = colors.pink })
 vim.api.nvim_set_hl(0, "@variable.member", { fg = colors.blue })
 vim.api.nvim_set_hl(0, "@operator", { fg = colors.cyan })
 
-vim.api.nvim_set_hl(0, "@property", { fg = colors.orange })
-vim.api.nvim_set_hl(0, "@parameter", { fg = colors.orange })
+vim.api.nvim_set_hl(0, "@property", { fg = colors.red })
+vim.api.nvim_set_hl(0, "@parameter", { fg = colors.red })
 
 vim.api.nvim_set_hl(0, "@method", { fg = colors.blue })
 vim.api.nvim_set_hl(0, "@include", { fg = colors.blue })
@@ -30,7 +30,7 @@ vim.api.nvim_set_hl(0, "@type.qualifier", { fg = colors.purple })
 vim.api.nvim_set_hl(0, "@punctuation.bracket", { fg = colors.blue })
 
 vim.api.nvim_set_hl(0, "@constructor", { fg = colors.red })
-vim.api.nvim_set_hl(0, "@label", { fg = colors.orange })
+vim.api.nvim_set_hl(0, "@label", { fg = colors.red })
 
 -- Context
 vim.api.nvim_set_hl(0, "TreeSitterContext", { fg = colors.background1 })
