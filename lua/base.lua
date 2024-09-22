@@ -16,6 +16,9 @@ vim.opt.foldmethod = "indent"
 vim.opt.foldminlines = 1
 vim.opt.foldlevelstart = 99
 
+--- Make status line global (away from nvimtree)
+vim.opt.laststatus = 3
+
 -- transparent background
 vim.o.pumblend = 10;
 

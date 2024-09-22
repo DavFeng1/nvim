@@ -3,6 +3,7 @@ local indent_blankline = require "plugins.ui.indent-blankline"
 local barbar = require "plugins.ui.barbar"
 local noice = require "plugins.ui.noice"
 local gitsigns = require "plugins.ui.gitsigns"
+local colorizer = require "plugins.ui.colorizer"
 
 return {
   noice,
@@ -17,5 +18,5 @@ return {
   { "goolord/alpha-nvim" },
   barbar,
   indent_blankline,
-  { "norcalli/nvim-colorizer.lua" },
+  colorizer
 }

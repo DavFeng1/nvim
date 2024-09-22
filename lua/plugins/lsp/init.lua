@@ -1,6 +1,7 @@
 local cmp = require('plugins.lsp.cmp')
 local lazydev = require "plugins.lsp.lazydev"
 local mason = require "plugins.lsp.mason"
+local treesitter_context = require "plugins.lsp.nvim-treesitter-context"
 
 return {
   mason,
@@ -12,6 +13,14 @@ return {
       "williamboman/mason-lspconfig.nvim",
     },
   },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    build = ":TSUpdate",
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter-context",
+    },
+  },
+  treesitter_context,
   cmp,
   lazydev,
   {

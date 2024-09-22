@@ -6,13 +6,6 @@ local lean = require "plugins.coding.lean"
 return {
   telescope,
   conform,
-  {
-    "nvim-treesitter/nvim-treesitter",
-    build = ":TSUpdate",
-    dependencies = {
-      "nvim-treesitter/nvim-treesitter-context",
-    },
-  },
   neotree,
   {
     "windwp/nvim-autopairs",

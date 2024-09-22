@@ -3,8 +3,6 @@ if not status_ok then
   return
 end
 
---- Make status line global (away from nvimtree)
-vim.opt.laststatus = 3
 -- Color table for highlights
 -- stylua: ignore
 local colors = require('theme.colors')

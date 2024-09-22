@@ -38,7 +38,6 @@ require("confs.dap-ui")
 
 -- UI
 require("confs.lualine")
-require("confs.nvim-colorizer")
 
 -- 	-- Fuzzy search
 --   use 'nvim-lua/plenary.nvim'
