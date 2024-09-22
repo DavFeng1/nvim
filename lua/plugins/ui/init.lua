@@ -4,6 +4,7 @@ local barbar = require "plugins.ui.barbar"
 local noice = require "plugins.ui.noice"
 local gitsigns = require "plugins.ui.gitsigns"
 local colorizer = require "plugins.ui.colorizer"
+local lualine = require "plugins.ui.lualine"
 
 return {
   noice,
@@ -14,9 +15,9 @@ return {
     opts = {}
   },
   gitsigns,
-  { "nvim-lualine/lualine.nvim" },
   { "goolord/alpha-nvim" },
   barbar,
   indent_blankline,
-  colorizer
+  colorizer,
+  lualine
 }

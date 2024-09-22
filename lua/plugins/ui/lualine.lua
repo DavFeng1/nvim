@@ -1,8 +1,3 @@
-local status_ok, lualine = pcall(require, "lualine")
-if not status_ok then
-  return
-end
-
 -- Color table for highlights
 -- stylua: ignore
 local colors = require('theme.colors')
@@ -143,4 +138,7 @@ local config = {
   extensions = {}
 }
 
-lualine.setup(config)
+return {
+  "nvim-lualine/lualine.nvim",
+  opts = config
+}

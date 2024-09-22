@@ -33,10 +33,6 @@ require("confs.lspconfig")
 require("confs.nvim-dap")
 require("confs.dap-ui")
 
-
--- UI
-require("confs.lualine")
-
 -- 	-- Fuzzy search
 --   use 'nvim-lua/plenary.nvim'
 --
