@@ -23,11 +23,11 @@ local opts = {
   }
 }
 
+vim.api.nvim_set_hl(0, "NoiceCmdline", { fg = colors.red })
 vim.api.nvim_set_hl(0, "NoiceCmdlinePopup", { bg = colors.background_dark })
 vim.api.nvim_set_hl(0, "NoiceCmdlinePopupBorder", { fg = colors.background_dark })
 vim.api.nvim_set_hl(0, "NoiceCmdlinePopupTitle", { bg = colors.red })
 vim.api.nvim_set_hl(0, "NoiceCmdlineIcon", { fg = colors.red })
-vim.api.nvim_set_hl(0, "NoiceCmdline", { fg = colors.red })
 
 return {
   "folke/noice.nvim",
