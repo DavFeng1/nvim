@@ -5,6 +5,8 @@ local treesitter_context = require "plugins.lsp.nvim-treesitter-context"
 local treesitter = require "plugins.lsp.nvim-treesitter"
 
 return {
+  treesitter,
+  treesitter_context,
   mason,
   {
     "neovim/nvim-lspconfig",
@@ -14,8 +16,6 @@ return {
       "williamboman/mason-lspconfig.nvim",
     },
   },
-  treesitter,
-  treesitter_context,
   cmp,
   lazydev,
   {
