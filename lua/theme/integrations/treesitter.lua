@@ -23,7 +23,7 @@ vim.api.nvim_set_hl(0, "@parameter", { fg = colors.red })
 
 vim.api.nvim_set_hl(0, "@method", { fg = colors.blue })
 vim.api.nvim_set_hl(0, "@include", { fg = colors.blue })
-vim.api.nvim_set_hl(0, "@type", { fg = colors.yellow })
+vim.api.nvim_set_hl(0, "@type", { fg = colors.green })
 vim.api.nvim_set_hl(0, "@type.builtin.typescript", { fg = colors.yellow })
 vim.api.nvim_set_hl(0, "@type.qualifier", { fg = colors.purple })
 
