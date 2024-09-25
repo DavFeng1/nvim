@@ -3,6 +3,10 @@ require "base"
 require "confs.autocmds"
 require "confs.keymaps"
 
+require "latex"
+require "theme"
+require "plugins"
+
 if vim.g.vscode then
   vim.cmd([[
     nnoremap zc :call VSCodeNotify('editor.fold')<CR>
@@ -21,8 +25,4 @@ if vim.g.vscode then
     nmap <expr> j MoveCursor('j')
     nmap <expr> k MoveCursor('k')
   ]])
-else
-  require "latex"
-  require "theme"
-  require "plugins"
 end

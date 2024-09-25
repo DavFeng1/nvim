@@ -1,5 +1,7 @@
-local colors = require("theme.colors")
+local colors = require "theme.colors"
 
+vim.api.nvim_set_hl(0, "Normal", { fg = colors.white, bg = colors.background1 })
+vim.api.nvim_set_hl(0, "NormalFloat", { bg = colors.background2 })
 vim.api.nvim_set_hl(0, "MsgArea", { fg = colors.red })
 vim.api.nvim_set_hl(0, "DefinitionBorder", { fg = colors.red })
 vim.api.nvim_set_hl(0, "Delimiter", { fg = colors.dark_blue })
@@ -11,8 +13,6 @@ vim.api.nvim_set_hl(0, "SignColumn", {})
 
 vim.api.nvim_set_hl(0, "Error", { fg = colors.red, bg = colors.background1 })
 vim.api.nvim_set_hl(0, "ErrorMsg", { fg = colors.red, bg = colors.background1 })
-vim.api.nvim_set_hl(0, "Normal", { fg = colors.white, bg = colors.background1 })
-vim.api.nvim_set_hl(0, "NormalFloat", { bg = colors.background2 })
 vim.api.nvim_set_hl(0, "Folded", { bg = colors.background1 })
 vim.api.nvim_set_hl(0, "Statement", { fg = colors.purple })
 vim.api.nvim_set_hl(0, "Search", { fg = colors.black, bg = colors.pink })
@@ -47,7 +47,6 @@ vim.api.nvim_set_hl(0, "MatchParen", { fg = colors.black, bg = colors.blue })
 vim.api.nvim_set_hl(0, "Directory", { fg = colors.blue })
 -- Use terminal emulator's background color
 vim.api.nvim_set_hl(0, "NonText", { fg = colors.grey })
-
 -- Cursor
 vim.api.nvim_set_hl(0, "Cursor", { bg = colors.light_white })
 vim.api.nvim_set_hl(0, "CursorLine", { bg = colors.cursor_line_background })
