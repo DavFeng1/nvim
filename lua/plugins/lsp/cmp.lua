@@ -22,7 +22,7 @@ return {
       formatting = {
         expandable_indicator = true,
         format = function(entry, vim_item)
-          vim_item.kind = string.format("   %s %s    ", kind_icons[vim_item.kind], vim_item.kind)
+          vim_item.kind = string.format("   %s %s    ", kind_icons.kinds[vim_item.kind], vim_item.kind)
           vim_item.menu = ({
             buffer = "Buf",
             nvim_lsp = "Lsp",
