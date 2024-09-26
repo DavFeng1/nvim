@@ -36,7 +36,6 @@ vim.opt.foldtext = "v:lua.customFoldText()"
 -- Search
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
-
 vim.opt.termguicolors = true
 vim.opt.backspace = "indent,eol,start"
 vim.opt.number = true
@@ -79,3 +78,4 @@ vim.opt.timeoutlen = 500
 vim.opt.mouse = "nvi"
 
 vim.opt.winbar = "%{%v:lua.require('winbar').eval()%}"
+vim.o.background = 'dark'
