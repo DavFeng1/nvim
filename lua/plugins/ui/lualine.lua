@@ -10,8 +10,8 @@ vim.api.nvim_set_hl(0, "LuaLineDiffDelete", { fg = colors.red })
 
 local custom_theme = {
   normal = {
-    a = { fg = colors.red, bg = colors.background1 },
-    z = { fg = colors.red, bg = colors.background1 },
+    a = { fg = colors.red, bg = colors.background_dark },
+    z = { fg = colors.red, bg = colors.background_dark },
   },
   insert = {
     a = { fg = colors.dark_green, bg = colors.background1 },
