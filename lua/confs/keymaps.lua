@@ -45,7 +45,6 @@ vim.keymap.set("v", "<Leader>y", ":<C-U>'<,'>w !clip.exe<cr><cr>", opts)
 -- Telescope
 vim.keymap.set("n", "<C-p>", "<Cmd>Telescope find_files<CR>", opts)
 vim.keymap.set("n", "<C-f>", "<Cmd>Telescope live_grep<CR>", opts)
-vim.keymap.set("n", "<C-e>", "<Cmd>Telescope file_browser<CR>", opts)
 
 -- Neo Tree
 vim.keymap.set("n", "<Leader>e", "<cmd>Neotree toggle<cr>", opts)

@@ -62,7 +62,7 @@ local M = {
   lualine_background = base_colors.background2,
   lualine_background2 = "#2a75a6",
 
-  barbar_background = base_colors.background2,
+  barbar_background = base_colors.background_dark,
 
   which_key_background = base_colors.background2,
 
