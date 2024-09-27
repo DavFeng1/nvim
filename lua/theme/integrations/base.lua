@@ -1,6 +1,6 @@
 local colors = require "theme.colors"
 
-vim.api.nvim_set_hl(0, "Normal", { fg = colors.white, bg = colors.background1 })
+vim.api.nvim_set_hl(0, "Normal", { fg = colors.white, bg = colors.background_light })
 vim.api.nvim_set_hl(0, "NormalFloat", { bg = colors.background2 })
 vim.api.nvim_set_hl(0, "MsgArea", { fg = colors.red })
 vim.api.nvim_set_hl(0, "DefinitionBorder", { fg = colors.red })
