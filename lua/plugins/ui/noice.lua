@@ -36,6 +36,6 @@ return {
   dependencies = {
     "MunifTanjim/nui.nvim",
     --   If not available, we use `mini` as the fallback
-    "rcarriga/nvim-notify",
+    -- "rcarriga/nvim-notify",
   }
 }
