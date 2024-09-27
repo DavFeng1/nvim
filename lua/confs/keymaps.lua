@@ -65,8 +65,9 @@ vim.keymap.set("n", "<S-l>", "<Cmd>BufferMoveNext<CR>", opts)
 
 -- LSP
 vim.keymap.set("n", "<C-d>", "<Cmd> lua vim.lsp.buf.definition()<cr>", opts)
-vim.keymap.set("n", "<C-k>", vim.diagnostic.goto_next)
-vim.keymap.set("n", "<C-j>", vim.diagnostic.goto_prev)
+vim.keymap.set("n", "<C-j>", vim.diagnostic.goto_next)
+vim.keymap.set("n", "<C-k>", vim.diagnostic.goto_prev)
+vim.keymap.set("n", "<C-h>", vim.lsp.buf.hover)
 
 -- Notifications
 vim.keymap.set('', '<Leader>d', "<Cmd> lua require('notify').dismiss() <CR>", { silent = true })
