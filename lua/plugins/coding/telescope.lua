@@ -12,7 +12,7 @@ return {
         entry_prefix = "   ",
         sorting_strategy = "ascending",
         -- @TODO doesn't work
-        file_ignore_patterns = { "node_modules/", "**/package%-lock.json", ".git/", "dist/", "lazy%-lock.json" },
+        file_ignore_patterns = { "node_modules/", "**/package%-lock.json", ".git/", "dist/", ".turbo/", "lazy%-lock.json" },
         layout_strategy = "vertical",
         layout_config = {
           horizontal = {
