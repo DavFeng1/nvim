@@ -69,7 +69,7 @@ vim.keymap.set("n", "<C-k>", vim.diagnostic.goto_prev)
 vim.keymap.set("n", "<C-h>", vim.lsp.buf.hover)
 
 -- Notifications
-vim.keymap.set('', '<Leader>d', "<Cmd> lua require('notify').dismiss() <CR>", { silent = true })
+-- vim.keymap.set('', '<Leader>d', "<Cmd> lua require('notify').dismiss() <CR>", { silent = true })
 
 -- Debug
 -- vim.keymap.set("n", "<C-b>", "<Cmd> lua require'dap'.toggle_breakpoint() <CR>", opts)
