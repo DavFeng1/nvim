@@ -2,6 +2,7 @@ local base_colors = {
   background1 = "#073642",
   background2 = "#021014",
   background3 = "#020c1a",
+  background_dark = "#002831",
   black = "#002831",
   blue = "#2176c7",
   cyan = "#259286",
@@ -23,8 +24,8 @@ local base_colors = {
 
 local M = {
   -- Base Colors
-  background_dark = "#020c1a",
-  black = "#002831",
+  background_dark = "#002831",
+  black = "#020c1a",
   background_light = "#002B36",
   background_lighter = "#073642",
   background1 = base_colors.background1,
@@ -56,7 +57,7 @@ local M = {
 
   cmp_background = base_colors.background2,
 
-  telescope_background = base_colors.background3,
+  telescope_background = base_colors.background_dark,
 
   lualine_background = base_colors.background2,
   lualine_background2 = "#2a75a6",

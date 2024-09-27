@@ -21,9 +21,9 @@ return {
           vertical = {
             prompt_position = "top",
           },
-          width = 115,
-          height = 45,
-          preview_height = 10,
+          width = 100,
+          height = 30,
+          preview_height = 5,
           preview_cutoff = 1,
         },
         color_devicons = true,
