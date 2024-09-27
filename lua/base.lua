@@ -78,4 +78,3 @@ vim.opt.timeoutlen = 500
 vim.opt.mouse = "nvi"
 
 vim.opt.winbar = "%{%v:lua.require('winbar').eval()%}"
-vim.o.background = 'dark'
