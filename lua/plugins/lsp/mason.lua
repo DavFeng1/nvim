@@ -1,6 +1,7 @@
 return {
   "williamboman/mason.nvim",
   opts = {
-    ensure_installed = { "lua_ls", "rust_analyzer", "taplo", "dockerls", "biome", "typescript-language-server" }
+    ensure_installed = { "lua_ls", "rust_analyzer", "taplo",
+      "dockerls", "biome", "typescript-language-server", "json-lsp" }
   }
 }
