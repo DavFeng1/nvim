@@ -23,9 +23,9 @@ local opts = {
   }
 }
 
-vim.api.nvim_set_hl(0, "NoiceCmdline", { fg = colors.red })
-vim.api.nvim_set_hl(0, "NoiceCmdlinePopup", { bg = colors.background2 })
-vim.api.nvim_set_hl(0, "NoiceCmdlinePopupBorder", { fg = colors.background2 })
+vim.api.nvim_set_hl(0, "NoiceCmdline", { fg = colors.red, bg = colors.background_light })
+vim.api.nvim_set_hl(0, "NoiceCmdlinePopup", { bg = colors.background_light })
+vim.api.nvim_set_hl(0, "NoiceCmdlinePopupBorder", { fg = colors.background_light })
 vim.api.nvim_set_hl(0, "NoiceCmdlinePopupTitle", { bg = colors.red })
 vim.api.nvim_set_hl(0, "NoiceCmdlineIcon", { fg = colors.red })
 
