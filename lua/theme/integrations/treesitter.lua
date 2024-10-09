@@ -27,7 +27,7 @@ vim.api.nvim_set_hl(0, "@include", { fg = colors.blue })
 vim.api.nvim_set_hl(0, "@type", { fg = colors.type })
 vim.api.nvim_set_hl(0, "@type.qualifier", { fg = colors.purple })
 
-vim.api.nvim_set_hl(0, "@punctuation.bracket", { fg = colors.blue })
+vim.api.nvim_set_hl(0, "@punctuation.bracket", { fg = colors.bracket })
 
 vim.api.nvim_set_hl(0, "@constructor", { fg = colors.red })
 vim.api.nvim_set_hl(0, "@label", { fg = colors.red })

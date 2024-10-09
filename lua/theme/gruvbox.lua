@@ -81,7 +81,10 @@ local M = {
   variable = "#83a598",
   string = "#b8bb26",
   func = "#8ec07c",
-  operator = "#fe8019"
+  operator = "#fe8019",
+  bracket = "#b16286",
+  special = "#fabd2f",
+  delimiter = "#8ec07c",
 }
 
 return M
