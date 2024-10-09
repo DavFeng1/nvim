@@ -76,7 +76,9 @@ local M = {
   neo_tree_winbar_background = "#1a304d",
 
   winbar_background = base_colors.background1,
-  keyword = "#fb4934"
+  keyword = "#fb4934",
+  type = "#fabd2f",
+  variable = "#83a598"
 }
 
 return M

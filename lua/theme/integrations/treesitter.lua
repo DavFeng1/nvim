@@ -11,11 +11,12 @@ vim.api.nvim_set_hl(0, "@function.builtin", { fg = colors.blue })
 
 vim.api.nvim_set_hl(0, "@conditional", { fg = colors.purple })
 vim.api.nvim_set_hl(0, "@keyword", { fg = colors.keyword })
+vim.api.nvim_set_hl(0, "@keyword.modifier.typescript", { fg = colors.type })
 
 vim.api.nvim_set_hl(0, "@field", { fg = colors.blue })
-vim.api.nvim_set_hl(0, "@variable", { fg = colors.red })
+vim.api.nvim_set_hl(0, "@variable", { fg = colors.variable })
 vim.api.nvim_set_hl(0, "@variable.builtin", { fg = colors.pink })
-vim.api.nvim_set_hl(0, "@variable.member", { fg = colors.blue })
+vim.api.nvim_set_hl(0, "@variable.member", { fg = colors.variable })
 vim.api.nvim_set_hl(0, "@operator", { fg = colors.cyan })
 
 vim.api.nvim_set_hl(0, "@property", { fg = colors.red })
@@ -23,8 +24,7 @@ vim.api.nvim_set_hl(0, "@parameter", { fg = colors.red })
 
 vim.api.nvim_set_hl(0, "@method", { fg = colors.blue })
 vim.api.nvim_set_hl(0, "@include", { fg = colors.blue })
-vim.api.nvim_set_hl(0, "@type", { fg = colors.yellow })
-vim.api.nvim_set_hl(0, "@type.builtin.typescript", { fg = colors.yellow })
+vim.api.nvim_set_hl(0, "@type", { fg = colors.type })
 vim.api.nvim_set_hl(0, "@type.qualifier", { fg = colors.purple })
 
 vim.api.nvim_set_hl(0, "@punctuation.bracket", { fg = colors.blue })
