@@ -33,5 +33,5 @@ vim.api.nvim_set_hl(0, "@constructor", { fg = colors.red })
 vim.api.nvim_set_hl(0, "@label", { fg = colors.red })
 
 -- Context
-vim.api.nvim_set_hl(0, "TreeSitterContext", { fg = colors.background1 })
-vim.api.nvim_set_hl(0, "TreeSitterContextBottom", { bg = colors.background1 })
+vim.api.nvim_set_hl(0, "TreeSitterContext", { fg = colors.background })
+vim.api.nvim_set_hl(0, "TreeSitterContextBottom", { bg = colors.background })

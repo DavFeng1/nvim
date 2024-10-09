@@ -22,7 +22,7 @@ return {
             prompt_position = "top",
           },
           width = 100,
-          height = 30,
+          height = 20,
           preview_height = 5,
           preview_cutoff = 1,
         },
@@ -45,6 +45,7 @@ return {
             "-H",
             "--no-ignore-vcs",
           },
+          previewer = false,
         },
         live_grep = {
           shorten_path = true,
