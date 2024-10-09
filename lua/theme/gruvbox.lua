@@ -60,7 +60,7 @@ local M = {
   lualine_background = base_colors.background2,
   lualine_background2 = "#2a75a6",
 
-  barbar_background = base_colors.background_dark,
+  barbar_background = base_colors.background,
 
   which_key_background = base_colors.background2,
 
@@ -75,7 +75,7 @@ local M = {
   neo_tree_root_background = "#1a304d",
   neo_tree_winbar_background = "#1a304d",
 
-  winbar_background = base_colors.background1,
+  winbar_background = base_colors.background,
   keyword = "#fb4935",
   type = "#fabd2f",
   variable = "#83a598",
@@ -85,6 +85,8 @@ local M = {
   bracket = "#b16286",
   special = "#fabd2f",
   delimiter = "#8ec07c",
+  --
+  barbar_current = "#8ec07c",
 }
 
 return M
