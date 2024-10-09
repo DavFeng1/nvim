@@ -1,6 +1,6 @@
 local colors = require "theme.colors"
 
-vim.api.nvim_set_hl(0, "Normal", { fg = colors.white, bg = colors.background_dark })
+vim.api.nvim_set_hl(0, "Normal", { fg = colors.white, bg = colors.background })
 vim.api.nvim_set_hl(0, "NormalFloat", { bg = colors.background_dark })
 vim.api.nvim_set_hl(0, "MsgArea", { fg = colors.red })
 vim.api.nvim_set_hl(0, "DefinitionBorder", { fg = colors.red })
@@ -40,7 +40,7 @@ vim.api.nvim_set_hl(0, "Title", { fg = colors.dark_purple })
 
 -- SPlit
 vim.api.nvim_set_hl(0, "WinSeparator", { fg = colors.red })
-vim.api.nvim_set_hl(0, "Visual", { bg = colors.lightbg })
+vim.api.nvim_set_hl(0, "Visual", { bg = colors.selection })
 
 -- Characters
 vim.api.nvim_set_hl(0, "MatchParen", { fg = colors.black, bg = colors.blue })
