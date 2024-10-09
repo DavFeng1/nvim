@@ -8,14 +8,15 @@ local base_colors = {
   light_white = "#ffffff",
   white = "#f1f1f1",
   yellow = "#fefdc8",
-  background = "#201f1f",
   background_light = "#2a2929",
-  background_dark = "#171516",
+  background = "#1e2021",
+  background_dark = "#201f1f",
   foreground = "#c7c7c7",
   selection = "#29302b",
+  brown = "#453326",
   -- auxilliery colors --> remove
   grey = "#a1aab4",
-  line = "#404f7d",
+  line = "#504f4f",
   dark_green = "#003748",
   orange = "#f34b00",
   dark_blue = "#178ec8",
@@ -52,10 +53,13 @@ local M = {
   statusline_bg = base_colors.background2,
   folder_bg = "#86a5ff",
   cursor_line_background = base_colors.background_light,
+  cursor_line_frontground = base_colors.line,
+  git_signs_add = "#487e02",
+  git_signs_blame = base_colors.line,
 
   cmp_background = base_colors.background2,
 
-  telescope_background = base_colors.background_dark,
+  telescope_background = base_colors.background_light,
 
   lualine_background = base_colors.background2,
   lualine_background2 = "#2a75a6",
@@ -64,8 +68,6 @@ local M = {
 
   which_key_background = base_colors.background2,
 
-  git_signs_add = "#487e02",
-  git_signs_blame = "#35577d",
 
   diagnostics_error = "#f14c4c",
 
@@ -87,6 +89,7 @@ local M = {
   delimiter = "#8ec07c",
   --
   barbar_current = "#8ec07c",
+  search = "#393527"
 }
 
 return M

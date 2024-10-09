@@ -10,15 +10,14 @@ vim.api.nvim_set_hl(0, "DiffChange", { fg = colors.yellow })
 vim.api.nvim_set_hl(0, "DiffDelete", { fg = colors.red })
 vim.api.nvim_set_hl(0, "FinderParam", { fg = colors.red, bg = colors.background1 })
 vim.api.nvim_set_hl(0, "SignColumn", {})
-
 vim.api.nvim_set_hl(0, "Error", { fg = colors.red, bg = colors.background1 })
 vim.api.nvim_set_hl(0, "ErrorMsg", { fg = colors.red, bg = colors.background1 })
 vim.api.nvim_set_hl(0, "Folded", { bg = colors.background1 })
 vim.api.nvim_set_hl(0, "Statement", { fg = colors.purple })
-vim.api.nvim_set_hl(0, "Search", { fg = colors.black, bg = colors.pink })
+vim.api.nvim_set_hl(0, "Search", { bg = colors.search })
 vim.api.nvim_set_hl(0, "Todo", { fg = colors.black, bg = colors.yellow })
 vim.api.nvim_set_hl(0, "Folded", { fg = colors.grey })
-vim.api.nvim_set_hl(0, "DiagnosticUnderlineError", { gui = nil })
+-- vim.api.nvim_set_hl(0, "DiagnosticUnderlineError", { gui = nil })
 
 -- Built in
 vim.api.nvim_set_hl(0, "Type", { fg = colors.yellow })
@@ -50,8 +49,8 @@ vim.api.nvim_set_hl(0, "NonText", { fg = colors.grey })
 -- Cursor
 vim.api.nvim_set_hl(0, "Cursor", { bg = colors.light_white })
 vim.api.nvim_set_hl(0, "CursorLine", { bg = colors.cursor_line_background })
-vim.api.nvim_set_hl(0, "CursorLineNr", { fg = colors.light_white })
-vim.api.nvim_set_hl(0, "LineNr", { fg = colors.grey })
+vim.api.nvim_set_hl(0, "CursorLineNr", { fg = colors.white, })
+vim.api.nvim_set_hl(0, "LineNr", { fg = colors.line })
 
 -- Diagnostic
 vim.api.nvim_set_hl(0, "DiagnosticInfo", { fg = colors.dark_purple })
