@@ -1,8 +1,9 @@
 if vim.o.background == 'dark' then
+  -- Base theme
+  require "theme.integrations.base"
   -- Plugin integrations
   require "theme.integrations.neo-tree"
   require("theme.integrations.telescope")
-  require("theme.integrations.cmp")
   require("theme.integrations.barbar")
   require("theme.integrations.treesitter")
   require "theme.integrations.indent-blankline"
@@ -12,8 +13,7 @@ if vim.o.background == 'dark' then
   require("theme.integrations.notify")
   -- Custom
   require("theme.winbar")
-  -- Base theme
-  require "theme.integrations.base"
+  require "theme.integrations.cmp"
 else
   print('light mode!')
   vim.api.nvim_set_hl(0, "Normal", { bg = "#405570" })

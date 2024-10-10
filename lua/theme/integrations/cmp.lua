@@ -13,9 +13,6 @@ vim.api.nvim_set_hl(0, "CmpItemKindDefault", { fg = colors.white })
 vim.api.nvim_set_hl(0, "CmpItemMenuDefault", { fg = colors.white })
 -- vim.api.nvim_set_hl(0, "CmpItemAbbrDefault", { fg = colors.grey })
 
--- Matches
-vim.api.nvim_set_hl(0, "CmpItemAbbrMatchDefault", { fg = colors.green })
-
 -- Kinds
 vim.api.nvim_set_hl(0, "CmpItemKindField", { fg = colors.pink })
 vim.api.nvim_set_hl(0, "CmpItemKindProperty", { fg = colors.blue })
@@ -44,3 +41,6 @@ vim.api.nvim_set_hl(0, "CmpItemKindInterface", { fg = colors.blue })
 vim.api.nvim_set_hl(0, "CmpItemKindColor", { fg = colors.blue })
 vim.api.nvim_set_hl(0, "CmpItemKindTypeParameter", { fg = colors.blue })
 vim.api.nvim_set_hl(0, "CmpItemKindSnippet", { fg = colors.orange })
+
+-- Matches
+vim.api.nvim_set_hl(0, "CmpItemAbbrMatch", { fg = colors.green })
