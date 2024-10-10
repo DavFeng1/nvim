@@ -4,7 +4,7 @@ if not present then
   return
 end
 
-local on_attach = function(client, bufnr)
+local on_attach = function(client, _bufnr)
   client.server_capabilities.document_formatting = true
   client.server_capabilities.semanticTokensProvider = nil
 end
@@ -14,7 +14,9 @@ local lsp_flags = {
 }
 
 lspconfig.ts_ls.setup {
-  on_attach = on_attach,
+  on_attach = function(client, __bufnr)
+    client.server_capabilities.documentFormattingProvider = false
+  end,
   flags = lsp_flags
 }
 
@@ -65,7 +67,10 @@ lspconfig.rust_analyzer.setup {
   flags = lsp_flags,
 }
 
-lspconfig.biome.setup {}
+lspconfig.biome.setup {
+  on_attach = on_attach,
+  flags = lsp_flags
+}
 
 lspconfig.dockerls.setup {}
 

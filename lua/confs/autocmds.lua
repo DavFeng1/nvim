@@ -12,3 +12,7 @@ vim.api.nvim_create_autocmd("TextYankPost", {
     })
   end
 })
+
+
+-- Formatting
+vim.cmd([[autocmd BufWritePre * lua vim.lsp.buf.format()]])
