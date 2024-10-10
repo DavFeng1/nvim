@@ -46,10 +46,11 @@ local M = {
   dark_purple = base_colors.dark_purple,
   yellow = base_colors.yellow,
   pink = base_colors.pink,
-  pmenu_bg = base_colors.background2,
+  pmenu_bg = base_colors.background_light,
 
   -- Component specific colors
-  pmenu_sel_bg = base_colors.red,
+  pmenu_sel_bg = base_colors.background_light,
+  pmenu_sel_fg = "#8ec07c",
   statusline_bg = base_colors.background2,
   folder_bg = "#86a5ff",
   cursor_line_background = base_colors.background_light,
@@ -66,7 +67,7 @@ local M = {
 
   barbar_background = base_colors.background,
 
-  which_key_background = base_colors.background2,
+  which_key_background = base_colors.background_dark,
 
 
   diagnostics_error = "#f14c4c",

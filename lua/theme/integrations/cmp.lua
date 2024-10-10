@@ -1,7 +1,7 @@
 local colors = require("theme.colors")
 
 -- Menu
-vim.api.nvim_set_hl(0, "CmpPmenu", { fg = colors.white, bg = colors.background3 })
+vim.api.nvim_set_hl(0, "CmpPmenu", { bg = colors.pmenu_bg })
 vim.api.nvim_set_hl(0, "CmpBorder", { fg = colors.red })
 
 vim.api.nvim_set_hl(0, "CmpDocBorder", { fg = colors.red, bg = colors.background3 })

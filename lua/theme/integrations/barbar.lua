@@ -4,15 +4,13 @@ local colors = require "theme.colors"
 vim.api.nvim_set_hl(0, "BufferOffset", { bg = colors.neo_tree_background, fg = colors.light_white })
 
 --  Current
-vim.api.nvim_set_hl(0, "BufferCurrent", { bg = colors.background_light, fg = colors.light_white })
-vim.api.nvim_set_hl(0, "BufferCurrentIcon", { fg = colors.yellow, bg = colors.background_light })
-vim.api.nvim_set_hl(0, "BufferCurrentIndex", { bg = colors.background_light, fg = colors.light_white })
--- right bar
-vim.api.nvim_set_hl(0, "BufferCurrentSign", { bg = colors.background_light, fg = colors.barbar_current })
-vim.api.nvim_set_hl(0, "BufferCurrentSignRight", { bg = colors.background_light, fg = colors.background_light })
--- When the current buffer is modified
-vim.api.nvim_set_hl(0, "BufferCurrentMod", { background = colors.background_light })
-vim.api.nvim_set_hl(0, "BufferCurrentTarget", { bg = colors.background, fg = colors.light_white })
+vim.api.nvim_set_hl(0, "BufferCurrent", { fg = colors.yellow, bg = colors.background_light })
+vim.api.nvim_set_hl(0, "BufferCurrentIcon", { bg = colors.background_light })
+vim.api.nvim_set_hl(0, "BufferCurrentIndex", { fg = colors.yellow, bg = colors.background_light })
+vim.api.nvim_set_hl(0, "BufferCurrentSign", { fg = colors.barbar_current, bg = colors.background_light })
+vim.api.nvim_set_hl(0, "BufferCurrentSignRight", { fg = colors.background, bg = colors.background_light })
+vim.api.nvim_set_hl(0, "BufferCurrentMod", { bg = colors.background_light })
+vim.api.nvim_set_hl(0, "BufferCurrentTarget", { fg = colors.yellow, bg = colors.background_light })
 
 -- Visible
 vim.api.nvim_set_hl(0, "BufferVisible", { fg = colors.white, bg = colors.background1 })

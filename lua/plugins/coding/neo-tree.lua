@@ -63,17 +63,20 @@ return {
           },
         },
       },
-      filesystem = {
+      buffers = {
         follow_current_file = {
-          enabled = true,
+          enabled = true
         },
+      },
+      filesystem = {
+        follow_current_file = true,
+        use_libuv_file_watcher = true,
         filtered_items = {
           visible = true,
         },
-        use_libuv_file_watcher = true,
       },
       source_selector = {
-        winbar = true,
+        winbar = false,
         statusline = false,
       },
       window = {
