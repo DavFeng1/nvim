@@ -16,6 +16,7 @@ return {
   },
   gitsigns,
   { "goolord/alpha-nvim" },
+  { "echasnovski/mini.nvim", version = "*" },
   barbar,
   indent_blankline,
   colorizer,

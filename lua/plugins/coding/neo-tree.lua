@@ -80,8 +80,8 @@ return {
         statusline = false,
       },
       window = {
-        position = "float", -- left, right, top, bottom, float, current
-        width = 100,
+        position = "right", -- left, right, top, bottom, float, current
+        width = 50,
         height = 30,
       },
     })

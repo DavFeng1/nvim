@@ -71,7 +71,7 @@ local M = {
   diagnostics_error = "#f14c4c",
 
   -- Neo Tree
-  neo_tree_background = base_colors.background_dark,
+  neo_tree_background = base_colors.background,
   neo_tree_modified = "#e2a974",
   neo_tree_root_background = "#1a304d",
   neo_tree_winbar_background = "#1a304d",
