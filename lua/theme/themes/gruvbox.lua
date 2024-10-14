@@ -47,6 +47,9 @@ local M = {
   pink = base_colors.pink,
   pmenu_bg = base_colors.background_light,
 
+  -- text
+  text_primary = base_colors.white,
+  text_highlight = base_colors.yellow,
   -- Component specific colors
   pmenu_sel_bg = base_colors.selection,
   statusline_bg = base_colors.background2,
@@ -55,20 +58,15 @@ local M = {
   cursor_line_frontground = base_colors.line,
   git_signs_add = "#487e02",
   git_signs_blame = base_colors.line,
-
   cmp_background = base_colors.background2,
-
   telescope_background = base_colors.background_light,
-
   lualine_background = base_colors.background2,
   lualine_background2 = "#2a75a6",
-
   barbar_background = base_colors.background,
-
   which_key_background = base_colors.background_dark,
-
-
   diagnostics_error = "#f14c4c",
+  ibl_line = "#2f302e",
+  ibl_scope = base_colors.red,
 
   -- Neo Tree
   neo_tree_background = base_colors.background,
