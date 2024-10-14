@@ -4,7 +4,7 @@ require "confs.autocmds"
 require "confs.keymaps"
 
 require "latex"
-require "theme"
+require "colorscheme"
 require "plugins"
 
 if vim.g.vscode then
