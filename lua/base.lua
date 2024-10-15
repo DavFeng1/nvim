@@ -33,7 +33,6 @@ vim.o.pumblend = 5;
 -- Case insensitive search
 vim.opt.ignorecase = true
 
-
 -- Search
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
