@@ -1,4 +1,4 @@
-vim.o.background = 'light'
+vim.o.background = 'dark'
 if vim.o.background == 'light' then
   local colors = require 'theme.themes.quietLight'
   return colors
