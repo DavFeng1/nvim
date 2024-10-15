@@ -36,7 +36,4 @@ return {
 
     alpha_nvim.setup(dashboard.opts)
   end
-
-
-
 }

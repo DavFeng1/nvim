@@ -5,6 +5,7 @@ local noice = require "plugins.ui.noice"
 local gitsigns = require "plugins.ui.gitsigns"
 local colorizer = require "plugins.ui.colorizer"
 local lualine = require "plugins.ui.lualine"
+local scrollview = require "plugins.ui.scrollview"
 
 return {
   noice,
@@ -20,5 +21,6 @@ return {
   barbar,
   indent_blankline,
   colorizer,
-  lualine
+  lualine,
+  scrollview
 }
