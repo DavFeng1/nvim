@@ -8,6 +8,17 @@ return {
     end
 
     neo_tree.setup({
+      window = {
+        position = "bottom", -- left, right, top, bottom, float, current
+        width = 100,
+        height = 30,
+      },
+      filesystem = {
+        follow_current_file = { enabled = true, leave_dirs_open = false },
+        filtered_items = {
+          visible = true,
+        },
+      },
       popup_border_style = "single",
       add_blank_line_at_top = false,
       close_if_last_window = true,
@@ -19,7 +30,7 @@ return {
         },
         indent = {
           indent_size = 2,
-          padding = 1, -- extra padding on left hand side
+          -- padding = 1, -- extra padding on left hand side
           -- indent guides
           with_markers = true,
           indent_marker = "│",
@@ -50,40 +61,27 @@ return {
         git_status = {
           symbols = {
             -- Change type
-            added = "✚",
-            modified = "",
-            deleted = "✖", -- this can only be used in the git_status source
-            renamed = "", -- this can only be used in the git_status source
+            added     = "", -- or "✚", but this is redundant info if you use git_status_colors on the name
+            modified  = "", -- or "", but this is redundant info if you use git_status_colors on the name
+            deleted   = "✖", -- this can only be used in the git_status source
+            renamed   = "󰁕", -- this can only be used in the git_status source
             -- Status type
             untracked = "",
-            ignored = "",
-            unstaged = "",
-            staged = "",
-            conflict = "",
+            ignored   = "",
+            unstaged  = "󰄱",
+            staged    = "",
+            conflict  = "",
           },
         },
-      },
-      buffers = {
-        follow_current_file = {
-          enabled = true
+        file_size = {
+          enabled = true,
+          required_width = 64, -- min width of window required to show this column
         },
-      },
-      filesystem = {
-        follow_current_file = true,
-        use_libuv_file_watcher = true,
-        filtered_items = {
-          visible = true,
+        source_selector = {
+          winbar = false,
+          statusline = false,
         },
-      },
-      source_selector = {
-        winbar = false,
-        statusline = false,
-      },
-      window = {
-        position = "right", -- left, right, top, bottom, float, current
-        width = 50,
-        height = 30,
-      },
+      }
     })
   end,
   dependencies = {

@@ -47,7 +47,7 @@ vim.keymap.set("n", "<C-p>", "<Cmd>Telescope find_files<CR>", opts)
 vim.keymap.set("n", "<C-f>", "<Cmd>Telescope live_grep<CR>", opts)
 
 -- Neo Tree
-vim.keymap.set("n", "<Leader>e", "<cmd>Neotree toggle<cr>", opts)
+vim.keymap.set("n", "<Leader>e", "<cmd>Neotree toggle reveal_force_cwd<cr>", opts)
 
 -- Bufferline
 vim.keymap.set("n", "<Leader>1", "<Cmd>BufferGoto 1<CR>", opts)
