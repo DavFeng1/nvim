@@ -5,6 +5,9 @@ require "confs.keymaps"
 
 require "latex"
 require "plugins"
+local set_colorscheme = require "colorscheme"
+
+set_colorscheme()
 
 if vim.g.vscode then
   vim.cmd([[

@@ -4,7 +4,6 @@ local set_neo_tree = require "theme.integrations.neo-tree"
 local set_telescope = require "theme.integrations.telescope"
 local set_barbar = require "theme.integrations.barbar"
 local set_treesitter = require "theme.integrations.treesitter"
-local set_ibl = require "theme.integrations.indent-blankline"
 local set_git_signs = require "theme.integrations.gitsigns"
 local set_which_key = require "theme.integrations.which-key"
 local set_alpha = require "theme.integrations.alpha"
@@ -20,7 +19,6 @@ return function()
   set_cmp()
   set_treesitter()
   set_barbar()
-  set_ibl()
   set_telescope()
   set_neo_tree()
   set_git_signs()

@@ -22,7 +22,7 @@ return {
             prompt_position = "top",
           },
           width = 100,
-          height = 20,
+          height = 30,
           preview_height = 5,
           preview_cutoff = 1,
         },
