@@ -72,13 +72,13 @@ local M = {
   diagnostics_error = "#f14c4c",
   ibl_line = "#d9d9d9",
   ibl_scope = base_colors.line,
-
   -- Neo Tree
   neo_tree_background = base_colors.background,
   neo_tree_modified = "#e2a974",
   neo_tree_root_background = "#1a304d",
   neo_tree_winbar_background = "#1a304d",
-
+  -- CMP
+  cmp_text = base_colors.black,
   winbar_background = base_colors.background,
   keyword = base_colors.blue,
   type = base_colors.magenta,
@@ -92,7 +92,7 @@ local M = {
   delimiter = "#8ec07c",
   --
   barbar_current = "#8ec07c",
-  search = "#393527"
+  search = "#f0dae3"
 }
 
 

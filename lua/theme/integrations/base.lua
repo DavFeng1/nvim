@@ -31,7 +31,7 @@ return function()
   vim.api.nvim_set_hl(0, "StatusLineNC", { fg = colors.green })
 
   -- PMenu
-  vim.api.nvim_set_hl(0, "PMenu", { fg = colors.white, bg = colors.pmenu_bg })
+  vim.api.nvim_set_hl(0, "PMenu", { fg = colors.text_primary, bg = colors.pmenu_bg })
   vim.api.nvim_set_hl(0, "PmenuSel", { bg = colors.pmenu_sel_bg })
   vim.api.nvim_set_hl(0, "PmenuSbar", { fg = colors.white, bg = colors.background2 })
   vim.api.nvim_set_hl(0, "PmenuThumb", { bg = colors.red })

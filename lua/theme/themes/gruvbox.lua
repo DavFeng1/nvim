@@ -76,7 +76,8 @@ local M = {
   neo_tree_modified = "#e2a974",
   neo_tree_root_background = "#1a304d",
   neo_tree_winbar_background = "#1a304d",
-
+  -- CMP
+  cmp_text = base_colors.grey,
   winbar_background = base_colors.background,
   keyword = "#fb4935",
   type = "#fabd2f",

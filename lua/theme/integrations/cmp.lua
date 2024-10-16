@@ -7,13 +7,13 @@ return function()
   vim.api.nvim_set_hl(0, "CmpBorder", { fg = colors.red })
 
   vim.api.nvim_set_hl(0, "CmpDocBorder", { fg = colors.red, bg = colors.background3 })
-  vim.api.nvim_set_hl(0, "CmpDocPMenu", { fg = colors.white, bg = colors.background3 })
+  vim.api.nvim_set_hl(0, "CmpDocPMenu", { fg = colors.text_primary, bg = colors.background3 })
   vim.api.nvim_set_hl(0, "CmpPmenuBorder", { bg = colors.yellow })
 
   -- Defaults
-  vim.api.nvim_set_hl(0, "CmpItemKindDefault", { fg = colors.white })
-  vim.api.nvim_set_hl(0, "CmpItemMenuDefault", { fg = colors.white })
-  -- vim.api.nvim_set_hl(0, "CmpItemAbbrDefault", { fg = colors.grey })
+  vim.api.nvim_set_hl(0, "CmpItemKindDefault", { fg = colors.text_primary })
+  vim.api.nvim_set_hl(0, "CmpItemMenuDefault", { fg = colors.text_primary })
+  vim.api.nvim_set_hl(0, "CmpItemAbbrDefault", { fg = colors.cmp_text })
 
   -- Kinds
   vim.api.nvim_set_hl(0, "CmpItemKindField", { fg = colors.pink })
