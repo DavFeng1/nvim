@@ -4,7 +4,7 @@ local config_lualine = function()
   local colors = get_colors()
   local custom_theme = {
     normal = {
-      a = { fg = colors.red, bg = colors.background_dark },
+      a = { fg = colors.lualine_normal_foreground, bg = colors.lualine_mode_background },
       c = { fg = colors.red, bg = colors.lualine_background },
       x = { fg = colors.red, bg = colors.lualine_background },
       z = { fg = colors.red, bg = colors.background_dark },
@@ -19,13 +19,13 @@ local config_lualine = function()
       a = { fg = colors.dark_blue, bg = colors.lualine_background },
       c = { fg = colors.red, bg = colors.lualine_background },
       x = { fg = colors.red, bg = colors.lualine_background },
-      z = { fg = colors.dark_blue, bg = colors.lualine_background2 }
+      z = { fg = colors.dark_blue, bg = colors.lualine_background_dark }
     },
     replace = {
       a = { fg = colors.cyan, bg = colors.lualine_background },
       c = { fg = colors.red, bg = colors.lualine_background },
       x = { fg = colors.red, bg = colors.lualine_background },
-      z = { fg = colors.cyan, bg = colors.lualine_background2 }
+      z = { fg = colors.cyan, bg = colors.lualine_background_dark }
     },
     inactive = {
       a = { fg = colors.grey, bg = colors.lualine_background },
@@ -35,9 +35,9 @@ local config_lualine = function()
     },
   }
 
-  vim.api.nvim_set_hl(0, "LuaLineDiffAdd", { fg = colors.green })
-  vim.api.nvim_set_hl(0, "LuaLineDiffChange", { fg = colors.yellow })
-  vim.api.nvim_set_hl(0, "LuaLineDiffDelete", { fg = colors.red })
+  vim.api.nvim_set_hl(0, "LuaLineDiffAdd", { fg = colors.lualine_diff_add })
+  vim.api.nvim_set_hl(0, "LuaLineDiffChange", { fg = colors.lualine_diff_change })
+  vim.api.nvim_set_hl(0, "LuaLineDiffDelete", { fg = colors.lualine_diff_delete })
 
   local lualine_present, lualine = pcall(require, 'lualine')
   if not lualine_present then
@@ -68,15 +68,15 @@ local config_lualine = function()
       lualine_c = {
         {
           'branch',
-          color = { fg = colors.purple },
+          color = { fg = colors.lualine_branch },
           padding = { left = 3 }
         },
         {
           'filetype',
-          colored = true,            -- Displays filetype icon in color if set to true
-          icon_only = false,         -- Display only an icon for filetype
-          icon = { align = 'left' }, -- Display filetype icon on the right hand side
-          color = { fg = colors.blue },
+          colored = true,                                           -- Displays filetype icon in color if set to true
+          icon_only = false,                                        -- Display only an icon for filetype
+          icon = { align = 'left', color = { fg = colors.black } }, -- Display filetype icon on the right hand side
+          color = { fg = colors.lualine_filetype_foreground },
           padding = { left = 3 }
         },
         {
@@ -118,15 +118,15 @@ local config_lualine = function()
             return msg
           end,
           icon = ' ',
-          color = { fg = colors.blue },
+          color = { fg = colors.lualine_lsp_foreground },
         },
         {
           'location',
-          color = { fg = colors.red },
+          color = { fg = colors.lualine_location_foreground },
         },
         {
           'progress',
-          color = { fg = colors.red },
+          color = { fg = colors.lualine_progress_foreground },
         }
       },
       lualine_y = {},
