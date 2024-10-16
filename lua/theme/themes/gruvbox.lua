@@ -81,6 +81,7 @@ local M = {
   keyword = "#fb4935",
   type = "#fabd2f",
   variable = "#83a598",
+  variable_member = "#83a598",
   string = "#b8bb26",
   func = "#8ec07c",
   operator = "#fe8019",
