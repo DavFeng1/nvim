@@ -7,6 +7,7 @@ vim.api.nvim_create_autocmd("OptionSet", {
   pattern = "background",
   command = "silent!"
 })
+
 local set_custom_highlights = require "colorscheme"
 -- Reapply custom highlights on background change without changing colorscheme
 vim.api.nvim_create_autocmd("OptionSet", {

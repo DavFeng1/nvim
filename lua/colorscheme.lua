@@ -9,6 +9,7 @@ local set_which_key = require "theme.integrations.which-key"
 local set_alpha = require "theme.integrations.alpha"
 local set_notify = require "theme.integrations.notify"
 local set_cmp = require "theme.integrations.cmp"
+local set_ibl = require "theme.integrations.indent-blankline"
 
 -- Custom
 local set_winbar = require "theme.winbar"
@@ -27,4 +28,5 @@ return function()
   set_notify()
   set_winbar()
   set_cmp()
+  set_ibl()
 end
