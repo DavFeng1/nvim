@@ -1,14 +1,11 @@
-local get_colors = require "theme.colors"
 local set_ibl = require "theme.integrations.indent-blankline"
 return {
   "lukas-reineke/indent-blankline.nvim",
   main = "ibl",
   ---@module "ibl"
   ---@type ibl.config
-  opts = function()
-    set_ibl()
-
-    return {
+  config = function()
+    require('ibl').setup({
       indent = {
         char = "│",
         tab_char = "│",
@@ -24,7 +21,8 @@ return {
           "notify",
         }
       }
-    }
+    })
+    set_ibl()
   end
 
 }

@@ -2,7 +2,6 @@
 require "base"
 require "confs.autocmds"
 require "confs.keymaps"
-
 require "latex"
 require "plugins"
 local set_colorscheme = require "colorscheme"

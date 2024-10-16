@@ -27,7 +27,7 @@ return function()
     fg = colors.barbar_background_current,
     bg = colors.barbar_background_current
   })
-  vim.api.nvim_set_hl(0, "BufferCurrentMod", { bg = colors.red })
+  vim.api.nvim_set_hl(0, "BufferCurrentMod", { bg = colors.barbar_background_current })
   vim.api.nvim_set_hl(0, "BufferCurrentTarget", {
     fg = colors.text_highlight,
     bg = colors.barbar_background_current
