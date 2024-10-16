@@ -1,11 +1,19 @@
 -- Built-in configs
-require "base"
-require "confs.autocmds"
-require "confs.keymaps"
-require "latex"
-require "plugins"
-local set_colorscheme = require "colorscheme"
 
+require "latex"
+
+local set_options     = require "options"
+local set_autocmds    = require "confs.autocmds"
+local set_keymaps     = require "confs.keymaps"
+local set_colorscheme = require "colorscheme"
+local setup_plugins   = require "plugins"
+local get_colors      = require 'theme.colors'
+local colors          = get_colors()
+
+set_options()
+set_autocmds()
+set_keymaps()
+setup_plugins()
 set_colorscheme()
 
 if vim.g.vscode then

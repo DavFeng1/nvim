@@ -1,31 +1,37 @@
--- Color table for highlights
--- stylua: ignore
-local get_colors = require 'theme.colors'
-local icons = require "theme.icons"
-
-local config = function()
+local config_lualine = function()
+  local icons = require "theme.icons"
+  local get_colors = require 'theme.colors'
   local colors = get_colors()
-
   local custom_theme = {
     normal = {
       a = { fg = colors.red, bg = colors.background_dark },
+      c = { fg = colors.red, bg = colors.lualine_background },
+      x = { fg = colors.red, bg = colors.lualine_background },
       z = { fg = colors.red, bg = colors.background_dark },
     },
     insert = {
-      a = { fg = colors.dark_green, bg = colors.background1 },
-      z = { fg = colors.dark_green, bg = colors.background1 }
+      a = { fg = colors.dark_green, bg = colors.background },
+      c = { fg = colors.red, bg = colors.lualine_background },
+      x = { fg = colors.red, bg = colors.lualine_background },
+      z = { fg = colors.dark_green, bg = colors.background }
     },
     visual = {
-      a = { fg = colors.dark_blue, bg = colors.background2 },
+      a = { fg = colors.dark_blue, bg = colors.lualine_background },
+      c = { fg = colors.red, bg = colors.lualine_background },
+      x = { fg = colors.red, bg = colors.lualine_background },
       z = { fg = colors.dark_blue, bg = colors.lualine_background2 }
     },
     replace = {
-      a = { fg = colors.cyan, bg = colors.background2 },
+      a = { fg = colors.cyan, bg = colors.lualine_background },
+      c = { fg = colors.red, bg = colors.lualine_background },
+      x = { fg = colors.red, bg = colors.lualine_background },
       z = { fg = colors.cyan, bg = colors.lualine_background2 }
     },
     inactive = {
-      a = { fg = colors.grey, bg = colors.background2 },
-      z = { fg = colors.grey, bg = colors.background2 }
+      a = { fg = colors.grey, bg = colors.lualine_background },
+      c = { fg = colors.red, bg = colors.lualine_background },
+      x = { fg = colors.red, bg = colors.lualine_background },
+      z = { fg = colors.grey, bg = colors.lualine_background }
     },
   }
 
@@ -33,7 +39,12 @@ local config = function()
   vim.api.nvim_set_hl(0, "LuaLineDiffChange", { fg = colors.yellow })
   vim.api.nvim_set_hl(0, "LuaLineDiffDelete", { fg = colors.red })
 
-  return {
+  local lualine_present, lualine = pcall(require, 'lualine')
+  if not lualine_present then
+    return
+  end
+
+  lualine.setup({
     options = {
       icons_enabled = true,
       theme = custom_theme,
@@ -138,10 +149,8 @@ local config = function()
     },
     tabline = {},
     extensions = {}
-  }
+  })
 end
 
-return {
-  "nvim-lualine/lualine.nvim",
-  opts = config
-}
+
+return config_lualine
