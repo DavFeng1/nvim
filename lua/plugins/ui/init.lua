@@ -6,8 +6,10 @@ local gitsigns = require "plugins.ui.gitsigns"
 local colorizer = require "plugins.ui.colorizer"
 local lualine = require "plugins.ui.lualine"
 local scrollview = require "plugins.ui.scrollview"
+local nvim_web_devicons = require "plugins.ui.nvim-web-devicons"
 
 return {
+  nvim_web_devicons,
   noice,
   alpha,
   {
