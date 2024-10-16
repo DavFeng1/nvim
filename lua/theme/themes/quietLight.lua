@@ -87,7 +87,7 @@ local M = {
   func = "#aa3732",
   operator = "#fe8019",
   bracket = "#b16286",
-  special = "#fabd2f",
+  special = base_colors.magenta,
   delimiter = "#8ec07c",
   --
   barbar_current = "#8ec07c",
