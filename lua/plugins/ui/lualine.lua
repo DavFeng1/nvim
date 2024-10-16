@@ -1,7 +1,9 @@
 -- Color table for highlights
 -- stylua: ignore
-local colors = require('theme.colors')
+local get_colors = require 'theme.colors'
 local icons = require "theme.icons"
+
+local colors = get_colors()
 
 vim.api.nvim_set_hl(0, "LuaLineDiffAdd", { fg = colors.green })
 vim.api.nvim_set_hl(0, "LuaLineDiffChange", { fg = colors.yellow })

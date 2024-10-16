@@ -1,4 +1,5 @@
-local colors = require("theme.colors")
+local get_colors = require "theme.colors"
+local colors = get_colors()
 
 local opts = {
   lsp = {

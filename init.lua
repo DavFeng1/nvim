@@ -5,7 +5,6 @@ require "confs.keymaps"
 
 require "latex"
 require "plugins"
-require "colorscheme"
 
 if vim.g.vscode then
   vim.cmd([[

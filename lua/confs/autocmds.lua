@@ -1,3 +1,19 @@
+-- Don't auto change colorscheme
+vim.api.nvim_create_autocmd("ColorScheme", {
+  pattern = "*",
+  command = "silent!"
+})
+vim.api.nvim_create_autocmd("OptionSet", {
+  pattern = "background",
+  command = "silent!"
+})
+local set_custom_highlights = require "colorscheme"
+-- Reapply custom highlights on background change without changing colorscheme
+vim.api.nvim_create_autocmd("OptionSet", {
+  pattern = "background",
+  callback = set_custom_highlights
+})
+
 -- Dont continue comments on next line after enter
 vim.cmd([[autocmd FileType * set formatoptions-=cro]])
 
@@ -12,7 +28,5 @@ vim.api.nvim_create_autocmd("TextYankPost", {
     })
   end
 })
-
-
 -- Formatting
 vim.cmd([[autocmd BufWritePre * lua vim.lsp.buf.format()]])

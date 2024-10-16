@@ -1,15 +1,32 @@
 -- Base theme
-require "theme.integrations.base"
--- Plugin integrations
-require "theme.integrations.neo-tree"
-require "theme.integrations.telescope"
-require "theme.integrations.barbar"
-require "theme.integrations.treesitter"
-require "theme.integrations.indent-blankline"
-require "theme.integrations.gitsigns"
-require "theme.integrations.which-key"
-require "theme.integrations.alpha"
-require "theme.integrations.notify"
+local set_base = require "theme.integrations.base"
+local set_neo_tree = require "theme.integrations.neo-tree"
+local set_telescope = require "theme.integrations.telescope"
+local set_barbar = require "theme.integrations.barbar"
+local set_treesitter = require "theme.integrations.treesitter"
+local set_ibl = require "theme.integrations.indent-blankline"
+local set_git_signs = require "theme.integrations.gitsigns"
+local set_which_key = require "theme.integrations.which-key"
+local set_alpha = require "theme.integrations.alpha"
+local set_notify = require "theme.integrations.notify"
+local set_cmp = require "theme.integrations.cmp"
+
 -- Custom
-require "theme.winbar"
-require "theme.integrations.cmp"
+local set_winbar = require "theme.winbar"
+
+return function()
+  set_base()
+  set_git_signs()
+  set_cmp()
+  set_treesitter()
+  set_barbar()
+  set_ibl()
+  set_telescope()
+  set_neo_tree()
+  set_git_signs()
+  set_which_key()
+  set_alpha()
+  set_notify()
+  set_winbar()
+  set_cmp()
+end
