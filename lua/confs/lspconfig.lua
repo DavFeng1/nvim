@@ -5,7 +5,7 @@ if not present then
 end
 
 local on_attach = function(client, _bufnr)
-  client.server_capabilities.document_formatting = true
+  client.server_capabilities.documentFormattingProvider = true
   client.server_capabilities.semanticTokensProvider = nil
 end
 
@@ -14,9 +14,7 @@ local lsp_flags = {
 }
 
 lspconfig.ts_ls.setup {
-  on_attach = function(client, __bufnr)
-    client.server_capabilities.documentFormattingProvider = false
-  end,
+  on_attach = on_attach,
   flags = lsp_flags
 }
 
