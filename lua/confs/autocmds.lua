@@ -1,4 +1,6 @@
 local config_lualine = require "plugins.ui.lualine"
+local config_ibl = require "plugins.ui.indent-blankline"
+
 function set_autocmds()
   -- Don't auto change colorscheme
   vim.api.nvim_create_autocmd("ColorScheme", {
@@ -16,6 +18,7 @@ function set_autocmds()
     pattern = "background",
     callback = function()
       set_colorscheme()
+      config_ibl()
       config_lualine()
     end
 
