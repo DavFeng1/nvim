@@ -100,6 +100,7 @@ local M = {
   bracket = "#b16286",
   special = base_colors.magenta,
   delimiter = "#8ec07c",
+  match_paren_background = "#dfe6dd",
   --
   barbar_current = "#8ec07c",
   search = "#f0dae3"

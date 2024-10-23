@@ -40,7 +40,7 @@ function set_base_colors(colors)
   vim.api.nvim_set_hl(0, "Visual", { bg = colors.selection })
 
   -- Characters
-  vim.api.nvim_set_hl(0, "MatchParen", { fg = colors.black, bg = colors.blue })
+  vim.api.nvim_set_hl(0, "MatchParen", { bg = colors.match_paren_background })
   vim.api.nvim_set_hl(0, "Directory", { fg = colors.blue })
   -- Use terminal emulator's background color
   vim.api.nvim_set_hl(0, "NonText", { fg = colors.grey })

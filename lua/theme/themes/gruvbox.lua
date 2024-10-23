@@ -99,6 +99,7 @@ local M = {
   bracket = "#b16286",
   special = "#fabd2f",
   delimiter = "#8ec07c",
+  match_paren_background = "#5e564e",
   --
   barbar_current = "#8ec07c",
   search = "#393527"
