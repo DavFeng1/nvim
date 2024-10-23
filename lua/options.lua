@@ -77,7 +77,7 @@ function set_options()
   vim.opt.timeoutlen = 500
   vim.opt.mouse = "nvi"
 
-  vim.opt.winbar = "%{%v:lua.require('winbar').eval()%}"
+  -- vim.opt.winbar = "%{%v:lua.require('winbar').eval()%}"
 end
 
 return set_options
