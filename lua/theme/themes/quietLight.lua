@@ -100,9 +100,10 @@ local M = {
   operator = "#fe8019",
   bracket = "#b16286",
   special = base_colors.magenta,
-  delimiter = "#8ec07c",
+  delimiter = base_colors.magenta,
   match_paren_background = "#dfe6dd",
   variable_builtin = "#9c5d27",
+  comment = base_colors.green,
   --
   barbar_current = "#8ec07c",
   search = "#f0dae3"
