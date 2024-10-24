@@ -15,10 +15,7 @@ local set_ibl = require "theme.integrations.indent-blankline"
 local set_winbar = require "theme.winbar"
 
 function set_colorscheme()
-  local get_colors = require 'theme.colors'
-  local colors = get_colors()
-
-  set_base_colors(colors)
+  set_base_colors()
   set_git_signs()
   set_cmp()
   set_treesitter()

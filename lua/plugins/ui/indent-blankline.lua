@@ -22,7 +22,6 @@ local config_ibl = function()
       }
     }
   })
-  set_ibl()
 end
 
 return config_ibl

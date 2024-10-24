@@ -17,6 +17,7 @@ function set_autocmds()
   vim.api.nvim_create_autocmd("OptionSet", {
     pattern = "background",
     callback = function()
+      print('optionset!')
       set_colorscheme()
       config_ibl()
       config_lualine()

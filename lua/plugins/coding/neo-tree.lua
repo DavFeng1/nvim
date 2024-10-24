@@ -16,8 +16,7 @@ return {
       filesystem = {
         follow_current_file = { enabled = true, leave_dirs_open = false },
         filtered_items = {
-          visible = true,
-        },
+          visible = true, },
       },
       popup_border_style = "single",
       add_blank_line_at_top = false,
