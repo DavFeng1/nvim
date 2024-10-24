@@ -8,5 +8,8 @@ return {
       },
       separator_at_end = false
     }
+  },
+  dependencies = {
+    'nvim-tree/nvim-web-devicons',
   }
 }
