@@ -60,6 +60,7 @@ local M = {
   git_signs_blame = base_colors.line,
   cmp_background = base_colors.background_light,
   telescope_background = base_colors.background_light,
+  noice_background = base_colors.background_light,
   lualine_background = base_colors.background,
   lualine_background_dark = "#2a75a6",
   lualine_mode_background = base_colors.background_dark,
