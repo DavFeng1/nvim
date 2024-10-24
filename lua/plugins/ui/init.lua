@@ -1,7 +1,7 @@
 function setup_ui_plugins(colors)
   local alpha = require "plugins.ui.alpha"
   local barbar = require "plugins.ui.barbar"
-  local noice = require "plugins.ui.noice"
+  local config_noice = require "plugins.ui.noice"
   local gitsigns = require "plugins.ui.gitsigns"
   local colorizer = require "plugins.ui.colorizer"
   local config_lualine = require "plugins.ui.lualine"
@@ -11,7 +11,17 @@ function setup_ui_plugins(colors)
 
   return {
     nvim_web_devicons,
-    noice,
+    {
+
+      "folke/noice.nvim",
+      event = "VeryLazy",
+      config = config_noice,
+      dependencies = {
+        "MunifTanjim/nui.nvim",
+        --   If not available, we use `mini` as the fallback
+        -- "rcarriga/nvim-notify",
+      }
+    },
     alpha,
     {
       "folke/which-key.nvim",

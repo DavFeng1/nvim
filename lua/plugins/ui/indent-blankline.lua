@@ -1,4 +1,3 @@
-local set_ibl = require "theme.integrations.indent-blankline"
 local config_ibl = function()
   local ibl_present, ibl = pcall(require, 'ibl')
   if not ibl_present then

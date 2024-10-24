@@ -10,6 +10,7 @@ local set_alpha = require "theme.integrations.alpha"
 local set_notify = require "theme.integrations.notify"
 local set_cmp = require "theme.integrations.cmp"
 local set_ibl = require "theme.integrations.indent-blankline"
+local set_noice = require "theme.integrations.noice"
 
 -- Custom
 local set_winbar = require "theme.winbar"
@@ -29,6 +30,7 @@ function set_colorscheme()
   set_winbar()
   set_cmp()
   set_ibl()
+  set_noice()
 end
 
 return set_colorscheme

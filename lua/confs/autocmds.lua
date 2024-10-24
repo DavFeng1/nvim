@@ -1,5 +1,6 @@
 local config_lualine = require "plugins.ui.lualine"
 local config_ibl = require "plugins.ui.indent-blankline"
+local config_noice = require "plugins.ui.noice"
 
 function set_autocmds()
   -- Don't auto change colorscheme
@@ -20,6 +21,7 @@ function set_autocmds()
       set_colorscheme()
       config_ibl()
       config_lualine()
+      config_noice()
     end
 
   })

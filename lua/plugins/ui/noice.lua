@@ -1,14 +1,12 @@
 local get_colors = require "theme.colors"
 
-local opts = function()
-  local colors = get_colors()
-  vim.api.nvim_set_hl(0, "NoiceCmdline", { fg = colors.red, bg = colors.background_light })
-  vim.api.nvim_set_hl(0, "NoiceCmdlinePopup", { bg = colors.background_light })
-  vim.api.nvim_set_hl(0, "NoiceCmdlinePopupBorder", { fg = colors.background_light })
-  vim.api.nvim_set_hl(0, "NoiceCmdlinePopupTitle", { bg = colors.red })
-  vim.api.nvim_set_hl(0, "NoiceCmdlineIcon", { fg = colors.red })
+return function()
+  local noice_present, noice = pcall(require, 'noice')
+  if not noice_present then
+    return
+  end
 
-  return {
+  noice.setup {
     lsp = {
       -- override markdown rendering so that **cmp** and other plugins use **Treesitter**
       override = {
@@ -31,15 +29,3 @@ local opts = function()
     }
   }
 end
-
-
-return {
-  "folke/noice.nvim",
-  event = "VeryLazy",
-  opts = opts,
-  dependencies = {
-    "MunifTanjim/nui.nvim",
-    --   If not available, we use `mini` as the fallback
-    -- "rcarriga/nvim-notify",
-  }
-}
