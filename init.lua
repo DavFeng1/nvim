@@ -8,13 +8,12 @@ local set_keymaps     = require "confs.keymaps"
 local set_colorscheme = require "colorscheme"
 local setup_plugins   = require "plugins"
 local get_colors      = require 'theme.colors'
-local colors          = get_colors()
 
 set_options()
 set_autocmds()
 set_keymaps()
-setup_plugins()
 set_colorscheme()
+setup_plugins()
 
 if vim.g.vscode then
   vim.cmd([[
