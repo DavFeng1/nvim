@@ -16,7 +16,7 @@ return function()
 
   vim.api.nvim_set_hl(0, "@field", { fg = colors.blue })
   vim.api.nvim_set_hl(0, "@variable", { fg = colors.variable })
-  vim.api.nvim_set_hl(0, "@variable.builtin", { fg = colors.pink })
+  vim.api.nvim_set_hl(0, "@variable.builtin", { fg = colors.variable_builtin })
   vim.api.nvim_set_hl(0, "@variable.member", { fg = colors.variable_member })
   vim.api.nvim_set_hl(0, "@operator", { fg = colors.operator })
 
