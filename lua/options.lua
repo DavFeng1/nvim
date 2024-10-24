@@ -78,7 +78,8 @@ function set_options()
   vim.opt.mouse = "nvi"
 
   -- vim.opt.winbar = "%{%v:lua.require('winbar').eval()%}"
-  vim.g.neovide_scale_factor = 1.2
+  vim.g.neovide_scale_factor = 1.4
+  vim.opt.linespace = 1.0
 end
 
 return set_options
