@@ -103,6 +103,7 @@ local M = {
   delimiter = base_colors.magenta,
   match_paren_background = "#dfe6dd",
   variable_builtin = "#9c5d27",
+  constant = "#9c5d27",
   comment = base_colors.green,
   --
   barbar_current = "#8ec07c",

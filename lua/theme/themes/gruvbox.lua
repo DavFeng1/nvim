@@ -102,6 +102,7 @@ local M = {
   delimiter = "#8ec07c",
   match_paren_background = "#5e564e",
   variable_builtin = base_colors.pink,
+  constant = base_colors.pink,
   comment = base_colors.grey,
   --
   barbar_current = "#8ec07c",
