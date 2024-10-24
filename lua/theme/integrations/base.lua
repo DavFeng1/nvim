@@ -3,7 +3,7 @@ function set_base_colors()
   local colors = get_colors()
 
   vim.api.nvim_set_hl(0, "Normal", { fg = colors.text_primary, bg = colors.background })
-  vim.api.nvim_set_hl(0, "Constant", { fg = colors.text_primary })
+  vim.api.nvim_set_hl(0, "Constant", { fg = colors.constant })
   vim.api.nvim_set_hl(0, "NormalFloat", { bg = colors.background_dark })
   vim.api.nvim_set_hl(0, "MsgArea", { fg = colors.red })
   vim.api.nvim_set_hl(0, "DefinitionBorder", { fg = colors.red })

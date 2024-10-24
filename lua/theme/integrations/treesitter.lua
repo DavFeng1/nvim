@@ -4,7 +4,7 @@ return function()
   -- " TREESITTER
   vim.api.nvim_set_hl(0, "@comment", { fg = colors.comment })
   vim.api.nvim_set_hl(0, "@string", { fg = colors.string })
-  vim.api.nvim_set_hl(0, "@constant", { fg = colors.pink })
+  vim.api.nvim_set_hl(0, "@constant", { fg = colors.constant })
   vim.api.nvim_set_hl(0, "@KeywordFunction", { fg = colors.purple })
   vim.api.nvim_set_hl(0, "@function", { fg = colors.func, bold = true })
   vim.api.nvim_set_hl(0, "@function.call", { fg = colors.func })

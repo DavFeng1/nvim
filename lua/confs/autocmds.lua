@@ -1,6 +1,7 @@
 local config_lualine = require "plugins.ui.lualine"
 local config_ibl = require "plugins.ui.indent-blankline"
 local config_noice = require "plugins.ui.noice"
+local config_devicons = require "plugins.ui.nvim-web-devicons"
 
 function set_autocmds()
   -- Don't auto change colorscheme
@@ -22,6 +23,7 @@ function set_autocmds()
       config_ibl()
       config_lualine()
       config_noice()
+      config_devicons()
     end
 
   })

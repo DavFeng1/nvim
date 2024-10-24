@@ -7,10 +7,13 @@ function setup_ui_plugins(colors)
   local config_lualine = require "plugins.ui.lualine"
   local config_ibl = require "plugins.ui.indent-blankline"
   local scrollview = require "plugins.ui.scrollview"
-  local nvim_web_devicons = require "plugins.ui.nvim-web-devicons"
+  local setup_devicons = require "plugins.ui.nvim-web-devicons"
 
   return {
-    nvim_web_devicons,
+    {
+      'nvim-tree/nvim-web-devicons',
+      config = setup_devicons
+    },
     {
 
       "folke/noice.nvim",
