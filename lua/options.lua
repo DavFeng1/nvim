@@ -17,7 +17,7 @@ function set_options()
   function _G.customFoldText()
     local line = vim.fn.getline(vim.v.foldstart)
     local line_count = vim.v.foldend - vim.v.foldstart + 1
-    return "  ..." .. line_count .. " lines"
+    return "     " .. line_count .. " lines"
   end
 
   vim.opt.foldtext = "v:lua.customFoldText()"
@@ -80,8 +80,9 @@ function set_options()
   -- vim.opt.winbar = "%{%v:lua.require('winbar').eval()%}"
   vim.g.neovide_scale_factor = 1.4
   vim.opt.linespace = 1.0
-  vim.g.neovide_cursor_trail_size = 0.5
+  vim.g.neovide_cursor_trail_size = 0
   vim.g.neovide_cursor_animation_length = 0
+  vim.g.neovide_scroll_animation_length = 0.3
 end
 
 return set_options
