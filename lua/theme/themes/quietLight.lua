@@ -83,6 +83,7 @@ local M = {
   diagnostics_error = "#f14c4c",
   ibl_line = "#e1e1e1",
   ibl_scope = base_colors.line,
+  scrollview = "#bbbbbb",
   -- Neo Tree
   neo_tree_background = base_colors.background,
   neo_tree_modified = "#e2a974",

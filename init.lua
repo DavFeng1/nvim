@@ -9,10 +9,10 @@ local set_colorscheme = require "colorscheme"
 local setup_plugins   = require "plugins"
 local get_colors      = require 'theme.colors'
 
+set_colorscheme()
 set_options()
 set_autocmds()
 set_keymaps()
-set_colorscheme()
 setup_plugins()
 
 if vim.g.vscode then

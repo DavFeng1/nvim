@@ -8,6 +8,7 @@ function setup_ui_plugins(colors)
   local config_ibl = require "plugins.ui.indent-blankline"
   local scrollview = require "plugins.ui.scrollview"
   local setup_devicons = require "plugins.ui.nvim-web-devicons"
+  local config_barbar = require "plugins.ui.barbar"
 
   return {
     {
@@ -34,7 +35,11 @@ function setup_ui_plugins(colors)
     gitsigns,
     { "goolord/alpha-nvim" },
     { "echasnovski/mini.nvim", version = "*" },
-    barbar,
+    {
+      "romgrk/barbar.nvim",
+      config = config_barbar,
+      dependencies = { 'nvim-tree/nvim-web-devicons', }
+    },
     {
       "lukas-reineke/indent-blankline.nvim",
       main = "ibl",

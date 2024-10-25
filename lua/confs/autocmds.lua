@@ -1,6 +1,5 @@
 local config_lualine = require "plugins.ui.lualine"
 local config_ibl = require "plugins.ui.indent-blankline"
-local config_noice = require "plugins.ui.noice"
 
 local function set_autocmds()
   -- Don't auto change colorscheme
@@ -12,16 +11,13 @@ local function set_autocmds()
     pattern = "background",
     command = "silent!"
   })
-
-
   -- Reapply custom highlights on background change without changing colorscheme
   vim.api.nvim_create_autocmd("OptionSet", {
     pattern = "background",
     callback = function()
       set_colorscheme()
-      config_ibl()
       config_lualine()
-      config_noice()
+      config_ibl()
     end
 
   })

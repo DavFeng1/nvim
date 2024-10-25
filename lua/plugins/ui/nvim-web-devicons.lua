@@ -4,5 +4,7 @@ return function()
     return
   end
 
-  devicons.setup {}
+  devicons.setup {
+    variant = "light"
+  }
 end

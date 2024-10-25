@@ -1,6 +1,10 @@
-return {
-  "romgrk/barbar.nvim",
-  opts = {
+local config_barbar = function()
+  local barbar_present, barbar = pcall(require, 'barbar')
+  if not barbar_present then
+    return
+  end
+
+  barbar.setup {
     icons = {
       filetype = {
         custom_colors = false,
@@ -8,8 +12,7 @@ return {
       },
       separator_at_end = false
     }
-  },
-  dependencies = {
-    'nvim-tree/nvim-web-devicons',
   }
-}
+end
+
+return config_barbar

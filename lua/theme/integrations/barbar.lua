@@ -8,16 +8,10 @@ return function()
     bg = colors.barbar_background,
   })
   --  Current
-  vim.api.nvim_set_hl(0, "BufferCurrent", {
-    fg = colors.text_hightlight,
-    bg = colors.barbar_background_current
-  })
-  vim.api.nvim_set_hl(0, "BufferCurrentIcon", {
-    bg = colors.barbar_background_current
-  }) -- requires custom_color = true
-  vim.api.nvim_set_hl(0, "BufferCurrentIndex", {
-    fg = colors.text_hightlight,
-    bg = colors.barbar_background_current
+  vim.api.nvim_set_hl(0, "BufferCurrent", { fg = colors.text_hightlight, bg = colors.barbar_background_current })
+  vim.api.nvim_set_hl(0, "BufferCurrentIcon", { bg = colors.barbar_background_current })
+  -- requires config.icons.filetype.custom_color = true
+  vim.api.nvim_set_hl(0, "BufferCurrentIndex", { fg = colors.text_hightlight, bg = colors.barbar_background_current
   })
   vim.api.nvim_set_hl(0, "BufferCurrentSign", {
     fg = colors.green,
