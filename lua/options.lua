@@ -79,7 +79,7 @@ function set_options()
 
   -- vim.opt.winbar = "%{%v:lua.require('winbar').eval()%}"
   vim.g.neovide_scale_factor = 1.4
-  vim.opt.linespace = 1.0
+  vim.opt.linespace = 2
   vim.g.neovide_cursor_trail_size = 0
   vim.g.neovide_cursor_animation_length = 0
   vim.g.neovide_scroll_animation_length = 0.3
