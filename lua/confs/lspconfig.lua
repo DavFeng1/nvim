@@ -4,9 +4,14 @@ if not present then
   return
 end
 
-local on_attach = function(client, _bufnr)
+local on_attach = function(client, bufnr)
   client.server_capabilities.documentFormattingProvider = true
-  client.server_capabilities.semanticTokensProvider = nil
+  vim.api.nvim_create_autocmd("BufWritePre", {
+    buffer = bufnr,
+    callback = function()
+      vim.lsp.buf.format({ bufnr = bufnr, async = false })
+    end
+  })
 end
 
 local lsp_flags = {
@@ -14,7 +19,9 @@ local lsp_flags = {
 }
 
 lspconfig.ts_ls.setup {
-  on_attach = on_attach,
+  on_attach = function(client, _bufnr)
+    client.server_capabilities.documentFormattingProvider = false
+  end,
   flags = lsp_flags
 }
 

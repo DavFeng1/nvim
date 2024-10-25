@@ -40,6 +40,7 @@ local function set_autocmds()
       })
     end
   })
+
   -- Formatting
   vim.cmd([[autocmd BufWritePre * lua vim.lsp.buf.format()]])
 end
