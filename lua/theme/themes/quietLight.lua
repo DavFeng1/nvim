@@ -17,7 +17,7 @@ local base_colors = {
   brown = "#453326",
   -- auxilliery colors --> remove
   grey = "#a1aab4",
-  line = "#6e705b",
+  line = "#9e9e9e",
   dark_green = "#003748",
   orange = "#f34b00",
   dark_blue = "#178ec8",
@@ -97,7 +97,7 @@ local M = {
   variable_member = base_colors.magenta,
   string = base_colors.green,
   func = "#aa3732",
-  operator = "#fe8019",
+  operator = "#777777",
   bracket = "#b16286",
   special = base_colors.magenta,
   delimiter = base_colors.magenta,
