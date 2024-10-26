@@ -46,4 +46,5 @@ return function()
 
   -- Matches
   vim.api.nvim_set_hl(0, "CmpItemAbbrMatch", { fg = colors.green })
+  vim.api.nvim_set_hl(0, "CmpItemAbbrMatchFuzzy", { fg = colors.green })
 end
