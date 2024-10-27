@@ -96,6 +96,7 @@ local M = {
   type = base_colors.magenta,
   variable = base_colors.magenta,
   variable_member = base_colors.magenta,
+  property = base_colors.red,
   string = base_colors.green,
   func = "#aa3732",
   operator = "#777777",

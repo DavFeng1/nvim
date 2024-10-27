@@ -20,7 +20,7 @@ return function()
   vim.api.nvim_set_hl(0, "@variable.member", { fg = colors.variable_member })
   vim.api.nvim_set_hl(0, "@operator", { fg = colors.operator })
 
-  vim.api.nvim_set_hl(0, "@property", { fg = colors.red })
+  vim.api.nvim_set_hl(0, "@property", { fg = colors.property })
   vim.api.nvim_set_hl(0, "@parameter", { fg = colors.red })
 
   vim.api.nvim_set_hl(0, "@method", { fg = colors.blue })

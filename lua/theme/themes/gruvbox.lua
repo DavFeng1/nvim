@@ -21,7 +21,7 @@ local base_colors = {
   orange = "#f34b00",
   dark_blue = "#178ec8",
   dark_purple = "#c678dd",
-  pink = "#C678DD",
+  pink = "#d3859b",
 }
 local M = {
   -- Base Colors
@@ -90,15 +90,16 @@ local M = {
   -- CMP
   cmp_text = base_colors.grey,
   winbar_background = base_colors.background,
-  keyword = "#fb4935",
+  keyword = "#fe8018",
   type = "#fabd2f",
   variable = "#83a598",
   variable_member = "#83a598",
+  property = "#83a598",
   string = "#b8bb26",
   func = "#8ec07c",
   operator = "#fe8019",
   bracket = "#b16286",
-  special = "#fabd2f",
+  special = base_colors.pink,
   delimiter = "#8ec07c",
   match_paren_background = "#5e564e",
   variable_builtin = base_colors.pink,
