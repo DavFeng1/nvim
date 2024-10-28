@@ -21,6 +21,7 @@ function set_base_colors()
   vim.api.nvim_set_hl(0, "Todo", { fg = colors.black, bg = colors.yellow })
   vim.api.nvim_set_hl(0, "Folded", { fg = colors.grey })
   -- vim.api.nvim_set_hl(0, "DiagnosticUnderlineError", { gui = nil })
+  vim.api.nvim_set_hl(0, "DiagnosticUnnecessary", { fg = colors.diagnostic_unnecessary, gui = underline })
 
   -- Built in
   vim.api.nvim_set_hl(0, "Type", { fg = colors.yellow })

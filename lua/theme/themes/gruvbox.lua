@@ -78,6 +78,7 @@ local M = {
   barbar_background_current = base_colors.background,
   which_key_background = base_colors.background_dark,
   diagnostics_error = "#f14c4c",
+  diagnostic_unnecessary = '#a79d82',
   ibl_line = "#2f302e",
   ibl_scope = base_colors.red,
   scrollview = "#3b3937",

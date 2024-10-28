@@ -109,6 +109,7 @@ local M = {
   variable_builtin = "#9c5d27",
   constant = "#9c5d27",
   comment = base_colors.green,
+  diagnostic_unnecessary = base_colors.grey,
   --
   barbar_current = "#8ec07c",
   search = "#f0dae3"
