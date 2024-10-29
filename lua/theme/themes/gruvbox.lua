@@ -50,6 +50,7 @@ local M = {
   -- text
   text_primary = base_colors.white,
   text_highlight = base_colors.yellow,
+  line_nr = base_colors.line,
   -- Component specific colors
   pmenu_sel_bg = base_colors.selection,
   statusline_bg = base_colors.background_light,

@@ -53,7 +53,7 @@ function set_base_colors()
   vim.api.nvim_set_hl(0, "Cursor", { bg = colors.light_white })
   vim.api.nvim_set_hl(0, "CursorLine", { bg = colors.cursor_line_background })
   vim.api.nvim_set_hl(0, "CursorLineNr", { fg = colors.white, })
-  vim.api.nvim_set_hl(0, "LineNr", { fg = colors.line })
+  vim.api.nvim_set_hl(0, "LineNr", { fg = colors.line_nr })
 
   -- Diagnostic
   vim.api.nvim_set_hl(0, "DiagnosticInfo", { fg = colors.dark_purple })

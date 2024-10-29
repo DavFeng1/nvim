@@ -41,6 +41,7 @@ local M = {
   white = base_colors.magenta,
   grey = base_colors.grey,
   line = base_colors.line,
+  line_nr = base_colors.grey,
   dark_green = base_colors.dark_green,
   orange = base_colors.orange,
   dark_blue = base_colors.dark_blue,
