@@ -6,8 +6,10 @@ local config_barbar = function()
 
   barbar.setup {
     icons = {
+      buffer_index = false,
+      buffer_number = false,
       filetype = {
-        custom_colors = false,
+        custom_colors = true,
         enabled = true
       },
       separator_at_end = false
