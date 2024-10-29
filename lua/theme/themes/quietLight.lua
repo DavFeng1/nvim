@@ -17,7 +17,7 @@ local base_colors = {
   brown = "#453326",
   -- auxilliery colors --> remove
   grey = "#a1aab4",
-  line = "#9e9e9e",
+  line = "#e1e1e1",
   dark_green = "#003748",
   orange = "#f34b00",
   dark_blue = "#178ec8",
@@ -81,7 +81,7 @@ local M = {
   barbar_background_current = base_colors.background,
   which_key_background = base_colors.background_dark,
   diagnostics_error = "#f14c4c",
-  ibl_line = "#e1e1e1",
+  ibl_line = base_colors.line,
   ibl_scope = base_colors.line,
   scrollview = "#bbbbbb",
   -- Neo Tree
