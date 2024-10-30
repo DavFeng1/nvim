@@ -9,7 +9,7 @@ local config_barbar = function()
       buffer_index = false,
       buffer_number = false,
       filetype = {
-        custom_colors = true,
+        custom_colors = false,
         enabled = true
       },
       separator_at_end = false
