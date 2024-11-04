@@ -69,6 +69,7 @@ local M = {
   lualine_background_dark = "#4e3c69",
   lualine_mode_background = "#4e3c69",
   lualine_normal_foreground = base_colors.white,
+  lualine_insert_foreground = base_colors.dark_green,
   lualine_branch = base_colors.white,
   lualine_lsp_foreground = base_colors.white,
   lualine_progress_foreground = base_colors.white,

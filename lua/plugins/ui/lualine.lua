@@ -10,7 +10,7 @@ local config_lualine = function()
       z = { fg = colors.red, bg = colors.background_dark },
     },
     insert = {
-      a = { fg = colors.lualine_normal_foreground, bg = colors.background },
+      a = { fg = colors.lualine_insert_foreground, bg = colors.background },
       c = { fg = colors.red, bg = colors.lualine_background },
       x = { fg = colors.red, bg = colors.lualine_background },
       z = { fg = colors.dark_green, bg = colors.background }

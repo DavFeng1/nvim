@@ -62,10 +62,12 @@ local M = {
   cmp_background = base_colors.background_light,
   telescope_background = base_colors.background_light,
   noice_background = base_colors.background_light,
+  -- Lualine
   lualine_background = base_colors.background,
   lualine_background_dark = "#2a75a6",
   lualine_mode_background = base_colors.background_dark,
   lualine_normal_foreground = base_colors.red,
+  lualine_insert_foreground = base_colors.green,
   lualine_lsp_foreground = base_colors.blue,
   lualine_progress_foreground = base_colors.red,
   lualine_location_foreground = base_colors.red,
@@ -74,6 +76,7 @@ local M = {
   lualine_diff_change = base_colors.yellow,
   lualine_diff_delete = base_colors.red,
   lualine_branch = base_colors.magenta,
+  -- Barbar
   barbar_background = base_colors.background,
   barbar_background_inactive = base_colors.background_light,
   barbar_background_current = base_colors.background,
