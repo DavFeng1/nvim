@@ -1,5 +1,6 @@
 local config_lualine = require "plugins.ui.lualine"
 local config_ibl = require "plugins.ui.indent-blankline"
+local set_colorscheme = require "colorscheme"
 
 local function set_autocmds()
   -- Reapply custom highlights on background change without changing colorscheme
