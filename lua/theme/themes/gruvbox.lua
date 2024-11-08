@@ -113,7 +113,8 @@ local M = {
   match_paren_background = "#5e564e",
   variable_builtin = base_colors.pink,
   constant = base_colors.pink,
-  comment = base_colors.grey,
+  comment = "#8f8476",
+  copilot_completion = "#737272",
   --
   barbar_current = "#8ec07c",
   search = "#393527"
