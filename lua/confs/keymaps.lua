@@ -28,8 +28,8 @@ function set_keymaps()
   -- Adjust pane size
   vim.keymap.set("n", "<S-Up>", "<cmd> :resize +1<cr>", opts)
   vim.keymap.set("n", "<S-Down>", "<cmd> :resize -1<cr>", opts)
-  vim.keymap.set("n", "<S-Left>", "<cmd> :vertical resize +1<cr>", opts)
-  vim.keymap.set("n", "<S-Right>", "<cmd> :vertical resize -1<cr>", opts)
+  vim.keymap.set("n", "+", "<cmd> :vertical resize +1<cr>", opts)
+  vim.keymap.set("n", "_", "<cmd> :vertical resize -1<cr>", opts)
 
   -- Toggle through command suggestions
   vim.cmd([[
