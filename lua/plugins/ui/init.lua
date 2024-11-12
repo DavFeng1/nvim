@@ -38,7 +38,8 @@ function setup_ui_plugins(colors)
     {
       "romgrk/barbar.nvim",
       config = config_barbar,
-      dependencies = { 'nvim-tree/nvim-web-devicons', }
+      dependencies = { 'nvim-tree/nvim-web-devicons', },
+      branch = "624-respond-to-bg-change"
     },
     {
       "lukas-reineke/indent-blankline.nvim",
