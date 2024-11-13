@@ -82,7 +82,7 @@ function set_options()
   vim.opt.linespace = 3
   vim.g.neovide_cursor_trail_size = 0
   vim.g.neovide_cursor_animation_length = 0
-  vim.g.neovide_scroll_animation_length = 0.3
+  vim.g.neovide_scroll_animation_length = 0.1
   vim.g.neovide_theme = 'auto'
 end
 
